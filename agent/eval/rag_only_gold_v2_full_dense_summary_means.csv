@@ -1,0 +1,8 @@
+metric,value
+total,50
+hit_at_1,0.52
+hit_at_5,0.84
+mrr,0.639
+faithfulness,0.9500985155195681
+answer_relevancy,0.9483080995982351
+context_precision,0.9149444444228669

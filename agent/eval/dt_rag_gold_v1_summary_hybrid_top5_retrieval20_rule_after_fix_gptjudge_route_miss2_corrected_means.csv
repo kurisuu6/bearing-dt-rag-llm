@@ -1,0 +1,12 @@
+metric,value
+total,30
+llm_success_count,30
+llm_success_rate,1.0
+llm_error_count,0
+hit_at_1,0.6
+hit_at_5,0.8
+hit_at_10,0.8
+mrr,0.6477777777777777
+faithfulness,0.85143014774612
+answer_relevancy,0.691696737169578
+context_precision,0.9826944444262357

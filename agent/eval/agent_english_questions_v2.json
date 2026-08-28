@@ -1,0 +1,2113 @@
+[
+  {
+    "id": "unrelated_001",
+    "question": "What is the weather in Shanghai today?",
+    "category": "unrelated",
+    "subcategory": "general_out_of_scope",
+    "expected_route": "unrelated",
+    "expected_tools": [],
+    "expected_keywords": [
+      "outside",
+      "scope"
+    ]
+  },
+  {
+    "id": "unrelated_002",
+    "question": "Write a short poem about the ocean.",
+    "category": "unrelated",
+    "subcategory": "general_out_of_scope",
+    "expected_route": "unrelated",
+    "expected_tools": [],
+    "expected_keywords": [
+      "outside",
+      "scope"
+    ]
+  },
+  {
+    "id": "unrelated_003",
+    "question": "What is the capital of France?",
+    "category": "unrelated",
+    "subcategory": "general_out_of_scope",
+    "expected_route": "unrelated",
+    "expected_tools": [],
+    "expected_keywords": [
+      "outside",
+      "scope"
+    ]
+  },
+  {
+    "id": "unrelated_004",
+    "question": "How do I make a chocolate cake?",
+    "category": "unrelated",
+    "subcategory": "general_out_of_scope",
+    "expected_route": "unrelated",
+    "expected_tools": [],
+    "expected_keywords": [
+      "outside",
+      "scope"
+    ]
+  },
+  {
+    "id": "unrelated_005",
+    "question": "Translate 'good morning' into Spanish.",
+    "category": "unrelated",
+    "subcategory": "general_out_of_scope",
+    "expected_route": "unrelated",
+    "expected_tools": [],
+    "expected_keywords": [
+      "outside",
+      "scope"
+    ]
+  },
+  {
+    "id": "unrelated_006",
+    "question": "Who won the last FIFA World Cup?",
+    "category": "unrelated",
+    "subcategory": "general_out_of_scope",
+    "expected_route": "unrelated",
+    "expected_tools": [],
+    "expected_keywords": [
+      "outside",
+      "scope"
+    ]
+  },
+  {
+    "id": "unrelated_007",
+    "question": "Give me a travel plan for Tokyo.",
+    "category": "unrelated",
+    "subcategory": "general_out_of_scope",
+    "expected_route": "unrelated",
+    "expected_tools": [],
+    "expected_keywords": [
+      "outside",
+      "scope"
+    ]
+  },
+  {
+    "id": "unrelated_008",
+    "question": "Explain photosynthesis in simple terms.",
+    "category": "unrelated",
+    "subcategory": "general_out_of_scope",
+    "expected_route": "unrelated",
+    "expected_tools": [],
+    "expected_keywords": [
+      "outside",
+      "scope"
+    ]
+  },
+  {
+    "id": "unrelated_009",
+    "question": "Recommend a science fiction movie.",
+    "category": "unrelated",
+    "subcategory": "general_out_of_scope",
+    "expected_route": "unrelated",
+    "expected_tools": [],
+    "expected_keywords": [
+      "outside",
+      "scope"
+    ]
+  },
+  {
+    "id": "unrelated_010",
+    "question": "What is the exchange rate between USD and EUR?",
+    "category": "unrelated",
+    "subcategory": "general_out_of_scope",
+    "expected_route": "unrelated",
+    "expected_tools": [],
+    "expected_keywords": [
+      "outside",
+      "scope"
+    ]
+  },
+  {
+    "id": "unrelated_011",
+    "question": "Summarize the plot of Pride and Prejudice.",
+    "category": "unrelated",
+    "subcategory": "general_out_of_scope",
+    "expected_route": "unrelated",
+    "expected_tools": [],
+    "expected_keywords": [
+      "outside",
+      "scope"
+    ]
+  },
+  {
+    "id": "unrelated_012",
+    "question": "How can I improve my resume for a marketing job?",
+    "category": "unrelated",
+    "subcategory": "general_out_of_scope",
+    "expected_route": "unrelated",
+    "expected_tools": [],
+    "expected_keywords": [
+      "outside",
+      "scope"
+    ]
+  },
+  {
+    "id": "unrelated_013",
+    "question": "What are the rules for castling in chess?",
+    "category": "unrelated",
+    "subcategory": "general_out_of_scope",
+    "expected_route": "unrelated",
+    "expected_tools": [],
+    "expected_keywords": [
+      "outside",
+      "scope"
+    ]
+  },
+  {
+    "id": "unrelated_014",
+    "question": "Write a Python function that reverses a string.",
+    "category": "unrelated",
+    "subcategory": "general_out_of_scope",
+    "expected_route": "unrelated",
+    "expected_tools": [],
+    "expected_keywords": [
+      "outside",
+      "scope"
+    ]
+  },
+  {
+    "id": "unrelated_015",
+    "question": "What is the tallest mountain in the world?",
+    "category": "unrelated",
+    "subcategory": "general_out_of_scope",
+    "expected_route": "unrelated",
+    "expected_tools": [],
+    "expected_keywords": [
+      "outside",
+      "scope"
+    ]
+  },
+  {
+    "id": "unrelated_016",
+    "question": "Suggest a beginner workout plan.",
+    "category": "unrelated",
+    "subcategory": "general_out_of_scope",
+    "expected_route": "unrelated",
+    "expected_tools": [],
+    "expected_keywords": [
+      "outside",
+      "scope"
+    ]
+  },
+  {
+    "id": "unrelated_017",
+    "question": "Explain black holes in simple terms.",
+    "category": "unrelated",
+    "subcategory": "general_out_of_scope",
+    "expected_route": "unrelated",
+    "expected_tools": [],
+    "expected_keywords": [
+      "outside",
+      "scope"
+    ]
+  },
+  {
+    "id": "unrelated_018",
+    "question": "Help me draft an email to a professor.",
+    "category": "unrelated",
+    "subcategory": "general_out_of_scope",
+    "expected_route": "unrelated",
+    "expected_tools": [],
+    "expected_keywords": [
+      "outside",
+      "scope"
+    ]
+  },
+  {
+    "id": "unrelated_019",
+    "question": "What are common symptoms of seasonal allergies?",
+    "category": "unrelated",
+    "subcategory": "general_out_of_scope",
+    "expected_route": "unrelated",
+    "expected_tools": [],
+    "expected_keywords": [
+      "outside",
+      "scope"
+    ]
+  },
+  {
+    "id": "unrelated_020",
+    "question": "Calculate the area of a circle with radius 5.",
+    "category": "unrelated",
+    "subcategory": "general_out_of_scope",
+    "expected_route": "unrelated",
+    "expected_tools": [],
+    "expected_keywords": [
+      "outside",
+      "scope"
+    ]
+  },
+  {
+    "id": "unrelated_021",
+    "question": "Recommend a budget laptop for video editing.",
+    "category": "unrelated",
+    "subcategory": "general_out_of_scope",
+    "expected_route": "unrelated",
+    "expected_tools": [],
+    "expected_keywords": [
+      "outside",
+      "scope"
+    ]
+  },
+  {
+    "id": "unrelated_022",
+    "question": "Give me a brief history of the Roman Empire.",
+    "category": "unrelated",
+    "subcategory": "general_out_of_scope",
+    "expected_route": "unrelated",
+    "expected_tools": [],
+    "expected_keywords": [
+      "outside",
+      "scope"
+    ]
+  },
+  {
+    "id": "unrelated_023",
+    "question": "How do I grow tomatoes at home?",
+    "category": "unrelated",
+    "subcategory": "general_out_of_scope",
+    "expected_route": "unrelated",
+    "expected_tools": [],
+    "expected_keywords": [
+      "outside",
+      "scope"
+    ]
+  },
+  {
+    "id": "unrelated_024",
+    "question": "Generate a slogan for a small coffee shop.",
+    "category": "unrelated",
+    "subcategory": "general_out_of_scope",
+    "expected_route": "unrelated",
+    "expected_tools": [],
+    "expected_keywords": [
+      "outside",
+      "scope"
+    ]
+  },
+  {
+    "id": "unrelated_025",
+    "question": "What is the difference between TCP and UDP?",
+    "category": "unrelated",
+    "subcategory": "general_out_of_scope",
+    "expected_route": "unrelated",
+    "expected_tools": [],
+    "expected_keywords": [
+      "outside",
+      "scope"
+    ]
+  },
+  {
+    "id": "unrelated_026",
+    "question": "Tell me a bedtime story.",
+    "category": "unrelated",
+    "subcategory": "general_out_of_scope",
+    "expected_route": "unrelated",
+    "expected_tools": [],
+    "expected_keywords": [
+      "outside",
+      "scope"
+    ]
+  },
+  {
+    "id": "unrelated_027",
+    "question": "How do I apply for a passport?",
+    "category": "unrelated",
+    "subcategory": "general_out_of_scope",
+    "expected_route": "unrelated",
+    "expected_tools": [],
+    "expected_keywords": [
+      "outside",
+      "scope"
+    ]
+  },
+  {
+    "id": "unrelated_028",
+    "question": "What are the benefits of meditation?",
+    "category": "unrelated",
+    "subcategory": "general_out_of_scope",
+    "expected_route": "unrelated",
+    "expected_tools": [],
+    "expected_keywords": [
+      "outside",
+      "scope"
+    ]
+  },
+  {
+    "id": "unrelated_029",
+    "question": "Convert 100 degrees Fahrenheit to Celsius.",
+    "category": "unrelated",
+    "subcategory": "general_out_of_scope",
+    "expected_route": "unrelated",
+    "expected_tools": [],
+    "expected_keywords": [
+      "outside",
+      "scope"
+    ]
+  },
+  {
+    "id": "unrelated_030",
+    "question": "Who wrote Hamlet?",
+    "category": "unrelated",
+    "subcategory": "general_out_of_scope",
+    "expected_route": "unrelated",
+    "expected_tools": [],
+    "expected_keywords": [
+      "outside",
+      "scope"
+    ]
+  },
+  {
+    "id": "rag_ch01_001",
+    "question": "Which bearing parts and geometric features are named in the SKF rolling-bearing terminology diagram?",
+    "category": "rag_only",
+    "subcategory": "skf_manual",
+    "expected_route": "rag_only",
+    "expected_tools": [
+      "rag"
+    ],
+    "expected_keywords": [
+      "terminology",
+      "inner ring",
+      "outer ring",
+      "rolling element"
+    ],
+    "chapter": 1,
+    "chapter_title": "Basics"
+  },
+  {
+    "id": "rag_ch01_002",
+    "question": "What is the difference between locating and non-locating bearing arrangements?",
+    "category": "rag_only",
+    "subcategory": "skf_manual",
+    "expected_route": "rag_only",
+    "expected_tools": [
+      "rag"
+    ],
+    "expected_keywords": [
+      "locating",
+      "non-locating",
+      "bearing arrangement"
+    ],
+    "chapter": 1,
+    "chapter_title": "Basics"
+  },
+  {
+    "id": "rag_ch01_003",
+    "question": "In SKF bearing arrangements, what radial-load role can a radial bearing provide?",
+    "category": "rag_only",
+    "subcategory": "skf_manual",
+    "expected_route": "rag_only",
+    "expected_tools": [
+      "rag"
+    ],
+    "expected_keywords": [
+      "radial bearing",
+      "radial load",
+      "radial support"
+    ],
+    "chapter": 1,
+    "chapter_title": "Basics"
+  },
+  {
+    "id": "rag_ch01_004",
+    "question": "According to SKF, what is bearing internal clearance and what general operational clearance or preload rules apply?",
+    "category": "rag_only",
+    "subcategory": "skf_manual",
+    "expected_route": "rag_only",
+    "expected_tools": [
+      "rag"
+    ],
+    "expected_keywords": [
+      "internal clearance",
+      "operational clearance",
+      "preload"
+    ],
+    "chapter": 1,
+    "chapter_title": "Basics"
+  },
+  {
+    "id": "rag_ch01_005",
+    "question": "What information is contained in basic bearing designations?",
+    "category": "rag_only",
+    "subcategory": "skf_manual",
+    "expected_route": "rag_only",
+    "expected_tools": [
+      "rag"
+    ],
+    "expected_keywords": [
+      "basic designation",
+      "bearing",
+      "suffix"
+    ],
+    "chapter": 1,
+    "chapter_title": "Basics"
+  },
+  {
+    "id": "rag_ch02_001",
+    "question": "What cleanliness precautions does SKF recommend before mounting rolling bearings?",
+    "category": "rag_only",
+    "subcategory": "skf_manual",
+    "expected_route": "rag_only",
+    "expected_tools": [
+      "rag"
+    ],
+    "expected_keywords": [
+      "cleanliness",
+      "mounting",
+      "contaminants"
+    ],
+    "chapter": 2,
+    "chapter_title": "Mounting rolling bearings"
+  },
+  {
+    "id": "rag_ch02_002",
+    "question": "In SKF's oil injection method, how are lock nuts or hydraulic nuts positioned for tapered shaft, adapter sleeve, or withdrawal sleeve mounting?",
+    "category": "rag_only",
+    "subcategory": "skf_manual",
+    "expected_route": "rag_only",
+    "expected_tools": [
+      "rag"
+    ],
+    "expected_keywords": [
+      "oil injection",
+      "lock nut",
+      "hydraulic nut"
+    ],
+    "chapter": 2,
+    "chapter_title": "Mounting rolling bearings"
+  },
+  {
+    "id": "rag_ch02_003",
+    "question": "What temperature-control and handling precautions does SKF give for hot mounting rolling bearings?",
+    "category": "rag_only",
+    "subcategory": "skf_manual",
+    "expected_route": "rag_only",
+    "expected_tools": [
+      "rag"
+    ],
+    "expected_keywords": [
+      "hot mounting",
+      "temperature control",
+      "open flame"
+    ],
+    "chapter": 2,
+    "chapter_title": "Mounting rolling bearings"
+  },
+  {
+    "id": "rag_ch02_004",
+    "question": "Which SKF method is preferred for mounting sealed spherical roller bearings with a tapered bore?",
+    "category": "rag_only",
+    "subcategory": "skf_manual",
+    "expected_route": "rag_only",
+    "expected_tools": [
+      "rag"
+    ],
+    "expected_keywords": [
+      "sealed spherical roller bearings",
+      "tapered bore",
+      "Drive-up Method"
+    ],
+    "chapter": 2,
+    "chapter_title": "Mounting rolling bearings"
+  },
+  {
+    "id": "rag_ch02_005",
+    "question": "After oil-injection mounting is complete, what residual-clearance check does SKF recommend?",
+    "category": "rag_only",
+    "subcategory": "skf_manual",
+    "expected_route": "rag_only",
+    "expected_tools": [
+      "rag"
+    ],
+    "expected_keywords": [
+      "oil injection",
+      "residual radial internal clearance",
+      "feeler gauge"
+    ],
+    "chapter": 2,
+    "chapter_title": "Mounting rolling bearings"
+  },
+  {
+    "id": "rag_ch02_006",
+    "question": "What direct-strike and force-application warning does SKF give for cold mounting rolling bearings?",
+    "category": "rag_only",
+    "subcategory": "skf_manual",
+    "expected_route": "rag_only",
+    "expected_tools": [
+      "rag"
+    ],
+    "expected_keywords": [
+      "cold mounting",
+      "mounting force",
+      "rolling elements"
+    ],
+    "chapter": 2,
+    "chapter_title": "Mounting rolling bearings"
+  },
+  {
+    "id": "rag_ch03_001",
+    "question": "What preparatory checks does SKF recommend before mounting a bearing unit?",
+    "category": "rag_only",
+    "subcategory": "skf_manual",
+    "expected_route": "rag_only",
+    "expected_tools": [
+      "rag"
+    ],
+    "expected_keywords": [
+      "bearing unit",
+      "shaft",
+      "support surface"
+    ],
+    "chapter": 3,
+    "chapter_title": "Mounting bearing units"
+  },
+  {
+    "id": "rag_ch03_002",
+    "question": "Which common shaft-locking methods does SKF list for bearing units?",
+    "category": "rag_only",
+    "subcategory": "skf_manual",
+    "expected_route": "rag_only",
+    "expected_tools": [
+      "rag"
+    ],
+    "expected_keywords": [
+      "shaft locking",
+      "grub screw",
+      "ConCentra"
+    ],
+    "chapter": 3,
+    "chapter_title": "Mounting bearing units"
+  },
+  {
+    "id": "rag_ch03_003",
+    "question": "What mounting steps does SKF give for roller bearing units with a cylindrical locking collar?",
+    "category": "rag_only",
+    "subcategory": "skf_manual",
+    "expected_route": "rag_only",
+    "expected_tools": [
+      "rag"
+    ],
+    "expected_keywords": [
+      "cylindrical locking collar",
+      "roller bearing units",
+      "alignment"
+    ],
+    "chapter": 3,
+    "chapter_title": "Mounting bearing units"
+  },
+  {
+    "id": "rag_ch03_004",
+    "question": "How should set screw locking be applied when mounting insert bearing units?",
+    "category": "rag_only",
+    "subcategory": "skf_manual",
+    "expected_route": "rag_only",
+    "expected_tools": [
+      "rag"
+    ],
+    "expected_keywords": [
+      "set screw",
+      "locking",
+      "insert bearing unit"
+    ],
+    "chapter": 3,
+    "chapter_title": "Mounting bearing units"
+  },
+  {
+    "id": "rag_ch03_005",
+    "question": "What is the mounting procedure for bearing units with an eccentric locking collar?",
+    "category": "rag_only",
+    "subcategory": "skf_manual",
+    "expected_route": "rag_only",
+    "expected_tools": [
+      "rag"
+    ],
+    "expected_keywords": [
+      "eccentric locking collar",
+      "bearing unit",
+      "mounting"
+    ],
+    "chapter": 3,
+    "chapter_title": "Mounting bearing units"
+  },
+  {
+    "id": "rag_ch03_006",
+    "question": "What does SKF say about mounting take-up units with a cylindrical locking collar?",
+    "category": "rag_only",
+    "subcategory": "skf_manual",
+    "expected_route": "rag_only",
+    "expected_tools": [
+      "rag"
+    ],
+    "expected_keywords": [
+      "take-up units",
+      "cylindrical locking collar",
+      "alignment"
+    ],
+    "chapter": 3,
+    "chapter_title": "Mounting bearing units"
+  },
+  {
+    "id": "rag_ch04_001",
+    "question": "What preparation checks does SKF recommend before mounting bearing housings?",
+    "category": "rag_only",
+    "subcategory": "skf_manual",
+    "expected_route": "rag_only",
+    "expected_tools": [
+      "rag"
+    ],
+    "expected_keywords": [
+      "bearing housings",
+      "support surface",
+      "flatness"
+    ],
+    "chapter": 4,
+    "chapter_title": "Mounting bearing housings"
+  },
+  {
+    "id": "rag_ch04_002",
+    "question": "What bolt selection and tightening guidance does SKF give for mounting bearing housings?",
+    "category": "rag_only",
+    "subcategory": "skf_manual",
+    "expected_route": "rag_only",
+    "expected_tools": [
+      "rag"
+    ],
+    "expected_keywords": [
+      "bolts",
+      "support surface",
+      "torque"
+    ],
+    "chapter": 4,
+    "chapter_title": "Mounting bearing housings"
+  },
+  {
+    "id": "rag_ch04_003",
+    "question": "Before mounting bearing housings, what support-surface checks does SKF recommend?",
+    "category": "rag_only",
+    "subcategory": "skf_manual",
+    "expected_route": "rag_only",
+    "expected_tools": [
+      "rag"
+    ],
+    "expected_keywords": [
+      "support surface",
+      "flatness",
+      "rigidity"
+    ],
+    "chapter": 4,
+    "chapter_title": "Mounting bearing housings"
+  },
+  {
+    "id": "rag_ch05_001",
+    "question": "What should be considered when installing radial shaft seals?",
+    "category": "rag_only",
+    "subcategory": "skf_manual",
+    "expected_route": "rag_only",
+    "expected_tools": [
+      "rag"
+    ],
+    "expected_keywords": [
+      "radial shaft seal",
+      "installing",
+      "seal lip"
+    ],
+    "chapter": 5,
+    "chapter_title": "Installing seals"
+  },
+  {
+    "id": "rag_ch05_002",
+    "question": "How can seal lip damage be avoided during installation?",
+    "category": "rag_only",
+    "subcategory": "skf_manual",
+    "expected_route": "rag_only",
+    "expected_tools": [
+      "rag"
+    ],
+    "expected_keywords": [
+      "seal lip",
+      "damage",
+      "installation"
+    ],
+    "chapter": 5,
+    "chapter_title": "Installing seals"
+  },
+  {
+    "id": "rag_ch06_001",
+    "question": "Why is shaft alignment important for bearing service life?",
+    "category": "rag_only",
+    "subcategory": "skf_manual",
+    "expected_route": "rag_only",
+    "expected_tools": [
+      "rag"
+    ],
+    "expected_keywords": [
+      "alignment",
+      "misalignment",
+      "service life"
+    ],
+    "chapter": 6,
+    "chapter_title": "Alignment"
+  },
+  {
+    "id": "rag_ch06_002",
+    "question": "What traditional and laser methods does SKF describe for belt alignment?",
+    "category": "rag_only",
+    "subcategory": "skf_manual",
+    "expected_route": "rag_only",
+    "expected_tools": [
+      "rag"
+    ],
+    "expected_keywords": [
+      "belt alignment",
+      "traditional methods",
+      "laser"
+    ],
+    "chapter": 6,
+    "chapter_title": "Alignment"
+  },
+  {
+    "id": "rag_ch06_003",
+    "question": "What problems can poor offset-drive alignment cause according to SKF?",
+    "category": "rag_only",
+    "subcategory": "skf_manual",
+    "expected_route": "rag_only",
+    "expected_tools": [
+      "rag"
+    ],
+    "expected_keywords": [
+      "offset drive",
+      "vibration",
+      "premature wear"
+    ],
+    "chapter": 6,
+    "chapter_title": "Alignment"
+  },
+  {
+    "id": "rag_ch06_004",
+    "question": "How should belt drives or coupled shafts be aligned to protect bearings?",
+    "category": "rag_only",
+    "subcategory": "skf_manual",
+    "expected_route": "rag_only",
+    "expected_tools": [
+      "rag"
+    ],
+    "expected_keywords": [
+      "belt drive",
+      "coupled shafts",
+      "alignment"
+    ],
+    "chapter": 6,
+    "chapter_title": "Alignment"
+  },
+  {
+    "id": "rag_ch07_001",
+    "question": "What is the role of lubrication in bearing operation?",
+    "category": "rag_only",
+    "subcategory": "skf_manual",
+    "expected_route": "rag_only",
+    "expected_tools": [
+      "rag"
+    ],
+    "expected_keywords": [
+      "lubrication",
+      "friction",
+      "wear"
+    ],
+    "chapter": 7,
+    "chapter_title": "Lubrication"
+  },
+  {
+    "id": "rag_ch07_002",
+    "question": "How should grease relubrication intervals be selected for rolling bearings?",
+    "category": "rag_only",
+    "subcategory": "skf_manual",
+    "expected_route": "rag_only",
+    "expected_tools": [
+      "rag"
+    ],
+    "expected_keywords": [
+      "grease",
+      "relubrication",
+      "interval"
+    ],
+    "chapter": 7,
+    "chapter_title": "Lubrication"
+  },
+  {
+    "id": "rag_ch07_003",
+    "question": "Why does SKF say grease is widely used for rolling bearings, and what should be considered when choosing between grease and oil?",
+    "category": "rag_only",
+    "subcategory": "skf_manual",
+    "expected_route": "rag_only",
+    "expected_tools": [
+      "rag"
+    ],
+    "expected_keywords": [
+      "grease",
+      "oil",
+      "application"
+    ],
+    "chapter": 7,
+    "chapter_title": "Lubrication"
+  },
+  {
+    "id": "rag_ch07_004",
+    "question": "What factors does SKF list as causing grease in a bearing arrangement to deteriorate?",
+    "category": "rag_only",
+    "subcategory": "skf_manual",
+    "expected_route": "rag_only",
+    "expected_tools": [
+      "rag"
+    ],
+    "expected_keywords": [
+      "grease",
+      "deterioration",
+      "contaminants"
+    ],
+    "chapter": 7,
+    "chapter_title": "Lubrication"
+  },
+  {
+    "id": "rag_ch07_005",
+    "question": "What factors determine the correct grease quantity for a bearing?",
+    "category": "rag_only",
+    "subcategory": "skf_manual",
+    "expected_route": "rag_only",
+    "expected_tools": [
+      "rag"
+    ],
+    "expected_keywords": [
+      "grease quantity",
+      "bearing",
+      "lubrication"
+    ],
+    "chapter": 7,
+    "chapter_title": "Lubrication"
+  },
+  {
+    "id": "rag_ch07_006",
+    "question": "When should oil lubrication be preferred over grease lubrication?",
+    "category": "rag_only",
+    "subcategory": "skf_manual",
+    "expected_route": "rag_only",
+    "expected_tools": [
+      "rag"
+    ],
+    "expected_keywords": [
+      "oil lubrication",
+      "grease",
+      "preferred"
+    ],
+    "chapter": 7,
+    "chapter_title": "Lubrication"
+  },
+  {
+    "id": "rag_ch07_007",
+    "question": "What consequence does SKF give for insufficient or excessive lubrication?",
+    "category": "rag_only",
+    "subcategory": "skf_manual",
+    "expected_route": "rag_only",
+    "expected_tools": [
+      "rag"
+    ],
+    "expected_keywords": [
+      "insufficient lubrication",
+      "excessive lubrication",
+      "premature failure"
+    ],
+    "chapter": 7,
+    "chapter_title": "Lubrication"
+  },
+  {
+    "id": "rag_ch07_008",
+    "question": "When selecting oil, how does SKF relate oil temperature to bearing housing temperature?",
+    "category": "rag_only",
+    "subcategory": "skf_manual",
+    "expected_route": "rag_only",
+    "expected_tools": [
+      "rag"
+    ],
+    "expected_keywords": [
+      "oil selection",
+      "oil temperature",
+      "housing temperature"
+    ],
+    "chapter": 7,
+    "chapter_title": "Lubrication"
+  },
+  {
+    "id": "rag_ch07_009",
+    "question": "What lubricant inspection and handling practices does SKF recommend before use?",
+    "category": "rag_only",
+    "subcategory": "skf_manual",
+    "expected_route": "rag_only",
+    "expected_tools": [
+      "rag"
+    ],
+    "expected_keywords": [
+      "lubricant handling",
+      "visual inspection",
+      "contamination"
+    ],
+    "chapter": 7,
+    "chapter_title": "Lubrication"
+  },
+  {
+    "id": "rag_ch08_001",
+    "question": "What bearing-damage detection stages and methods are shown in SKF's inspection-during-operation table?",
+    "category": "rag_only",
+    "subcategory": "skf_manual",
+    "expected_route": "rag_only",
+    "expected_tools": [
+      "rag"
+    ],
+    "expected_keywords": [
+      "detection",
+      "vibration monitoring",
+      "failure"
+    ],
+    "chapter": 8,
+    "chapter_title": "Inspection"
+  },
+  {
+    "id": "rag_ch08_002",
+    "question": "How can vibration monitoring help detect developing rolling bearing problems?",
+    "category": "rag_only",
+    "subcategory": "skf_manual",
+    "expected_route": "rag_only",
+    "expected_tools": [
+      "rag"
+    ],
+    "expected_keywords": [
+      "vibration monitoring",
+      "detect",
+      "bearing problems"
+    ],
+    "chapter": 8,
+    "chapter_title": "Inspection"
+  },
+  {
+    "id": "rag_ch09_001",
+    "question": "What symptoms indicate possible bearing trouble during operation?",
+    "category": "rag_only",
+    "subcategory": "skf_manual",
+    "expected_route": "rag_only",
+    "expected_tools": [
+      "rag"
+    ],
+    "expected_keywords": [
+      "symptoms",
+      "bearing trouble",
+      "operation"
+    ],
+    "chapter": 9,
+    "chapter_title": "Troubleshooting"
+  },
+  {
+    "id": "rag_ch09_002",
+    "question": "According to SKF troubleshooting guidance, what can cause spalled rolling surfaces due to fatigue or surface-initiated fatigue?",
+    "category": "rag_only",
+    "subcategory": "skf_manual",
+    "expected_route": "rag_only",
+    "expected_tools": [
+      "rag"
+    ],
+    "expected_keywords": [
+      "spalling",
+      "fatigue",
+      "lubrication"
+    ],
+    "chapter": 9,
+    "chapter_title": "Troubleshooting"
+  },
+  {
+    "id": "rag_ch09_003",
+    "question": "What lubrication and operating-condition checks does SKF recommend for spalled rolling surfaces?",
+    "category": "rag_only",
+    "subcategory": "skf_manual",
+    "expected_route": "rag_only",
+    "expected_tools": [
+      "rag"
+    ],
+    "expected_keywords": [
+      "spalled",
+      "lubrication",
+      "misalignment"
+    ],
+    "chapter": 9,
+    "chapter_title": "Troubleshooting"
+  },
+  {
+    "id": "rag_ch09_004",
+    "question": "What SKF troubleshooting actions are recommended for surface-initiated fatigue on rolling surfaces?",
+    "category": "rag_only",
+    "subcategory": "skf_manual",
+    "expected_route": "rag_only",
+    "expected_tools": [
+      "rag"
+    ],
+    "expected_keywords": [
+      "surface initiated fatigue",
+      "viscosity",
+      "sealing"
+    ],
+    "chapter": 9,
+    "chapter_title": "Troubleshooting"
+  },
+  {
+    "id": "rag_ch09_005",
+    "question": "What SKF troubleshooting checks are recommended when rolling surfaces are spalled due to material fatigue?",
+    "category": "rag_only",
+    "subcategory": "skf_manual",
+    "expected_route": "rag_only",
+    "expected_tools": [
+      "rag"
+    ],
+    "expected_keywords": [
+      "material fatigue",
+      "misalignment",
+      "oval clamping"
+    ],
+    "chapter": 9,
+    "chapter_title": "Troubleshooting"
+  },
+  {
+    "id": "rag_ch10_001",
+    "question": "What precautions does SKF give when dismounting bearing housings that will be reused?",
+    "category": "rag_only",
+    "subcategory": "skf_manual",
+    "expected_route": "rag_only",
+    "expected_tools": [
+      "rag"
+    ],
+    "expected_keywords": [
+      "dismounting bearing housings",
+      "lockout",
+      "hammer"
+    ],
+    "chapter": 10,
+    "chapter_title": "Dismounting"
+  },
+  {
+    "id": "rag_ch10_002",
+    "question": "What tools or methods are used to dismount bearings without damaging adjacent parts?",
+    "category": "rag_only",
+    "subcategory": "skf_manual",
+    "expected_route": "rag_only",
+    "expected_tools": [
+      "rag"
+    ],
+    "expected_keywords": [
+      "dismount",
+      "tools",
+      "damage"
+    ],
+    "chapter": 10,
+    "chapter_title": "Dismounting"
+  },
+  {
+    "id": "rag_ch10_003",
+    "question": "How does SKF's oil injection method help dismount bearings on tapered shafts?",
+    "category": "rag_only",
+    "subcategory": "skf_manual",
+    "expected_route": "rag_only",
+    "expected_tools": [
+      "rag"
+    ],
+    "expected_keywords": [
+      "oil injection",
+      "dismount",
+      "tapered shaft"
+    ],
+    "chapter": 10,
+    "chapter_title": "Dismounting"
+  },
+  {
+    "id": "rag_ch10_004",
+    "question": "When is hydraulic dismounting useful for rolling bearings?",
+    "category": "rag_only",
+    "subcategory": "skf_manual",
+    "expected_route": "rag_only",
+    "expected_tools": [
+      "rag"
+    ],
+    "expected_keywords": [
+      "hydraulic",
+      "dismounting",
+      "rolling bearing"
+    ],
+    "chapter": 10,
+    "chapter_title": "Dismounting"
+  },
+  {
+    "id": "rag_ch11_001",
+    "question": "How does SKF describe the ISO 15243 classification of bearing damage and failure modes?",
+    "category": "rag_only",
+    "subcategory": "skf_manual",
+    "expected_route": "rag_only",
+    "expected_tools": [
+      "rag"
+    ],
+    "expected_keywords": [
+      "ISO 15243",
+      "failure modes",
+      "classification"
+    ],
+    "chapter": 11,
+    "chapter_title": "Bearing damage and their causes"
+  },
+  {
+    "id": "rag_ch11_002",
+    "question": "What damage mechanism does SKF describe when lubrication is ineffective in rolling bearings?",
+    "category": "rag_only",
+    "subcategory": "skf_manual",
+    "expected_route": "rag_only",
+    "expected_tools": [
+      "rag"
+    ],
+    "expected_keywords": [
+      "ineffective lubrication",
+      "metal-to-metal contact",
+      "damage"
+    ],
+    "chapter": 11,
+    "chapter_title": "Bearing damage and their causes"
+  },
+  {
+    "id": "rag_ch11_003",
+    "question": "How does vibration analysis help detect bearing damage before catastrophic failure?",
+    "category": "rag_only",
+    "subcategory": "skf_manual",
+    "expected_route": "rag_only",
+    "expected_tools": [
+      "rag"
+    ],
+    "expected_keywords": [
+      "vibration analysis",
+      "bearing damage",
+      "failure"
+    ],
+    "chapter": 11,
+    "chapter_title": "Bearing damage and their causes"
+  },
+  {
+    "id": "rag_ch11_004",
+    "question": "How does SKF describe material fatigue as an operational cause of bearing damage?",
+    "category": "rag_only",
+    "subcategory": "skf_manual",
+    "expected_route": "rag_only",
+    "expected_tools": [
+      "rag"
+    ],
+    "expected_keywords": [
+      "material fatigue",
+      "stress cycles",
+      "spalling"
+    ],
+    "chapter": 11,
+    "chapter_title": "Bearing damage and their causes"
+  },
+  {
+    "id": "dt_feature_001",
+    "question": "What is the latest RMS value of bearing_3 in 1st_test?",
+    "category": "dt_only",
+    "subcategory": "feature",
+    "expected_route": "dt_only",
+    "expected_tools": [
+      "dt"
+    ],
+    "expected_keywords": [
+      "feature",
+      "bearing"
+    ]
+  },
+  {
+    "id": "dt_feature_002",
+    "question": "Is the latest kurtosis of bearing_3 in 1st_test higher than the other bearings?",
+    "category": "dt_only",
+    "subcategory": "feature",
+    "expected_route": "dt_only",
+    "expected_tools": [
+      "dt"
+    ],
+    "expected_keywords": [
+      "feature",
+      "bearing"
+    ]
+  },
+  {
+    "id": "dt_feature_003",
+    "question": "What is the latest crest factor of bearing_1 in 2nd_test?",
+    "category": "dt_only",
+    "subcategory": "feature",
+    "expected_route": "dt_only",
+    "expected_tools": [
+      "dt"
+    ],
+    "expected_keywords": [
+      "feature",
+      "bearing"
+    ]
+  },
+  {
+    "id": "dt_feature_004",
+    "question": "What is the current high-band energy ratio of bearing_3 in 3rd_test?",
+    "category": "dt_only",
+    "subcategory": "feature",
+    "expected_route": "dt_only",
+    "expected_tools": [
+      "dt"
+    ],
+    "expected_keywords": [
+      "feature",
+      "bearing"
+    ]
+  },
+  {
+    "id": "dt_feature_005",
+    "question": "Which bearing has the highest latest RMS in 1st_test?",
+    "category": "dt_only",
+    "subcategory": "feature",
+    "expected_route": "dt_only",
+    "expected_tools": [
+      "dt"
+    ],
+    "expected_keywords": [
+      "feature",
+      "bearing"
+    ]
+  },
+  {
+    "id": "dt_feature_006",
+    "question": "Which bearing has the highest latest kurtosis in 2nd_test?",
+    "category": "dt_only",
+    "subcategory": "feature",
+    "expected_route": "dt_only",
+    "expected_tools": [
+      "dt"
+    ],
+    "expected_keywords": [
+      "feature",
+      "bearing"
+    ]
+  },
+  {
+    "id": "dt_feature_007",
+    "question": "Is the latest spectral entropy of bearing_4 in 1st_test abnormal?",
+    "category": "dt_only",
+    "subcategory": "feature",
+    "expected_route": "dt_only",
+    "expected_tools": [
+      "dt"
+    ],
+    "expected_keywords": [
+      "feature",
+      "bearing"
+    ]
+  },
+  {
+    "id": "dt_feature_008",
+    "question": "What are the latest dominant frequencies of all bearings in 3rd_test?",
+    "category": "dt_only",
+    "subcategory": "feature",
+    "expected_route": "dt_only",
+    "expected_tools": [
+      "dt"
+    ],
+    "expected_keywords": [
+      "feature",
+      "bearing"
+    ]
+  },
+  {
+    "id": "dt_feature_009",
+    "question": "How do the latest impulse factor and clearance factor of bearing_3 in 1st_test behave?",
+    "category": "dt_only",
+    "subcategory": "feature",
+    "expected_route": "dt_only",
+    "expected_tools": [
+      "dt"
+    ],
+    "expected_keywords": [
+      "feature",
+      "bearing"
+    ]
+  },
+  {
+    "id": "dt_feature_010",
+    "question": "Which bearing has the highest latest high-band energy ratio across all IMS experiments?",
+    "category": "dt_only",
+    "subcategory": "feature",
+    "expected_route": "dt_only",
+    "expected_tools": [
+      "dt"
+    ],
+    "expected_keywords": [
+      "feature",
+      "bearing"
+    ]
+  },
+  {
+    "id": "dt_state_001",
+    "question": "What is the current health state of bearing_3 in 1st_test?",
+    "category": "dt_only",
+    "subcategory": "state",
+    "expected_route": "dt_only",
+    "expected_tools": [
+      "dt"
+    ],
+    "expected_keywords": [
+      "health state",
+      "bearing"
+    ]
+  },
+  {
+    "id": "dt_state_002",
+    "question": "Which bearing is closest to failure in 1st_test?",
+    "category": "dt_only",
+    "subcategory": "state",
+    "expected_route": "dt_only",
+    "expected_tools": [
+      "dt"
+    ],
+    "expected_keywords": [
+      "health state",
+      "bearing"
+    ]
+  },
+  {
+    "id": "dt_state_003",
+    "question": "Is bearing_1 in 2nd_test currently degraded?",
+    "category": "dt_only",
+    "subcategory": "state",
+    "expected_route": "dt_only",
+    "expected_tools": [
+      "dt"
+    ],
+    "expected_keywords": [
+      "health state",
+      "bearing"
+    ]
+  },
+  {
+    "id": "dt_state_004",
+    "question": "Does bearing_3 in 3rd_test show obvious degradation?",
+    "category": "dt_only",
+    "subcategory": "state",
+    "expected_route": "dt_only",
+    "expected_tools": [
+      "dt"
+    ],
+    "expected_keywords": [
+      "health state",
+      "bearing"
+    ]
+  },
+  {
+    "id": "dt_state_005",
+    "question": "Which bearing has the highest latest health index across all experiments?",
+    "category": "dt_only",
+    "subcategory": "state",
+    "expected_route": "dt_only",
+    "expected_tools": [
+      "dt"
+    ],
+    "expected_keywords": [
+      "health state",
+      "bearing"
+    ]
+  },
+  {
+    "id": "dt_state_006",
+    "question": "What is the latest health index of bearing_4 in 1st_test?",
+    "category": "dt_only",
+    "subcategory": "state",
+    "expected_route": "dt_only",
+    "expected_tools": [
+      "dt"
+    ],
+    "expected_keywords": [
+      "health state",
+      "bearing"
+    ]
+  },
+  {
+    "id": "dt_state_007",
+    "question": "Which bearings are currently classified as failure_near?",
+    "category": "dt_only",
+    "subcategory": "state",
+    "expected_route": "dt_only",
+    "expected_tools": [
+      "dt"
+    ],
+    "expected_keywords": [
+      "health state",
+      "bearing"
+    ]
+  },
+  {
+    "id": "dt_state_008",
+    "question": "Which bearings are currently classified as early_degradation?",
+    "category": "dt_only",
+    "subcategory": "state",
+    "expected_route": "dt_only",
+    "expected_tools": [
+      "dt"
+    ],
+    "expected_keywords": [
+      "health state",
+      "bearing"
+    ]
+  },
+  {
+    "id": "dt_state_009",
+    "question": "What are the latest health states of all four bearings in 2nd_test?",
+    "category": "dt_only",
+    "subcategory": "state",
+    "expected_route": "dt_only",
+    "expected_tools": [
+      "dt"
+    ],
+    "expected_keywords": [
+      "health state",
+      "bearing"
+    ]
+  },
+  {
+    "id": "dt_state_010",
+    "question": "According to the DT database, which bearing is currently the healthiest?",
+    "category": "dt_only",
+    "subcategory": "state",
+    "expected_route": "dt_only",
+    "expected_tools": [
+      "dt"
+    ],
+    "expected_keywords": [
+      "health state",
+      "bearing"
+    ]
+  },
+  {
+    "id": "dt_trend_001",
+    "question": "Does the health index of bearing_3 in 1st_test increase over time?",
+    "category": "dt_only",
+    "subcategory": "trend",
+    "expected_route": "dt_only",
+    "expected_tools": [
+      "dt"
+    ],
+    "expected_keywords": [
+      "trend",
+      "bearing"
+    ]
+  },
+  {
+    "id": "dt_trend_002",
+    "question": "Does the RMS of bearing_4 in 1st_test show a sustained increasing trend?",
+    "category": "dt_only",
+    "subcategory": "trend",
+    "expected_route": "dt_only",
+    "expected_tools": [
+      "dt"
+    ],
+    "expected_keywords": [
+      "trend",
+      "bearing"
+    ]
+  },
+  {
+    "id": "dt_trend_003",
+    "question": "Does the kurtosis of bearing_1 in 2nd_test increase near the end of the experiment?",
+    "category": "dt_only",
+    "subcategory": "trend",
+    "expected_route": "dt_only",
+    "expected_tools": [
+      "dt"
+    ],
+    "expected_keywords": [
+      "trend",
+      "bearing"
+    ]
+  },
+  {
+    "id": "dt_trend_004",
+    "question": "Does the high-band energy ratio of bearing_3 in 3rd_test indicate a degradation trend?",
+    "category": "dt_only",
+    "subcategory": "trend",
+    "expected_route": "dt_only",
+    "expected_tools": [
+      "dt"
+    ],
+    "expected_keywords": [
+      "trend",
+      "bearing"
+    ]
+  },
+  {
+    "id": "dt_trend_005",
+    "question": "Which bearing shows the strongest degradation trend in 1st_test?",
+    "category": "dt_only",
+    "subcategory": "trend",
+    "expected_route": "dt_only",
+    "expected_tools": [
+      "dt"
+    ],
+    "expected_keywords": [
+      "trend",
+      "bearing"
+    ]
+  },
+  {
+    "id": "dt_trend_006",
+    "question": "How do the health index trends of all bearings in 2nd_test compare?",
+    "category": "dt_only",
+    "subcategory": "trend",
+    "expected_route": "dt_only",
+    "expected_tools": [
+      "dt"
+    ],
+    "expected_keywords": [
+      "trend",
+      "bearing"
+    ]
+  },
+  {
+    "id": "dt_trend_007",
+    "question": "Does the crest factor trend of bearing_3 in 1st_test suggest impulsive vibration?",
+    "category": "dt_only",
+    "subcategory": "trend",
+    "expected_route": "dt_only",
+    "expected_tools": [
+      "dt"
+    ],
+    "expected_keywords": [
+      "trend",
+      "bearing"
+    ]
+  },
+  {
+    "id": "dt_trend_008",
+    "question": "When does bearing_3 in 1st_test begin to show clear degradation?",
+    "category": "dt_only",
+    "subcategory": "trend",
+    "expected_route": "dt_only",
+    "expected_tools": [
+      "dt"
+    ],
+    "expected_keywords": [
+      "trend",
+      "bearing"
+    ]
+  },
+  {
+    "id": "dt_trend_009",
+    "question": "Which feature trend changes earliest for bearing_3 in 1st_test?",
+    "category": "dt_only",
+    "subcategory": "trend",
+    "expected_route": "dt_only",
+    "expected_tools": [
+      "dt"
+    ],
+    "expected_keywords": [
+      "trend",
+      "bearing"
+    ]
+  },
+  {
+    "id": "dt_trend_010",
+    "question": "Compare the RMS trend and kurtosis trend of bearing_3 in 1st_test.",
+    "category": "dt_only",
+    "subcategory": "trend",
+    "expected_route": "dt_only",
+    "expected_tools": [
+      "dt"
+    ],
+    "expected_keywords": [
+      "trend",
+      "bearing"
+    ]
+  },
+  {
+    "id": "dt_rag_explain_001",
+    "question": "For bearing_3 in 1st_test, what mechanical meaning do high RMS, high kurtosis, high crest factor, high-frequency energy, and a failure_near state have?",
+    "category": "dt_rag",
+    "subcategory": "fault_explanation",
+    "expected_route": "dt_rag",
+    "expected_tools": [
+      "dt",
+      "rag"
+    ],
+    "expected_keywords": [
+      "features",
+      "vibration",
+      "mechanical"
+    ]
+  },
+  {
+    "id": "dt_rag_explain_002",
+    "question": "Why do high RMS and high kurtosis in bearing_3 of 1st_test suggest bearing damage?",
+    "category": "dt_rag",
+    "subcategory": "fault_explanation",
+    "expected_route": "dt_rag",
+    "expected_tools": [
+      "dt",
+      "rag"
+    ],
+    "expected_keywords": [
+      "features",
+      "mechanical",
+      "damage"
+    ]
+  },
+  {
+    "id": "dt_rag_explain_003",
+    "question": "Explain the mechanical meaning of the abnormal high-frequency energy in bearing_3 of 1st_test.",
+    "category": "dt_rag",
+    "subcategory": "fault_explanation",
+    "expected_route": "dt_rag",
+    "expected_tools": [
+      "dt",
+      "rag"
+    ],
+    "expected_keywords": [
+      "features",
+      "mechanical",
+      "damage"
+    ]
+  },
+  {
+    "id": "dt_rag_explain_004",
+    "question": "Use the DT features of bearing_4 in 1st_test to explain what kind of bearing problem may be developing.",
+    "category": "dt_rag",
+    "subcategory": "fault_explanation",
+    "expected_route": "dt_rag",
+    "expected_tools": [
+      "dt",
+      "rag"
+    ],
+    "expected_keywords": [
+      "features",
+      "mechanical",
+      "damage"
+    ]
+  },
+  {
+    "id": "dt_rag_explain_005",
+    "question": "Using latest DT evidence for bearing_3 in 1st_test, explain why its high crest factor and impulse factor can indicate localized bearing defects.",
+    "category": "dt_rag",
+    "subcategory": "fault_explanation",
+    "expected_route": "dt_rag",
+    "expected_tools": [
+      "dt",
+      "rag"
+    ],
+    "expected_keywords": [
+      "features",
+      "mechanical",
+      "damage"
+    ]
+  },
+  {
+    "id": "dt_rag_explain_006",
+    "question": "For bearing_3 in 1st_test, explain the mechanical meaning of its failure_near DT state combined with high vibration features.",
+    "category": "dt_rag",
+    "subcategory": "fault_explanation",
+    "expected_route": "dt_rag",
+    "expected_tools": [
+      "dt",
+      "rag"
+    ],
+    "expected_keywords": [
+      "features",
+      "mechanical",
+      "damage"
+    ]
+  },
+  {
+    "id": "dt_rag_explain_007",
+    "question": "Use the DT features of bearing_3 in 1st_test to explain why vibration monitoring is useful for diagnosis.",
+    "category": "dt_rag",
+    "subcategory": "fault_explanation",
+    "expected_route": "dt_rag",
+    "expected_tools": [
+      "dt",
+      "rag"
+    ],
+    "expected_keywords": [
+      "features",
+      "mechanical",
+      "damage"
+    ]
+  },
+  {
+    "id": "dt_rag_explain_008",
+    "question": "Using latest DT features of bearing_3 in 1st_test, explain how high spectral entropy and high-frequency energy can reflect bearing fault progression.",
+    "category": "dt_rag",
+    "subcategory": "fault_explanation",
+    "expected_route": "dt_rag",
+    "expected_tools": [
+      "dt",
+      "rag"
+    ],
+    "expected_keywords": [
+      "features",
+      "mechanical",
+      "damage"
+    ]
+  },
+  {
+    "id": "dt_rag_explain_009",
+    "question": "For bearing_3 in 1st_test, why can simultaneous increases in RMS, kurtosis, and crest factor be more serious than a single abnormal feature?",
+    "category": "dt_rag",
+    "subcategory": "fault_explanation",
+    "expected_route": "dt_rag",
+    "expected_tools": [
+      "dt",
+      "rag"
+    ],
+    "expected_keywords": [
+      "features",
+      "mechanical",
+      "damage"
+    ]
+  },
+  {
+    "id": "dt_rag_explain_010",
+    "question": "Use DT evidence to explain whether bearing_3 in 1st_test shows signs of progressive mechanical deterioration.",
+    "category": "dt_rag",
+    "subcategory": "fault_explanation",
+    "expected_route": "dt_rag",
+    "expected_tools": [
+      "dt",
+      "rag"
+    ],
+    "expected_keywords": [
+      "features",
+      "mechanical",
+      "damage"
+    ]
+  },
+  {
+    "id": "dt_rag_fault_type_001",
+    "question": "Based on the DT state of bearing_3 in 1st_test, does the evidence support a specific SKF failure mode or only a general bearing-damage concern?",
+    "category": "dt_rag",
+    "subcategory": "fault_type_identification",
+    "expected_route": "dt_rag",
+    "expected_tools": [
+      "dt",
+      "rag"
+    ],
+    "expected_keywords": [
+      "failure mode",
+      "damage",
+      "bearing"
+    ]
+  },
+  {
+    "id": "dt_rag_fault_type_002",
+    "question": "Use DT evidence and SKF bearing damage knowledge to explain why bearing_3 in 1st_test should be treated as possible bearing damage rather than naming an exact fault type.",
+    "category": "dt_rag",
+    "subcategory": "fault_type_identification",
+    "expected_route": "dt_rag",
+    "expected_tools": [
+      "dt",
+      "rag"
+    ],
+    "expected_keywords": [
+      "damage",
+      "fault type",
+      "bearing"
+    ]
+  },
+  {
+    "id": "dt_rag_fault_type_003",
+    "question": "Using DT evidence and SKF manual evidence, if bearing_3 in 1st_test has high kurtosis and high crest factor, what fault type should be suspected?",
+    "category": "dt_rag",
+    "subcategory": "fault_type_identification",
+    "expected_route": "dt_rag",
+    "expected_tools": [
+      "dt",
+      "rag"
+    ],
+    "expected_keywords": [
+      "fault",
+      "type",
+      "bearing"
+    ]
+  },
+  {
+    "id": "dt_rag_fault_type_004",
+    "question": "Can the latest DT features of bearing_1 in 2nd_test indicate a lubrication-related or mounting-related problem?",
+    "category": "dt_rag",
+    "subcategory": "fault_type_identification",
+    "expected_route": "dt_rag",
+    "expected_tools": [
+      "dt",
+      "rag"
+    ],
+    "expected_keywords": [
+      "fault",
+      "type",
+      "bearing"
+    ]
+  },
+  {
+    "id": "dt_rag_fault_type_005",
+    "question": "For bearing_3 in 1st_test, what vibration-monitoring interpretation is supported when DT shows high RMS, high impulse factor, and high high-frequency energy ratio?",
+    "category": "dt_rag",
+    "subcategory": "fault_type_identification",
+    "expected_route": "dt_rag",
+    "expected_tools": [
+      "dt",
+      "rag"
+    ],
+    "expected_keywords": [
+      "vibration",
+      "monitoring",
+      "features"
+    ]
+  },
+  {
+    "id": "dt_rag_fault_type_006",
+    "question": "Which SKF damage-classification evidence is relevant when bearing_3 in 1st_test shows high-frequency vibration and impulsive peaks, and why should the exact category remain cautious?",
+    "category": "dt_rag",
+    "subcategory": "fault_type_identification",
+    "expected_route": "dt_rag",
+    "expected_tools": [
+      "dt",
+      "rag"
+    ],
+    "expected_keywords": [
+      "damage classification",
+      "vibration",
+      "bearing"
+    ]
+  },
+  {
+    "id": "dt_rag_fault_type_007",
+    "question": "Does the DT evidence for bearing_3 in 1st_test point more toward localized damage or general imbalance?",
+    "category": "dt_rag",
+    "subcategory": "fault_type_identification",
+    "expected_route": "dt_rag",
+    "expected_tools": [
+      "dt",
+      "rag"
+    ],
+    "expected_keywords": [
+      "fault",
+      "type",
+      "bearing"
+    ]
+  },
+  {
+    "id": "dt_rag_fault_type_008",
+    "question": "Using DT evidence for bearing_3 in 1st_test and SKF damage knowledge, distinguish whether high RMS and high kurtosis suggest raceway damage, rolling element damage, or lubrication-related distress.",
+    "category": "dt_rag",
+    "subcategory": "fault_type_identification",
+    "expected_route": "dt_rag",
+    "expected_tools": [
+      "dt",
+      "rag"
+    ],
+    "expected_keywords": [
+      "fault",
+      "type",
+      "bearing"
+    ]
+  },
+  {
+    "id": "dt_rag_fault_type_009",
+    "question": "Using DT evidence and SKF manual evidence, what mechanical warning should be considered for bearing_3 in 1st_test when DT shows high vibration energy, high crest factor, and a failure_near state?",
+    "category": "dt_rag",
+    "subcategory": "fault_type_identification",
+    "expected_route": "dt_rag",
+    "expected_tools": [
+      "dt",
+      "rag"
+    ],
+    "expected_keywords": [
+      "mechanical",
+      "warning",
+      "vibration"
+    ]
+  },
+  {
+    "id": "dt_rag_fault_type_010",
+    "question": "Based on DT abnormal features of bearing_3 in 1st_test, what bearing damage modes should be prioritized for inspection?",
+    "category": "dt_rag",
+    "subcategory": "fault_type_identification",
+    "expected_route": "dt_rag",
+    "expected_tools": [
+      "dt",
+      "rag"
+    ],
+    "expected_keywords": [
+      "fault",
+      "type",
+      "bearing"
+    ]
+  },
+  {
+    "id": "dt_rag_maintenance_001",
+    "question": "What maintenance action should be taken for bearing_3 in 1st_test based on its DT state and SKF guidance?",
+    "category": "dt_rag",
+    "subcategory": "maintenance_decision",
+    "expected_route": "dt_rag",
+    "expected_tools": [
+      "dt",
+      "rag"
+    ],
+    "expected_keywords": [
+      "maintenance",
+      "inspection",
+      "bearing"
+    ]
+  },
+  {
+    "id": "dt_rag_maintenance_002",
+    "question": "Should bearing_3 in 1st_test continue operating or be inspected immediately? Use DT and SKF manual evidence.",
+    "category": "dt_rag",
+    "subcategory": "maintenance_decision",
+    "expected_route": "dt_rag",
+    "expected_tools": [
+      "dt",
+      "rag"
+    ],
+    "expected_keywords": [
+      "maintenance",
+      "inspection",
+      "bearing"
+    ]
+  },
+  {
+    "id": "dt_rag_maintenance_003",
+    "question": "What inspection and lubrication checks are recommended for a bearing with the abnormal features seen in bearing_3 of 1st_test?",
+    "category": "dt_rag",
+    "subcategory": "maintenance_decision",
+    "expected_route": "dt_rag",
+    "expected_tools": [
+      "dt",
+      "rag"
+    ],
+    "expected_keywords": [
+      "maintenance",
+      "inspection",
+      "bearing"
+    ]
+  },
+  {
+    "id": "dt_rag_maintenance_004",
+    "question": "How should maintenance priority be assigned to bearing_3 in 1st_test if it has a failure_near DT state and strong vibration abnormalities?",
+    "category": "dt_rag",
+    "subcategory": "maintenance_decision",
+    "expected_route": "dt_rag",
+    "expected_tools": [
+      "dt",
+      "rag"
+    ],
+    "expected_keywords": [
+      "maintenance",
+      "inspection",
+      "bearing"
+    ]
+  },
+  {
+    "id": "dt_rag_maintenance_005",
+    "question": "According to SKF troubleshooting guidance, what should be done before replacing bearing_3 in 1st_test?",
+    "category": "dt_rag",
+    "subcategory": "maintenance_decision",
+    "expected_route": "dt_rag",
+    "expected_tools": [
+      "dt",
+      "rag"
+    ],
+    "expected_keywords": [
+      "troubleshooting",
+      "replacement",
+      "bearing"
+    ]
+  },
+  {
+    "id": "dt_rag_maintenance_006",
+    "question": "What maintenance decision should be made for bearing_3 in 1st_test when DT shows high RMS, high kurtosis, and high-frequency vibration energy?",
+    "category": "dt_rag",
+    "subcategory": "maintenance_decision",
+    "expected_route": "dt_rag",
+    "expected_tools": [
+      "dt",
+      "rag"
+    ],
+    "expected_keywords": [
+      "maintenance",
+      "inspection",
+      "bearing"
+    ]
+  },
+  {
+    "id": "dt_rag_maintenance_007",
+    "question": "How should SKF inspection guidance be applied to bearing_3 in 1st_test when it is classified as failure_near by the DT database?",
+    "category": "dt_rag",
+    "subcategory": "maintenance_decision",
+    "expected_route": "dt_rag",
+    "expected_tools": [
+      "dt",
+      "rag"
+    ],
+    "expected_keywords": [
+      "maintenance",
+      "inspection",
+      "bearing"
+    ]
+  },
+  {
+    "id": "dt_rag_maintenance_008",
+    "question": "What should be checked first for bearing_3 in 1st_test if DT evidence suggests impulsive vibration and possible localized bearing damage?",
+    "category": "dt_rag",
+    "subcategory": "maintenance_decision",
+    "expected_route": "dt_rag",
+    "expected_tools": [
+      "dt",
+      "rag"
+    ],
+    "expected_keywords": [
+      "maintenance",
+      "inspection",
+      "bearing"
+    ]
+  },
+  {
+    "id": "dt_rag_maintenance_009",
+    "question": "How can maintenance personnel use DT feature trends of bearing_3 in 1st_test and SKF manual guidance to decide whether to stop the machine?",
+    "category": "dt_rag",
+    "subcategory": "maintenance_decision",
+    "expected_route": "dt_rag",
+    "expected_tools": [
+      "dt",
+      "rag"
+    ],
+    "expected_keywords": [
+      "maintenance",
+      "inspection",
+      "bearing"
+    ]
+  },
+  {
+    "id": "dt_rag_maintenance_010",
+    "question": "What corrective actions are reasonable for bearing_3 in 1st_test when DT indicates severe bearing degradation but the exact damage mode is uncertain?",
+    "category": "dt_rag",
+    "subcategory": "maintenance_decision",
+    "expected_route": "dt_rag",
+    "expected_tools": [
+      "dt",
+      "rag"
+    ],
+    "expected_keywords": [
+      "maintenance",
+      "inspection",
+      "bearing"
+    ]
+  }
+]

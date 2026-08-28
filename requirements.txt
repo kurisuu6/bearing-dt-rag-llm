@@ -1,0 +1,28 @@
+# Core numeric/data stack
+numpy
+pandas
+requests
+pydantic
+
+# PDF and document parsing
+pymupdf
+llama-cloud
+
+# LlamaIndex RAG stack tested with Python 3.10 recommended
+llama-index-core==0.11.23
+llama-index-embeddings-openai==0.2.5
+llama-index-llms-openai==0.2.16
+openai>=1.0.0
+
+tiktoken
+
+# Evaluation
+ragas==0.1.21
+datasets
+langchain==0.2.17
+langchain-community==0.2.19
+langchain-core==0.2.43
+langchain-openai==0.1.25
+
+# Optional utilities
+python-dotenv

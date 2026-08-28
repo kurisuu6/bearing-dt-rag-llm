@@ -1,0 +1,61 @@
+# macOS / editor
+.DS_Store
+.vscode/
+.idea/
+
+# Python
+__pycache__/
+*.py[cod]
+.pycache_tmp/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Environments and secrets
+.env
+.venv/
+venv/
+*.pem
+*.key
+
+# Large source data
+DT/IMS/
+DT/IMS.zip
+*.rar
+
+# Generated DT data, databases, and evaluation artifacts
+DT/outputs/
+DT/outputs_smoke/
+DT/eval/
+*.db
+*.sqlite
+*.sqlite3
+
+# SKF source material and generated corpus/index artifacts
+SKF-RAG/SKF.pdf
+SKF-RAG/chapters_*/
+SKF-RAG/chapter_*/
+SKF-RAG/**/llamaindex_vector_index*/
+SKF-RAG/**/skf_*_cleaned.json
+SKF-RAG/**/skf_*_rag_chunks*.json
+
+# Agent evaluation artifacts may contain answers, retrieved contexts, and paths.
+# Keep only the question set and reviewed metric-only means by default.
+agent/eval/**
+!agent/eval/
+!agent/eval/agent_english_questions_v2.json
+!agent/eval/*_means.csv
+
+# Optional generated indexes / caches
+**/storage/
+**/.cache/
+*.faiss
+*.pkl
+*.npy
+*.npz
+*.tmp
+*.bak
+*.swp
+
+# Manuscript directory is kept local and is not uploaded
+paper/
