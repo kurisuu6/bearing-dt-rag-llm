@@ -1,0 +1,2227 @@
+{
+  "benchmark": {
+    "name": "ims_dt_benchmark_v1",
+    "version": "1.0",
+    "description": "DT-only benchmark for IMS bearing digital-twin question answering.",
+    "source_db": "/Users/apple/Desktop/bearing-dt-rag-llm/DT/outputs/ims_dt.db",
+    "question_source": "/Users/apple/Desktop/bearing-dt-rag-llm/agent/eval/agent_english_questions_v2.json",
+    "generation_method": "Independent SQLite queries over bearing_snapshots; does not call DT high-level query functions.",
+    "time_policy": "latest_available_record",
+    "time_policy_description": "For IMS DT benchmark questions, current/latest/now means the latest available timestamp in the offline IMS digital-twin database for the requested experiment and bearing, not the real-world current date.",
+    "trend_policy": {
+      "window": 100,
+      "health_index_delta_thresholds": {
+        "strongly_increasing_degradation": ">= 0.20",
+        "increasing_degradation": ">= 0.05 and < 0.20",
+        "mostly_stable": "between -0.05 and 0.05",
+        "decreasing_or_recovering": "<= -0.05"
+      },
+      "earliest_feature_change": "First record after the baseline window where feature z-score >= 3.0, using the first 100 records as baseline."
+    },
+    "numeric_tolerance": 0.001,
+    "item_count": 30,
+    "subcategory_counts": {
+      "feature": 10,
+      "state": 10,
+      "trend": 10
+    }
+  },
+  "items": [
+    {
+      "id": "dt_feature_001",
+      "question": "What is the latest RMS value of bearing_3 in 1st_test?",
+      "category": "dt_only",
+      "subcategory": "feature",
+      "expected_route": "dt_only",
+      "expected_tools": [
+        "dt"
+      ],
+      "expected_dt_query": {
+        "action": "features",
+        "experiment": "1st_test",
+        "bearing_id": "bearing_3",
+        "features": [
+          "rms"
+        ],
+        "time_policy": "latest_available_record",
+        "sequence_index": null
+      },
+      "expected_result": {
+        "experiment": "1st_test",
+        "bearing_id": "bearing_3",
+        "timestamp": "2003-11-25 23:39:56",
+        "sequence_index": 2155,
+        "health_state": "failure_near",
+        "health_index": 1.0,
+        "features": {
+          "rms": 0.544805
+        },
+        "evidence": "RMS z-score 28.70; kurtosis z-score 27.99; crest factor z-score 5.75; high-frequency energy ratio z-score 14.75; spectral entropy z-score 57.68; RMS z-score 36.73; kurtosis z-score 62.81; crest factor z-score 9.09; high-frequency energy ratio z-score 24.07; spectral entropy z-score 71.10"
+      },
+      "reference_answer": "Using the latest available IMS DT record, 1st_test/bearing_3 has rms=0.545 at sequence_index 2155 (2003-11-25 23:39:56) and is classified as failure_near.",
+      "grading": {
+        "numeric_tolerance": 0.001,
+        "required_checks": [
+          "route",
+          "dt_action",
+          "experiment",
+          "bearing_id",
+          "features",
+          "answer_factuality"
+        ],
+        "notes": "Numerical answers should match expected_result within tolerance after rounding; state/ranking answers should match exact labels and selected bearing IDs."
+      }
+    },
+    {
+      "id": "dt_feature_002",
+      "question": "Is the latest kurtosis of bearing_3 in 1st_test higher than the other bearings?",
+      "category": "dt_only",
+      "subcategory": "feature",
+      "expected_route": "dt_only",
+      "expected_tools": [
+        "dt"
+      ],
+      "expected_dt_query": {
+        "action": "compare_feature",
+        "experiment": "1st_test",
+        "bearing_id": "bearing_3",
+        "feature": "kurtosis",
+        "scope": "latest_bearings_in_experiment",
+        "time_policy": "latest_available_record",
+        "sequence_index": null
+      },
+      "expected_result": {
+        "experiment": "1st_test",
+        "feature": "kurtosis",
+        "target": {
+          "rank": 1,
+          "experiment": "1st_test",
+          "bearing_id": "bearing_3",
+          "timestamp": "2003-11-25 23:39:56",
+          "sequence_index": 2155,
+          "health_state": "failure_near",
+          "kurtosis": 8.084203
+        },
+        "is_highest": true,
+        "rankings": [
+          {
+            "rank": 1,
+            "experiment": "1st_test",
+            "bearing_id": "bearing_3",
+            "timestamp": "2003-11-25 23:39:56",
+            "sequence_index": 2155,
+            "health_state": "failure_near",
+            "kurtosis": 8.084203
+          },
+          {
+            "rank": 2,
+            "experiment": "1st_test",
+            "bearing_id": "bearing_4",
+            "timestamp": "2003-11-25 23:39:56",
+            "sequence_index": 2155,
+            "health_state": "degradation",
+            "kurtosis": 3.605257
+          },
+          {
+            "rank": 3,
+            "experiment": "1st_test",
+            "bearing_id": "bearing_1",
+            "timestamp": "2003-11-25 23:39:56",
+            "sequence_index": 2155,
+            "health_state": "early_degradation",
+            "kurtosis": 3.564331
+          },
+          {
+            "rank": 4,
+            "experiment": "1st_test",
+            "bearing_id": "bearing_2",
+            "timestamp": "2003-11-25 23:39:56",
+            "sequence_index": 2155,
+            "health_state": "degradation",
+            "kurtosis": 3.319028
+          }
+        ]
+      },
+      "reference_answer": "Yes. In the latest 1st_test records, bearing_3 has kurtosis=8.084 and ranks 1; the highest is bearing_3 with kurtosis=8.084.",
+      "grading": {
+        "numeric_tolerance": 0.001,
+        "required_checks": [
+          "route",
+          "dt_action",
+          "experiment",
+          "bearing_id",
+          "feature",
+          "scope",
+          "answer_factuality"
+        ],
+        "notes": "Numerical answers should match expected_result within tolerance after rounding; state/ranking answers should match exact labels and selected bearing IDs."
+      }
+    },
+    {
+      "id": "dt_feature_003",
+      "question": "What is the latest crest factor of bearing_1 in 2nd_test?",
+      "category": "dt_only",
+      "subcategory": "feature",
+      "expected_route": "dt_only",
+      "expected_tools": [
+        "dt"
+      ],
+      "expected_dt_query": {
+        "action": "features",
+        "experiment": "2nd_test",
+        "bearing_id": "bearing_1",
+        "features": [
+          "crest_factor"
+        ],
+        "time_policy": "latest_available_record",
+        "sequence_index": null
+      },
+      "expected_result": {
+        "experiment": "2nd_test",
+        "bearing_id": "bearing_1",
+        "timestamp": "2004-02-19 06:22:39",
+        "sequence_index": 983,
+        "health_state": "normal",
+        "health_index": 0.0,
+        "features": {
+          "crest_factor": 3.262149
+        },
+        "evidence": ""
+      },
+      "reference_answer": "Using the latest available IMS DT record, 2nd_test/bearing_1 has crest_factor=3.262 at sequence_index 983 (2004-02-19 06:22:39) and is classified as normal.",
+      "grading": {
+        "numeric_tolerance": 0.001,
+        "required_checks": [
+          "route",
+          "dt_action",
+          "experiment",
+          "bearing_id",
+          "features",
+          "answer_factuality"
+        ],
+        "notes": "Numerical answers should match expected_result within tolerance after rounding; state/ranking answers should match exact labels and selected bearing IDs."
+      }
+    },
+    {
+      "id": "dt_feature_004",
+      "question": "What is the current high-band energy ratio of bearing_3 in 3rd_test?",
+      "category": "dt_only",
+      "subcategory": "feature",
+      "expected_route": "dt_only",
+      "expected_tools": [
+        "dt"
+      ],
+      "expected_dt_query": {
+        "action": "features",
+        "experiment": "3rd_test",
+        "bearing_id": "bearing_3",
+        "features": [
+          "high_band_energy_ratio"
+        ],
+        "time_policy": "latest_available_record",
+        "sequence_index": null
+      },
+      "expected_result": {
+        "experiment": "3rd_test",
+        "bearing_id": "bearing_3",
+        "timestamp": "2004-04-18 02:42:55",
+        "sequence_index": 6323,
+        "health_state": "normal",
+        "health_index": 0.0,
+        "features": {
+          "high_band_energy_ratio": 0.021987
+        },
+        "evidence": ""
+      },
+      "reference_answer": "Using the latest available IMS DT record, 3rd_test/bearing_3 has high_band_energy_ratio=0.022 at sequence_index 6323 (2004-04-18 02:42:55) and is classified as normal.",
+      "grading": {
+        "numeric_tolerance": 0.001,
+        "required_checks": [
+          "route",
+          "dt_action",
+          "experiment",
+          "bearing_id",
+          "features",
+          "answer_factuality"
+        ],
+        "notes": "Numerical answers should match expected_result within tolerance after rounding; state/ranking answers should match exact labels and selected bearing IDs."
+      }
+    },
+    {
+      "id": "dt_feature_005",
+      "question": "Which bearing has the highest latest RMS in 1st_test?",
+      "category": "dt_only",
+      "subcategory": "feature",
+      "expected_route": "dt_only",
+      "expected_tools": [
+        "dt"
+      ],
+      "expected_dt_query": {
+        "action": "rank_feature",
+        "experiment": "1st_test",
+        "feature": "rms",
+        "scope": "latest_bearings_in_experiment",
+        "order": "desc",
+        "time_policy": "latest_available_record",
+        "sequence_index": null
+      },
+      "expected_result": {
+        "experiment": "1st_test",
+        "feature": "rms",
+        "scope": "latest_bearings_in_experiment",
+        "winner": {
+          "rank": 1,
+          "experiment": "1st_test",
+          "bearing_id": "bearing_3",
+          "timestamp": "2003-11-25 23:39:56",
+          "sequence_index": 2155,
+          "health_state": "failure_near",
+          "rms": 0.544805
+        },
+        "rankings": [
+          {
+            "rank": 1,
+            "experiment": "1st_test",
+            "bearing_id": "bearing_3",
+            "timestamp": "2003-11-25 23:39:56",
+            "sequence_index": 2155,
+            "health_state": "failure_near",
+            "rms": 0.544805
+          },
+          {
+            "rank": 2,
+            "experiment": "1st_test",
+            "bearing_id": "bearing_4",
+            "timestamp": "2003-11-25 23:39:56",
+            "sequence_index": 2155,
+            "health_state": "degradation",
+            "rms": 0.219552
+          },
+          {
+            "rank": 3,
+            "experiment": "1st_test",
+            "bearing_id": "bearing_2",
+            "timestamp": "2003-11-25 23:39:56",
+            "sequence_index": 2155,
+            "health_state": "degradation",
+            "rms": 0.206729
+          },
+          {
+            "rank": 4,
+            "experiment": "1st_test",
+            "bearing_id": "bearing_1",
+            "timestamp": "2003-11-25 23:39:56",
+            "sequence_index": 2155,
+            "health_state": "early_degradation",
+            "rms": 0.166086
+          }
+        ]
+      },
+      "reference_answer": "The highest latest rms in scope latest_bearings_in_experiment is 1st_test/bearing_3 with rms=0.545 at sequence_index 2155.",
+      "grading": {
+        "numeric_tolerance": 0.001,
+        "required_checks": [
+          "route",
+          "dt_action",
+          "experiment",
+          "feature",
+          "scope",
+          "answer_factuality"
+        ],
+        "notes": "Numerical answers should match expected_result within tolerance after rounding; state/ranking answers should match exact labels and selected bearing IDs."
+      }
+    },
+    {
+      "id": "dt_feature_006",
+      "question": "Which bearing has the highest latest kurtosis in 2nd_test?",
+      "category": "dt_only",
+      "subcategory": "feature",
+      "expected_route": "dt_only",
+      "expected_tools": [
+        "dt"
+      ],
+      "expected_dt_query": {
+        "action": "rank_feature",
+        "experiment": "2nd_test",
+        "feature": "kurtosis",
+        "scope": "latest_bearings_in_experiment",
+        "order": "desc",
+        "time_policy": "latest_available_record",
+        "sequence_index": null
+      },
+      "expected_result": {
+        "experiment": "2nd_test",
+        "feature": "kurtosis",
+        "scope": "latest_bearings_in_experiment",
+        "winner": {
+          "rank": 1,
+          "experiment": "2nd_test",
+          "bearing_id": "bearing_4",
+          "timestamp": "2004-02-19 06:22:39",
+          "sequence_index": 983,
+          "health_state": "early_degradation",
+          "kurtosis": 4.170494
+        },
+        "rankings": [
+          {
+            "rank": 1,
+            "experiment": "2nd_test",
+            "bearing_id": "bearing_4",
+            "timestamp": "2004-02-19 06:22:39",
+            "sequence_index": 983,
+            "health_state": "early_degradation",
+            "kurtosis": 4.170494
+          },
+          {
+            "rank": 2,
+            "experiment": "2nd_test",
+            "bearing_id": "bearing_3",
+            "timestamp": "2004-02-19 06:22:39",
+            "sequence_index": 983,
+            "health_state": "normal",
+            "kurtosis": 1.930988
+          },
+          {
+            "rank": 3,
+            "experiment": "2nd_test",
+            "bearing_id": "bearing_2",
+            "timestamp": "2004-02-19 06:22:39",
+            "sequence_index": 983,
+            "health_state": "normal",
+            "kurtosis": 1.905901
+          },
+          {
+            "rank": 4,
+            "experiment": "2nd_test",
+            "bearing_id": "bearing_1",
+            "timestamp": "2004-02-19 06:22:39",
+            "sequence_index": 983,
+            "health_state": "normal",
+            "kurtosis": 1.390226
+          }
+        ]
+      },
+      "reference_answer": "The highest latest kurtosis in scope latest_bearings_in_experiment is 2nd_test/bearing_4 with kurtosis=4.170 at sequence_index 983.",
+      "grading": {
+        "numeric_tolerance": 0.001,
+        "required_checks": [
+          "route",
+          "dt_action",
+          "experiment",
+          "feature",
+          "scope",
+          "answer_factuality"
+        ],
+        "notes": "Numerical answers should match expected_result within tolerance after rounding; state/ranking answers should match exact labels and selected bearing IDs."
+      }
+    },
+    {
+      "id": "dt_feature_007",
+      "question": "Is the latest spectral entropy of bearing_4 in 1st_test abnormal?",
+      "category": "dt_only",
+      "subcategory": "feature",
+      "expected_route": "dt_only",
+      "expected_tools": [
+        "dt"
+      ],
+      "expected_dt_query": {
+        "action": "feature_abnormality",
+        "experiment": "1st_test",
+        "bearing_id": "bearing_4",
+        "feature": "spectral_entropy",
+        "time_policy": "latest_available_record",
+        "sequence_index": null
+      },
+      "expected_result": {
+        "experiment": "1st_test",
+        "bearing_id": "bearing_4",
+        "timestamp": "2003-11-25 23:39:56",
+        "sequence_index": 2155,
+        "health_state": "degradation",
+        "health_index": 0.523293,
+        "features": {
+          "spectral_entropy": 0.547969,
+          "health_index": 0.523293
+        },
+        "evidence": "RMS z-score 6.56; high-frequency energy ratio z-score 3.46; spectral entropy z-score 13.72; RMS z-score 7.45; spectral entropy z-score 5.54",
+        "feature": "spectral_entropy",
+        "is_abnormal": true,
+        "abnormality_rule": "True when the latest health_state is non-normal and the feature is explicitly cited in the snapshot evidence string."
+      },
+      "reference_answer": "Yes. The latest 1st_test/bearing_4 has spectral_entropy=0.548, health_state=degradation, and its evidence cites spectral entropy abnormality when applicable.",
+      "grading": {
+        "numeric_tolerance": 0.001,
+        "required_checks": [
+          "route",
+          "dt_action",
+          "experiment",
+          "bearing_id",
+          "feature",
+          "answer_factuality"
+        ],
+        "notes": "Numerical answers should match expected_result within tolerance after rounding; state/ranking answers should match exact labels and selected bearing IDs."
+      }
+    },
+    {
+      "id": "dt_feature_008",
+      "question": "What are the latest dominant frequencies of all bearings in 3rd_test?",
+      "category": "dt_only",
+      "subcategory": "feature",
+      "expected_route": "dt_only",
+      "expected_tools": [
+        "dt"
+      ],
+      "expected_dt_query": {
+        "action": "features_all_bearings",
+        "experiment": "3rd_test",
+        "features": [
+          "dominant_frequency"
+        ],
+        "time_policy": "latest_available_record",
+        "sequence_index": null
+      },
+      "expected_result": {
+        "experiment": "3rd_test",
+        "features": [
+          "dominant_frequency"
+        ],
+        "bearings": [
+          {
+            "experiment": "3rd_test",
+            "bearing_id": "bearing_1",
+            "timestamp": "2004-04-18 02:42:55",
+            "sequence_index": 6323,
+            "health_state": "normal",
+            "health_index": 0.098446,
+            "features": {
+              "dominant_frequency": 0.0,
+              "health_index": 0.098446
+            },
+            "evidence": "kurtosis z-score 3.15"
+          },
+          {
+            "experiment": "3rd_test",
+            "bearing_id": "bearing_2",
+            "timestamp": "2004-04-18 02:42:55",
+            "sequence_index": 6323,
+            "health_state": "normal",
+            "health_index": 0.003138,
+            "features": {
+              "dominant_frequency": 0.0,
+              "health_index": 0.003138
+            },
+            "evidence": ""
+          },
+          {
+            "experiment": "3rd_test",
+            "bearing_id": "bearing_3",
+            "timestamp": "2004-04-18 02:42:55",
+            "sequence_index": 6323,
+            "health_state": "normal",
+            "health_index": 0.0,
+            "features": {
+              "dominant_frequency": 0.0,
+              "health_index": 0.0
+            },
+            "evidence": ""
+          },
+          {
+            "experiment": "3rd_test",
+            "bearing_id": "bearing_4",
+            "timestamp": "2004-04-18 02:42:55",
+            "sequence_index": 6323,
+            "health_state": "early_degradation",
+            "health_index": 0.227883,
+            "features": {
+              "dominant_frequency": 0.0,
+              "health_index": 0.227883
+            },
+            "evidence": "kurtosis z-score 7.29"
+          }
+        ]
+      },
+      "reference_answer": "In the latest 3rd_test records, dominant_frequency values are: bearing_1=0.000; bearing_2=0.000; bearing_3=0.000; bearing_4=0.000.",
+      "grading": {
+        "numeric_tolerance": 0.001,
+        "required_checks": [
+          "route",
+          "dt_action",
+          "experiment",
+          "features",
+          "answer_factuality"
+        ],
+        "notes": "Numerical answers should match expected_result within tolerance after rounding; state/ranking answers should match exact labels and selected bearing IDs."
+      }
+    },
+    {
+      "id": "dt_feature_009",
+      "question": "How do the latest impulse factor and clearance factor of bearing_3 in 1st_test behave?",
+      "category": "dt_only",
+      "subcategory": "feature",
+      "expected_route": "dt_only",
+      "expected_tools": [
+        "dt"
+      ],
+      "expected_dt_query": {
+        "action": "features",
+        "experiment": "1st_test",
+        "bearing_id": "bearing_3",
+        "features": [
+          "impulse_factor",
+          "clearance_factor"
+        ],
+        "time_policy": "latest_available_record",
+        "sequence_index": null
+      },
+      "expected_result": {
+        "experiment": "1st_test",
+        "bearing_id": "bearing_3",
+        "timestamp": "2003-11-25 23:39:56",
+        "sequence_index": 2155,
+        "health_state": "failure_near",
+        "health_index": 1.0,
+        "features": {
+          "impulse_factor": 10.967134,
+          "clearance_factor": 13.316784
+        },
+        "evidence": "RMS z-score 28.70; kurtosis z-score 27.99; crest factor z-score 5.75; high-frequency energy ratio z-score 14.75; spectral entropy z-score 57.68; RMS z-score 36.73; kurtosis z-score 62.81; crest factor z-score 9.09; high-frequency energy ratio z-score 24.07; spectral entropy z-score 71.10"
+      },
+      "reference_answer": "Using the latest available IMS DT record, 1st_test/bearing_3 has impulse_factor=10.967, clearance_factor=13.317 at sequence_index 2155 (2003-11-25 23:39:56) and is classified as failure_near.",
+      "grading": {
+        "numeric_tolerance": 0.001,
+        "required_checks": [
+          "route",
+          "dt_action",
+          "experiment",
+          "bearing_id",
+          "features",
+          "answer_factuality"
+        ],
+        "notes": "Numerical answers should match expected_result within tolerance after rounding; state/ranking answers should match exact labels and selected bearing IDs."
+      }
+    },
+    {
+      "id": "dt_feature_010",
+      "question": "Which bearing has the highest latest high-band energy ratio across all IMS experiments?",
+      "category": "dt_only",
+      "subcategory": "feature",
+      "expected_route": "dt_only",
+      "expected_tools": [
+        "dt"
+      ],
+      "expected_dt_query": {
+        "action": "rank_feature",
+        "experiment": null,
+        "feature": "high_band_energy_ratio",
+        "scope": "latest_bearings_all_experiments",
+        "order": "desc",
+        "time_policy": "latest_available_record",
+        "sequence_index": null
+      },
+      "expected_result": {
+        "experiment": "all",
+        "feature": "high_band_energy_ratio",
+        "scope": "latest_bearings_all_experiments",
+        "winner": {
+          "rank": 1,
+          "experiment": "1st_test",
+          "bearing_id": "bearing_3",
+          "timestamp": "2003-11-25 23:39:56",
+          "sequence_index": 2155,
+          "health_state": "failure_near",
+          "high_band_energy_ratio": 0.334076
+        },
+        "rankings": [
+          {
+            "rank": 1,
+            "experiment": "1st_test",
+            "bearing_id": "bearing_3",
+            "timestamp": "2003-11-25 23:39:56",
+            "sequence_index": 2155,
+            "health_state": "failure_near",
+            "high_band_energy_ratio": 0.334076
+          },
+          {
+            "rank": 2,
+            "experiment": "2nd_test",
+            "bearing_id": "bearing_2",
+            "timestamp": "2004-02-19 06:22:39",
+            "sequence_index": 983,
+            "health_state": "normal",
+            "high_band_energy_ratio": 0.100233
+          },
+          {
+            "rank": 3,
+            "experiment": "2nd_test",
+            "bearing_id": "bearing_3",
+            "timestamp": "2004-02-19 06:22:39",
+            "sequence_index": 983,
+            "health_state": "normal",
+            "high_band_energy_ratio": 0.092181
+          },
+          {
+            "rank": 4,
+            "experiment": "1st_test",
+            "bearing_id": "bearing_4",
+            "timestamp": "2003-11-25 23:39:56",
+            "sequence_index": 2155,
+            "health_state": "degradation",
+            "high_band_energy_ratio": 0.075433
+          },
+          {
+            "rank": 5,
+            "experiment": "3rd_test",
+            "bearing_id": "bearing_4",
+            "timestamp": "2004-04-18 02:42:55",
+            "sequence_index": 6323,
+            "health_state": "early_degradation",
+            "high_band_energy_ratio": 0.066295
+          },
+          {
+            "rank": 6,
+            "experiment": "3rd_test",
+            "bearing_id": "bearing_1",
+            "timestamp": "2004-04-18 02:42:55",
+            "sequence_index": 6323,
+            "health_state": "normal",
+            "high_band_energy_ratio": 0.065787
+          },
+          {
+            "rank": 7,
+            "experiment": "1st_test",
+            "bearing_id": "bearing_1",
+            "timestamp": "2003-11-25 23:39:56",
+            "sequence_index": 2155,
+            "health_state": "early_degradation",
+            "high_band_energy_ratio": 0.057669
+          },
+          {
+            "rank": 8,
+            "experiment": "2nd_test",
+            "bearing_id": "bearing_1",
+            "timestamp": "2004-02-19 06:22:39",
+            "sequence_index": 983,
+            "health_state": "normal",
+            "high_band_energy_ratio": 0.050266
+          },
+          {
+            "rank": 9,
+            "experiment": "3rd_test",
+            "bearing_id": "bearing_2",
+            "timestamp": "2004-04-18 02:42:55",
+            "sequence_index": 6323,
+            "health_state": "normal",
+            "high_band_energy_ratio": 0.040706
+          },
+          {
+            "rank": 10,
+            "experiment": "1st_test",
+            "bearing_id": "bearing_2",
+            "timestamp": "2003-11-25 23:39:56",
+            "sequence_index": 2155,
+            "health_state": "degradation",
+            "high_band_energy_ratio": 0.036717
+          },
+          {
+            "rank": 11,
+            "experiment": "2nd_test",
+            "bearing_id": "bearing_4",
+            "timestamp": "2004-02-19 06:22:39",
+            "sequence_index": 983,
+            "health_state": "early_degradation",
+            "high_band_energy_ratio": 0.0364
+          },
+          {
+            "rank": 12,
+            "experiment": "3rd_test",
+            "bearing_id": "bearing_3",
+            "timestamp": "2004-04-18 02:42:55",
+            "sequence_index": 6323,
+            "health_state": "normal",
+            "high_band_energy_ratio": 0.021987
+          }
+        ]
+      },
+      "reference_answer": "The highest latest high_band_energy_ratio in scope latest_bearings_all_experiments is 1st_test/bearing_3 with high_band_energy_ratio=0.334 at sequence_index 2155.",
+      "grading": {
+        "numeric_tolerance": 0.001,
+        "required_checks": [
+          "route",
+          "dt_action",
+          "feature",
+          "scope",
+          "answer_factuality"
+        ],
+        "notes": "Numerical answers should match expected_result within tolerance after rounding; state/ranking answers should match exact labels and selected bearing IDs."
+      }
+    },
+    {
+      "id": "dt_state_001",
+      "question": "What is the current health state of bearing_3 in 1st_test?",
+      "category": "dt_only",
+      "subcategory": "state",
+      "expected_route": "dt_only",
+      "expected_tools": [
+        "dt"
+      ],
+      "expected_dt_query": {
+        "action": "latest_state",
+        "experiment": "1st_test",
+        "bearing_id": "bearing_3",
+        "time_policy": "latest_available_record",
+        "sequence_index": null
+      },
+      "expected_result": {
+        "experiment": "1st_test",
+        "bearing_id": "bearing_3",
+        "timestamp": "2003-11-25 23:39:56",
+        "sequence_index": 2155,
+        "health_state": "failure_near",
+        "health_index": 1.0,
+        "features": {
+          "health_index": 1.0
+        },
+        "evidence": "RMS z-score 28.70; kurtosis z-score 27.99; crest factor z-score 5.75; high-frequency energy ratio z-score 14.75; spectral entropy z-score 57.68; RMS z-score 36.73; kurtosis z-score 62.81; crest factor z-score 9.09; high-frequency energy ratio z-score 24.07; spectral entropy z-score 71.10"
+      },
+      "reference_answer": "Using the latest available IMS DT record, 1st_test/bearing_3 is classified as failure_near with health_index=1.000 at sequence_index 2155 (2003-11-25 23:39:56).",
+      "grading": {
+        "numeric_tolerance": 0.001,
+        "required_checks": [
+          "route",
+          "dt_action",
+          "experiment",
+          "bearing_id",
+          "answer_factuality"
+        ],
+        "notes": "Numerical answers should match expected_result within tolerance after rounding; state/ranking answers should match exact labels and selected bearing IDs."
+      }
+    },
+    {
+      "id": "dt_state_002",
+      "question": "Which bearing is closest to failure in 1st_test?",
+      "category": "dt_only",
+      "subcategory": "state",
+      "expected_route": "dt_only",
+      "expected_tools": [
+        "dt"
+      ],
+      "expected_dt_query": {
+        "action": "rank_health",
+        "experiment": "1st_test",
+        "scope": "latest_bearings_in_experiment",
+        "order": "desc",
+        "time_policy": "latest_available_record",
+        "sequence_index": null
+      },
+      "expected_result": {
+        "experiment": "1st_test",
+        "scope": "latest_bearings_in_experiment",
+        "order": "desc",
+        "selected": {
+          "rank": 1,
+          "experiment": "1st_test",
+          "bearing_id": "bearing_3",
+          "timestamp": "2003-11-25 23:39:56",
+          "sequence_index": 2155,
+          "health_state": "failure_near",
+          "health_index": 1.0
+        },
+        "rankings": [
+          {
+            "rank": 1,
+            "experiment": "1st_test",
+            "bearing_id": "bearing_3",
+            "timestamp": "2003-11-25 23:39:56",
+            "sequence_index": 2155,
+            "health_state": "failure_near",
+            "health_index": 1.0
+          },
+          {
+            "rank": 2,
+            "experiment": "1st_test",
+            "bearing_id": "bearing_2",
+            "timestamp": "2003-11-25 23:39:56",
+            "sequence_index": 2155,
+            "health_state": "degradation",
+            "health_index": 0.55024
+          },
+          {
+            "rank": 3,
+            "experiment": "1st_test",
+            "bearing_id": "bearing_4",
+            "timestamp": "2003-11-25 23:39:56",
+            "sequence_index": 2155,
+            "health_state": "degradation",
+            "health_index": 0.523293
+          },
+          {
+            "rank": 4,
+            "experiment": "1st_test",
+            "bearing_id": "bearing_1",
+            "timestamp": "2003-11-25 23:39:56",
+            "sequence_index": 2155,
+            "health_state": "early_degradation",
+            "health_index": 0.22955
+          }
+        ]
+      },
+      "reference_answer": "The bearing closest to failure / highest latest health_index in scope latest_bearings_in_experiment is 1st_test/bearing_3 with health_index=1.000 and state=failure_near.",
+      "grading": {
+        "numeric_tolerance": 0.001,
+        "required_checks": [
+          "route",
+          "dt_action",
+          "experiment",
+          "scope",
+          "answer_factuality"
+        ],
+        "notes": "Numerical answers should match expected_result within tolerance after rounding; state/ranking answers should match exact labels and selected bearing IDs."
+      }
+    },
+    {
+      "id": "dt_state_003",
+      "question": "Is bearing_1 in 2nd_test currently degraded?",
+      "category": "dt_only",
+      "subcategory": "state",
+      "expected_route": "dt_only",
+      "expected_tools": [
+        "dt"
+      ],
+      "expected_dt_query": {
+        "action": "state_check",
+        "experiment": "2nd_test",
+        "bearing_id": "bearing_1",
+        "positive_states": [
+          "early_degradation",
+          "degradation",
+          "failure_near"
+        ],
+        "time_policy": "latest_available_record",
+        "sequence_index": null
+      },
+      "expected_result": {
+        "experiment": "2nd_test",
+        "bearing_id": "bearing_1",
+        "timestamp": "2004-02-19 06:22:39",
+        "sequence_index": 983,
+        "health_state": "normal",
+        "health_index": 0.0,
+        "features": {
+          "health_index": 0.0
+        },
+        "evidence": "",
+        "positive_states": [
+          "early_degradation",
+          "degradation",
+          "failure_near"
+        ],
+        "answer_boolean": false
+      },
+      "reference_answer": "No. The latest 2nd_test/bearing_1 state is normal with health_index=0.000.",
+      "grading": {
+        "numeric_tolerance": 0.001,
+        "required_checks": [
+          "route",
+          "dt_action",
+          "experiment",
+          "bearing_id",
+          "answer_factuality"
+        ],
+        "notes": "Numerical answers should match expected_result within tolerance after rounding; state/ranking answers should match exact labels and selected bearing IDs."
+      }
+    },
+    {
+      "id": "dt_state_004",
+      "question": "Does bearing_3 in 3rd_test show obvious degradation?",
+      "category": "dt_only",
+      "subcategory": "state",
+      "expected_route": "dt_only",
+      "expected_tools": [
+        "dt"
+      ],
+      "expected_dt_query": {
+        "action": "state_check",
+        "experiment": "3rd_test",
+        "bearing_id": "bearing_3",
+        "positive_states": [
+          "degradation",
+          "failure_near"
+        ],
+        "time_policy": "latest_available_record",
+        "sequence_index": null
+      },
+      "expected_result": {
+        "experiment": "3rd_test",
+        "bearing_id": "bearing_3",
+        "timestamp": "2004-04-18 02:42:55",
+        "sequence_index": 6323,
+        "health_state": "normal",
+        "health_index": 0.0,
+        "features": {
+          "health_index": 0.0
+        },
+        "evidence": "",
+        "positive_states": [
+          "degradation",
+          "failure_near"
+        ],
+        "answer_boolean": false
+      },
+      "reference_answer": "No. The latest 3rd_test/bearing_3 state is normal with health_index=0.000.",
+      "grading": {
+        "numeric_tolerance": 0.001,
+        "required_checks": [
+          "route",
+          "dt_action",
+          "experiment",
+          "bearing_id",
+          "answer_factuality"
+        ],
+        "notes": "Numerical answers should match expected_result within tolerance after rounding; state/ranking answers should match exact labels and selected bearing IDs."
+      }
+    },
+    {
+      "id": "dt_state_005",
+      "question": "Which bearing has the highest latest health index across all experiments?",
+      "category": "dt_only",
+      "subcategory": "state",
+      "expected_route": "dt_only",
+      "expected_tools": [
+        "dt"
+      ],
+      "expected_dt_query": {
+        "action": "rank_health",
+        "experiment": null,
+        "scope": "latest_bearings_all_experiments",
+        "order": "desc",
+        "time_policy": "latest_available_record",
+        "sequence_index": null
+      },
+      "expected_result": {
+        "experiment": "all",
+        "scope": "latest_bearings_all_experiments",
+        "order": "desc",
+        "selected": {
+          "rank": 1,
+          "experiment": "1st_test",
+          "bearing_id": "bearing_3",
+          "timestamp": "2003-11-25 23:39:56",
+          "sequence_index": 2155,
+          "health_state": "failure_near",
+          "health_index": 1.0
+        },
+        "rankings": [
+          {
+            "rank": 1,
+            "experiment": "1st_test",
+            "bearing_id": "bearing_3",
+            "timestamp": "2003-11-25 23:39:56",
+            "sequence_index": 2155,
+            "health_state": "failure_near",
+            "health_index": 1.0
+          },
+          {
+            "rank": 2,
+            "experiment": "1st_test",
+            "bearing_id": "bearing_2",
+            "timestamp": "2003-11-25 23:39:56",
+            "sequence_index": 2155,
+            "health_state": "degradation",
+            "health_index": 0.55024
+          },
+          {
+            "rank": 3,
+            "experiment": "1st_test",
+            "bearing_id": "bearing_4",
+            "timestamp": "2003-11-25 23:39:56",
+            "sequence_index": 2155,
+            "health_state": "degradation",
+            "health_index": 0.523293
+          },
+          {
+            "rank": 4,
+            "experiment": "2nd_test",
+            "bearing_id": "bearing_4",
+            "timestamp": "2004-02-19 06:22:39",
+            "sequence_index": 983,
+            "health_state": "early_degradation",
+            "health_index": 0.353794
+          },
+          {
+            "rank": 5,
+            "experiment": "1st_test",
+            "bearing_id": "bearing_1",
+            "timestamp": "2003-11-25 23:39:56",
+            "sequence_index": 2155,
+            "health_state": "early_degradation",
+            "health_index": 0.22955
+          },
+          {
+            "rank": 6,
+            "experiment": "3rd_test",
+            "bearing_id": "bearing_4",
+            "timestamp": "2004-04-18 02:42:55",
+            "sequence_index": 6323,
+            "health_state": "early_degradation",
+            "health_index": 0.227883
+          },
+          {
+            "rank": 7,
+            "experiment": "3rd_test",
+            "bearing_id": "bearing_1",
+            "timestamp": "2004-04-18 02:42:55",
+            "sequence_index": 6323,
+            "health_state": "normal",
+            "health_index": 0.098446
+          },
+          {
+            "rank": 8,
+            "experiment": "3rd_test",
+            "bearing_id": "bearing_2",
+            "timestamp": "2004-04-18 02:42:55",
+            "sequence_index": 6323,
+            "health_state": "normal",
+            "health_index": 0.003138
+          },
+          {
+            "rank": 9,
+            "experiment": "2nd_test",
+            "bearing_id": "bearing_1",
+            "timestamp": "2004-02-19 06:22:39",
+            "sequence_index": 983,
+            "health_state": "normal",
+            "health_index": 0.0
+          },
+          {
+            "rank": 10,
+            "experiment": "2nd_test",
+            "bearing_id": "bearing_2",
+            "timestamp": "2004-02-19 06:22:39",
+            "sequence_index": 983,
+            "health_state": "normal",
+            "health_index": 0.0
+          },
+          {
+            "rank": 11,
+            "experiment": "2nd_test",
+            "bearing_id": "bearing_3",
+            "timestamp": "2004-02-19 06:22:39",
+            "sequence_index": 983,
+            "health_state": "normal",
+            "health_index": 0.0
+          },
+          {
+            "rank": 12,
+            "experiment": "3rd_test",
+            "bearing_id": "bearing_3",
+            "timestamp": "2004-04-18 02:42:55",
+            "sequence_index": 6323,
+            "health_state": "normal",
+            "health_index": 0.0
+          }
+        ]
+      },
+      "reference_answer": "The bearing closest to failure / highest latest health_index in scope latest_bearings_all_experiments is 1st_test/bearing_3 with health_index=1.000 and state=failure_near.",
+      "grading": {
+        "numeric_tolerance": 0.001,
+        "required_checks": [
+          "route",
+          "dt_action",
+          "scope",
+          "answer_factuality"
+        ],
+        "notes": "Numerical answers should match expected_result within tolerance after rounding; state/ranking answers should match exact labels and selected bearing IDs."
+      }
+    },
+    {
+      "id": "dt_state_006",
+      "question": "What is the latest health index of bearing_4 in 1st_test?",
+      "category": "dt_only",
+      "subcategory": "state",
+      "expected_route": "dt_only",
+      "expected_tools": [
+        "dt"
+      ],
+      "expected_dt_query": {
+        "action": "features",
+        "experiment": "1st_test",
+        "bearing_id": "bearing_4",
+        "features": [
+          "health_index"
+        ],
+        "time_policy": "latest_available_record",
+        "sequence_index": null
+      },
+      "expected_result": {
+        "experiment": "1st_test",
+        "bearing_id": "bearing_4",
+        "timestamp": "2003-11-25 23:39:56",
+        "sequence_index": 2155,
+        "health_state": "degradation",
+        "health_index": 0.523293,
+        "features": {
+          "health_index": 0.523293
+        },
+        "evidence": "RMS z-score 6.56; high-frequency energy ratio z-score 3.46; spectral entropy z-score 13.72; RMS z-score 7.45; spectral entropy z-score 5.54"
+      },
+      "reference_answer": "Using the latest available IMS DT record, 1st_test/bearing_4 has health_index=0.523 at sequence_index 2155 (2003-11-25 23:39:56) and is classified as degradation.",
+      "grading": {
+        "numeric_tolerance": 0.001,
+        "required_checks": [
+          "route",
+          "dt_action",
+          "experiment",
+          "bearing_id",
+          "features",
+          "answer_factuality"
+        ],
+        "notes": "Numerical answers should match expected_result within tolerance after rounding; state/ranking answers should match exact labels and selected bearing IDs."
+      }
+    },
+    {
+      "id": "dt_state_007",
+      "question": "Which bearings are currently classified as failure_near?",
+      "category": "dt_only",
+      "subcategory": "state",
+      "expected_route": "dt_only",
+      "expected_tools": [
+        "dt"
+      ],
+      "expected_dt_query": {
+        "action": "filter_state",
+        "experiment": null,
+        "scope": "latest_bearings_all_experiments",
+        "state": "failure_near",
+        "time_policy": "latest_available_record",
+        "sequence_index": null
+      },
+      "expected_result": {
+        "experiment": "all",
+        "scope": "latest_bearings_all_experiments",
+        "state": "failure_near",
+        "matches": [
+          {
+            "experiment": "1st_test",
+            "bearing_id": "bearing_3",
+            "timestamp": "2003-11-25 23:39:56",
+            "sequence_index": 2155,
+            "health_state": "failure_near",
+            "health_index": 1.0,
+            "features": {
+              "health_index": 1.0
+            },
+            "evidence": "RMS z-score 28.70; kurtosis z-score 27.99; crest factor z-score 5.75; high-frequency energy ratio z-score 14.75; spectral entropy z-score 57.68; RMS z-score 36.73; kurtosis z-score 62.81; crest factor z-score 9.09; high-frequency energy ratio z-score 24.07; spectral entropy z-score 71.10"
+          }
+        ],
+        "count": 1
+      },
+      "reference_answer": "The latest bearings classified as failure_near are: 1st_test/bearing_3. Count=1.",
+      "grading": {
+        "numeric_tolerance": 0.001,
+        "required_checks": [
+          "route",
+          "dt_action",
+          "scope",
+          "state",
+          "answer_factuality"
+        ],
+        "notes": "Numerical answers should match expected_result within tolerance after rounding; state/ranking answers should match exact labels and selected bearing IDs."
+      }
+    },
+    {
+      "id": "dt_state_008",
+      "question": "Which bearings are currently classified as early_degradation?",
+      "category": "dt_only",
+      "subcategory": "state",
+      "expected_route": "dt_only",
+      "expected_tools": [
+        "dt"
+      ],
+      "expected_dt_query": {
+        "action": "filter_state",
+        "experiment": null,
+        "scope": "latest_bearings_all_experiments",
+        "state": "early_degradation",
+        "time_policy": "latest_available_record",
+        "sequence_index": null
+      },
+      "expected_result": {
+        "experiment": "all",
+        "scope": "latest_bearings_all_experiments",
+        "state": "early_degradation",
+        "matches": [
+          {
+            "experiment": "1st_test",
+            "bearing_id": "bearing_1",
+            "timestamp": "2003-11-25 23:39:56",
+            "sequence_index": 2155,
+            "health_state": "early_degradation",
+            "health_index": 0.22955,
+            "features": {
+              "health_index": 0.22955
+            },
+            "evidence": "RMS z-score 3.27; spectral entropy z-score 4.72; spectral entropy z-score 3.63"
+          },
+          {
+            "experiment": "2nd_test",
+            "bearing_id": "bearing_4",
+            "timestamp": "2004-02-19 06:22:39",
+            "sequence_index": 983,
+            "health_state": "early_degradation",
+            "health_index": 0.353794,
+            "features": {
+              "health_index": 0.353794
+            },
+            "evidence": "kurtosis z-score 11.32"
+          },
+          {
+            "experiment": "3rd_test",
+            "bearing_id": "bearing_4",
+            "timestamp": "2004-04-18 02:42:55",
+            "sequence_index": 6323,
+            "health_state": "early_degradation",
+            "health_index": 0.227883,
+            "features": {
+              "health_index": 0.227883
+            },
+            "evidence": "kurtosis z-score 7.29"
+          }
+        ],
+        "count": 3
+      },
+      "reference_answer": "The latest bearings classified as early_degradation are: 1st_test/bearing_1, 2nd_test/bearing_4, 3rd_test/bearing_4. Count=3.",
+      "grading": {
+        "numeric_tolerance": 0.001,
+        "required_checks": [
+          "route",
+          "dt_action",
+          "scope",
+          "state",
+          "answer_factuality"
+        ],
+        "notes": "Numerical answers should match expected_result within tolerance after rounding; state/ranking answers should match exact labels and selected bearing IDs."
+      }
+    },
+    {
+      "id": "dt_state_009",
+      "question": "What are the latest health states of all four bearings in 2nd_test?",
+      "category": "dt_only",
+      "subcategory": "state",
+      "expected_route": "dt_only",
+      "expected_tools": [
+        "dt"
+      ],
+      "expected_dt_query": {
+        "action": "states_all_bearings",
+        "experiment": "2nd_test",
+        "time_policy": "latest_available_record",
+        "sequence_index": null
+      },
+      "expected_result": {
+        "experiment": "2nd_test",
+        "bearings": [
+          {
+            "experiment": "2nd_test",
+            "bearing_id": "bearing_1",
+            "timestamp": "2004-02-19 06:22:39",
+            "sequence_index": 983,
+            "health_state": "normal",
+            "health_index": 0.0,
+            "features": {
+              "health_index": 0.0
+            },
+            "evidence": ""
+          },
+          {
+            "experiment": "2nd_test",
+            "bearing_id": "bearing_2",
+            "timestamp": "2004-02-19 06:22:39",
+            "sequence_index": 983,
+            "health_state": "normal",
+            "health_index": 0.0,
+            "features": {
+              "health_index": 0.0
+            },
+            "evidence": ""
+          },
+          {
+            "experiment": "2nd_test",
+            "bearing_id": "bearing_3",
+            "timestamp": "2004-02-19 06:22:39",
+            "sequence_index": 983,
+            "health_state": "normal",
+            "health_index": 0.0,
+            "features": {
+              "health_index": 0.0
+            },
+            "evidence": ""
+          },
+          {
+            "experiment": "2nd_test",
+            "bearing_id": "bearing_4",
+            "timestamp": "2004-02-19 06:22:39",
+            "sequence_index": 983,
+            "health_state": "early_degradation",
+            "health_index": 0.353794,
+            "features": {
+              "health_index": 0.353794
+            },
+            "evidence": "kurtosis z-score 11.32"
+          }
+        ]
+      },
+      "reference_answer": "The latest health states in 2nd_test are: bearing_1=normal (health_index=0.000); bearing_2=normal (health_index=0.000); bearing_3=normal (health_index=0.000); bearing_4=early_degradation (health_index=0.354).",
+      "grading": {
+        "numeric_tolerance": 0.001,
+        "required_checks": [
+          "route",
+          "dt_action",
+          "experiment",
+          "answer_factuality"
+        ],
+        "notes": "Numerical answers should match expected_result within tolerance after rounding; state/ranking answers should match exact labels and selected bearing IDs."
+      }
+    },
+    {
+      "id": "dt_state_010",
+      "question": "According to the DT database, which bearing is currently the healthiest?",
+      "category": "dt_only",
+      "subcategory": "state",
+      "expected_route": "dt_only",
+      "expected_tools": [
+        "dt"
+      ],
+      "expected_dt_query": {
+        "action": "rank_health",
+        "experiment": null,
+        "scope": "latest_bearings_all_experiments",
+        "order": "asc",
+        "time_policy": "latest_available_record",
+        "sequence_index": null
+      },
+      "expected_result": {
+        "experiment": "all",
+        "scope": "latest_bearings_all_experiments",
+        "order": "asc",
+        "selected": {
+          "rank": 1,
+          "experiment": "2nd_test",
+          "bearing_id": "bearing_1",
+          "timestamp": "2004-02-19 06:22:39",
+          "sequence_index": 983,
+          "health_state": "normal",
+          "health_index": 0.0
+        },
+        "rankings": [
+          {
+            "rank": 1,
+            "experiment": "2nd_test",
+            "bearing_id": "bearing_1",
+            "timestamp": "2004-02-19 06:22:39",
+            "sequence_index": 983,
+            "health_state": "normal",
+            "health_index": 0.0
+          },
+          {
+            "rank": 2,
+            "experiment": "2nd_test",
+            "bearing_id": "bearing_2",
+            "timestamp": "2004-02-19 06:22:39",
+            "sequence_index": 983,
+            "health_state": "normal",
+            "health_index": 0.0
+          },
+          {
+            "rank": 3,
+            "experiment": "2nd_test",
+            "bearing_id": "bearing_3",
+            "timestamp": "2004-02-19 06:22:39",
+            "sequence_index": 983,
+            "health_state": "normal",
+            "health_index": 0.0
+          },
+          {
+            "rank": 4,
+            "experiment": "3rd_test",
+            "bearing_id": "bearing_3",
+            "timestamp": "2004-04-18 02:42:55",
+            "sequence_index": 6323,
+            "health_state": "normal",
+            "health_index": 0.0
+          },
+          {
+            "rank": 5,
+            "experiment": "3rd_test",
+            "bearing_id": "bearing_2",
+            "timestamp": "2004-04-18 02:42:55",
+            "sequence_index": 6323,
+            "health_state": "normal",
+            "health_index": 0.003138
+          },
+          {
+            "rank": 6,
+            "experiment": "3rd_test",
+            "bearing_id": "bearing_1",
+            "timestamp": "2004-04-18 02:42:55",
+            "sequence_index": 6323,
+            "health_state": "normal",
+            "health_index": 0.098446
+          },
+          {
+            "rank": 7,
+            "experiment": "3rd_test",
+            "bearing_id": "bearing_4",
+            "timestamp": "2004-04-18 02:42:55",
+            "sequence_index": 6323,
+            "health_state": "early_degradation",
+            "health_index": 0.227883
+          },
+          {
+            "rank": 8,
+            "experiment": "1st_test",
+            "bearing_id": "bearing_1",
+            "timestamp": "2003-11-25 23:39:56",
+            "sequence_index": 2155,
+            "health_state": "early_degradation",
+            "health_index": 0.22955
+          },
+          {
+            "rank": 9,
+            "experiment": "2nd_test",
+            "bearing_id": "bearing_4",
+            "timestamp": "2004-02-19 06:22:39",
+            "sequence_index": 983,
+            "health_state": "early_degradation",
+            "health_index": 0.353794
+          },
+          {
+            "rank": 10,
+            "experiment": "1st_test",
+            "bearing_id": "bearing_4",
+            "timestamp": "2003-11-25 23:39:56",
+            "sequence_index": 2155,
+            "health_state": "degradation",
+            "health_index": 0.523293
+          },
+          {
+            "rank": 11,
+            "experiment": "1st_test",
+            "bearing_id": "bearing_2",
+            "timestamp": "2003-11-25 23:39:56",
+            "sequence_index": 2155,
+            "health_state": "degradation",
+            "health_index": 0.55024
+          },
+          {
+            "rank": 12,
+            "experiment": "1st_test",
+            "bearing_id": "bearing_3",
+            "timestamp": "2003-11-25 23:39:56",
+            "sequence_index": 2155,
+            "health_state": "failure_near",
+            "health_index": 1.0
+          }
+        ]
+      },
+      "reference_answer": "The healthiest bearing in scope latest_bearings_all_experiments is 2nd_test/bearing_1 with the lowest latest health_index=0.000 and state=normal.",
+      "grading": {
+        "numeric_tolerance": 0.001,
+        "required_checks": [
+          "route",
+          "dt_action",
+          "scope",
+          "answer_factuality"
+        ],
+        "notes": "Numerical answers should match expected_result within tolerance after rounding; state/ranking answers should match exact labels and selected bearing IDs."
+      }
+    },
+    {
+      "id": "dt_trend_001",
+      "question": "Does the health index of bearing_3 in 1st_test increase over time?",
+      "category": "dt_only",
+      "subcategory": "trend",
+      "expected_route": "dt_only",
+      "expected_tools": [
+        "dt"
+      ],
+      "expected_dt_query": {
+        "action": "trend",
+        "experiment": "1st_test",
+        "bearing_id": "bearing_3",
+        "metric": "health_index",
+        "window": 100,
+        "time_policy": "full_available_sequence",
+        "sequence_index": null
+      },
+      "expected_result": {
+        "experiment": "1st_test",
+        "bearing_id": "bearing_3",
+        "metric": "health_index",
+        "samples": 2156,
+        "window": 100,
+        "early_mean": 0.048259,
+        "late_mean": 0.935847,
+        "delta": 0.887588,
+        "percent_change": 18.392157,
+        "trend": "strongly_increasing_degradation",
+        "latest_sequence_index": 2155,
+        "latest_timestamp": "2003-11-25 23:39:56",
+        "latest_health_state": "failure_near"
+      },
+      "reference_answer": "Yes. 1st_test/bearing_3 shows strongly_increasing_degradation: mean health_index changes from 0.048 to 0.936, delta=0.888.",
+      "grading": {
+        "numeric_tolerance": 0.001,
+        "required_checks": [
+          "route",
+          "dt_action",
+          "experiment",
+          "bearing_id",
+          "metric",
+          "answer_factuality"
+        ],
+        "notes": "Numerical answers should match expected_result within tolerance after rounding; state/ranking answers should match exact labels and selected bearing IDs."
+      }
+    },
+    {
+      "id": "dt_trend_002",
+      "question": "Does the RMS of bearing_4 in 1st_test show a sustained increasing trend?",
+      "category": "dt_only",
+      "subcategory": "trend",
+      "expected_route": "dt_only",
+      "expected_tools": [
+        "dt"
+      ],
+      "expected_dt_query": {
+        "action": "trend",
+        "experiment": "1st_test",
+        "bearing_id": "bearing_4",
+        "metric": "rms",
+        "window": 100,
+        "time_policy": "full_available_sequence",
+        "sequence_index": null
+      },
+      "expected_result": {
+        "experiment": "1st_test",
+        "bearing_id": "bearing_4",
+        "metric": "rms",
+        "samples": 2156,
+        "window": 100,
+        "early_mean": 0.113556,
+        "late_mean": 0.183325,
+        "delta": 0.069769,
+        "percent_change": 0.614399,
+        "trend": "increasing",
+        "latest_sequence_index": 2155,
+        "latest_timestamp": "2003-11-25 23:39:56",
+        "latest_health_state": "degradation"
+      },
+      "reference_answer": "The rms trend for 1st_test/bearing_4 increases: early mean=0.114, late mean=0.183, delta=0.070, latest_state=degradation.",
+      "grading": {
+        "numeric_tolerance": 0.001,
+        "required_checks": [
+          "route",
+          "dt_action",
+          "experiment",
+          "bearing_id",
+          "metric",
+          "answer_factuality"
+        ],
+        "notes": "Numerical answers should match expected_result within tolerance after rounding; state/ranking answers should match exact labels and selected bearing IDs."
+      }
+    },
+    {
+      "id": "dt_trend_003",
+      "question": "Does the kurtosis of bearing_1 in 2nd_test increase near the end of the experiment?",
+      "category": "dt_only",
+      "subcategory": "trend",
+      "expected_route": "dt_only",
+      "expected_tools": [
+        "dt"
+      ],
+      "expected_dt_query": {
+        "action": "near_end_trend",
+        "experiment": "2nd_test",
+        "bearing_id": "bearing_1",
+        "metric": "kurtosis",
+        "window": 100,
+        "time_policy": "full_available_sequence",
+        "sequence_index": null
+      },
+      "expected_result": {
+        "experiment": "2nd_test",
+        "bearing_id": "bearing_1",
+        "metric": "kurtosis",
+        "window": 100,
+        "previous_window_mean": 4.504491,
+        "late_window_mean": 4.687233,
+        "near_end_delta": 0.182742,
+        "near_end_trend": "increasing",
+        "latest_sequence_index": 983,
+        "latest_timestamp": "2004-02-19 06:22:39",
+        "latest_health_state": "normal"
+      },
+      "reference_answer": "Near the end, kurtosis for 2nd_test/bearing_1 increases: previous-window mean=4.504, late-window mean=4.687, delta=0.183.",
+      "grading": {
+        "numeric_tolerance": 0.001,
+        "required_checks": [
+          "route",
+          "dt_action",
+          "experiment",
+          "bearing_id",
+          "metric",
+          "answer_factuality"
+        ],
+        "notes": "Numerical answers should match expected_result within tolerance after rounding; state/ranking answers should match exact labels and selected bearing IDs."
+      }
+    },
+    {
+      "id": "dt_trend_004",
+      "question": "Does the high-band energy ratio of bearing_3 in 3rd_test indicate a degradation trend?",
+      "category": "dt_only",
+      "subcategory": "trend",
+      "expected_route": "dt_only",
+      "expected_tools": [
+        "dt"
+      ],
+      "expected_dt_query": {
+        "action": "trend",
+        "experiment": "3rd_test",
+        "bearing_id": "bearing_3",
+        "metric": "high_band_energy_ratio",
+        "window": 100,
+        "time_policy": "full_available_sequence",
+        "sequence_index": null
+      },
+      "expected_result": {
+        "experiment": "3rd_test",
+        "bearing_id": "bearing_3",
+        "metric": "high_band_energy_ratio",
+        "samples": 6324,
+        "window": 100,
+        "early_mean": 0.322762,
+        "late_mean": 0.207929,
+        "delta": -0.114833,
+        "percent_change": -0.355783,
+        "trend": "decreasing",
+        "latest_sequence_index": 6323,
+        "latest_timestamp": "2004-04-18 02:42:55",
+        "latest_health_state": "normal"
+      },
+      "reference_answer": "The high_band_energy_ratio trend for 3rd_test/bearing_3 decreases: early mean=0.323, late mean=0.208, delta=-0.115, latest_state=normal.",
+      "grading": {
+        "numeric_tolerance": 0.001,
+        "required_checks": [
+          "route",
+          "dt_action",
+          "experiment",
+          "bearing_id",
+          "metric",
+          "answer_factuality"
+        ],
+        "notes": "Numerical answers should match expected_result within tolerance after rounding; state/ranking answers should match exact labels and selected bearing IDs."
+      }
+    },
+    {
+      "id": "dt_trend_005",
+      "question": "Which bearing shows the strongest degradation trend in 1st_test?",
+      "category": "dt_only",
+      "subcategory": "trend",
+      "expected_route": "dt_only",
+      "expected_tools": [
+        "dt"
+      ],
+      "expected_dt_query": {
+        "action": "rank_trend",
+        "experiment": "1st_test",
+        "metric": "health_index",
+        "order": "desc",
+        "window": 100,
+        "time_policy": "full_available_sequence",
+        "sequence_index": null
+      },
+      "expected_result": {
+        "experiment": "1st_test",
+        "metric": "health_index",
+        "window": 100,
+        "selected": {
+          "experiment": "1st_test",
+          "bearing_id": "bearing_3",
+          "metric": "health_index",
+          "samples": 2156,
+          "window": 100,
+          "early_mean": 0.048259,
+          "late_mean": 0.935847,
+          "delta": 0.887588,
+          "percent_change": 18.392157,
+          "trend": "strongly_increasing_degradation",
+          "latest_sequence_index": 2155,
+          "latest_timestamp": "2003-11-25 23:39:56",
+          "latest_health_state": "failure_near",
+          "rank": 1
+        },
+        "rankings": [
+          {
+            "experiment": "1st_test",
+            "bearing_id": "bearing_3",
+            "metric": "health_index",
+            "samples": 2156,
+            "window": 100,
+            "early_mean": 0.048259,
+            "late_mean": 0.935847,
+            "delta": 0.887588,
+            "percent_change": 18.392157,
+            "trend": "strongly_increasing_degradation",
+            "latest_sequence_index": 2155,
+            "latest_timestamp": "2003-11-25 23:39:56",
+            "latest_health_state": "failure_near",
+            "rank": 1
+          },
+          {
+            "experiment": "1st_test",
+            "bearing_id": "bearing_4",
+            "metric": "health_index",
+            "samples": 2156,
+            "window": 100,
+            "early_mean": 0.053848,
+            "late_mean": 0.44961,
+            "delta": 0.395761,
+            "percent_change": 7.349574,
+            "trend": "strongly_increasing_degradation",
+            "latest_sequence_index": 2155,
+            "latest_timestamp": "2003-11-25 23:39:56",
+            "latest_health_state": "degradation",
+            "rank": 2
+          },
+          {
+            "experiment": "1st_test",
+            "bearing_id": "bearing_2",
+            "metric": "health_index",
+            "samples": 2156,
+            "window": 100,
+            "early_mean": 0.041528,
+            "late_mean": 0.19288,
+            "delta": 0.151351,
+            "percent_change": 3.644521,
+            "trend": "increasing_degradation",
+            "latest_sequence_index": 2155,
+            "latest_timestamp": "2003-11-25 23:39:56",
+            "latest_health_state": "degradation",
+            "rank": 3
+          },
+          {
+            "experiment": "1st_test",
+            "bearing_id": "bearing_1",
+            "metric": "health_index",
+            "samples": 2156,
+            "window": 100,
+            "early_mean": 0.043205,
+            "late_mean": 0.121344,
+            "delta": 0.078139,
+            "percent_change": 1.808582,
+            "trend": "increasing_degradation",
+            "latest_sequence_index": 2155,
+            "latest_timestamp": "2003-11-25 23:39:56",
+            "latest_health_state": "early_degradation",
+            "rank": 4
+          }
+        ]
+      },
+      "reference_answer": "The strongest health_index degradation trend in 1st_test is bearing_3, with delta=0.888 from early mean 0.048 to late mean 0.936.",
+      "grading": {
+        "numeric_tolerance": 0.001,
+        "required_checks": [
+          "route",
+          "dt_action",
+          "experiment",
+          "metric",
+          "answer_factuality"
+        ],
+        "notes": "Numerical answers should match expected_result within tolerance after rounding; state/ranking answers should match exact labels and selected bearing IDs."
+      }
+    },
+    {
+      "id": "dt_trend_006",
+      "question": "How do the health index trends of all bearings in 2nd_test compare?",
+      "category": "dt_only",
+      "subcategory": "trend",
+      "expected_route": "dt_only",
+      "expected_tools": [
+        "dt"
+      ],
+      "expected_dt_query": {
+        "action": "compare_trends",
+        "experiment": "2nd_test",
+        "metric": "health_index",
+        "window": 100,
+        "time_policy": "full_available_sequence",
+        "sequence_index": null
+      },
+      "expected_result": {
+        "experiment": "2nd_test",
+        "metric": "health_index",
+        "window": 100,
+        "trend_comparison": [
+          {
+            "experiment": "2nd_test",
+            "bearing_id": "bearing_1",
+            "metric": "health_index",
+            "samples": 984,
+            "window": 100,
+            "early_mean": 0.046479,
+            "late_mean": 0.988454,
+            "delta": 0.941975,
+            "percent_change": 20.266683,
+            "trend": "strongly_increasing_degradation",
+            "latest_sequence_index": 983,
+            "latest_timestamp": "2004-02-19 06:22:39",
+            "latest_health_state": "normal"
+          },
+          {
+            "experiment": "2nd_test",
+            "bearing_id": "bearing_4",
+            "metric": "health_index",
+            "samples": 984,
+            "window": 100,
+            "early_mean": 0.04571,
+            "late_mean": 0.958635,
+            "delta": 0.912925,
+            "percent_change": 19.972093,
+            "trend": "strongly_increasing_degradation",
+            "latest_sequence_index": 983,
+            "latest_timestamp": "2004-02-19 06:22:39",
+            "latest_health_state": "early_degradation"
+          },
+          {
+            "experiment": "2nd_test",
+            "bearing_id": "bearing_2",
+            "metric": "health_index",
+            "samples": 984,
+            "window": 100,
+            "early_mean": 0.048141,
+            "late_mean": 0.883328,
+            "delta": 0.835188,
+            "percent_change": 17.348811,
+            "trend": "strongly_increasing_degradation",
+            "latest_sequence_index": 983,
+            "latest_timestamp": "2004-02-19 06:22:39",
+            "latest_health_state": "normal"
+          },
+          {
+            "experiment": "2nd_test",
+            "bearing_id": "bearing_3",
+            "metric": "health_index",
+            "samples": 984,
+            "window": 100,
+            "early_mean": 0.049782,
+            "late_mean": 0.587477,
+            "delta": 0.537695,
+            "percent_change": 10.801079,
+            "trend": "strongly_increasing_degradation",
+            "latest_sequence_index": 983,
+            "latest_timestamp": "2004-02-19 06:22:39",
+            "latest_health_state": "normal"
+          }
+        ]
+      },
+      "reference_answer": "The health_index trends in 2nd_test rank as: bearing_1: strongly_increasing_degradation (delta=0.942); bearing_4: strongly_increasing_degradation (delta=0.913); bearing_2: strongly_increasing_degradation (delta=0.835); bearing_3: strongly_increasing_degradation (delta=0.538).",
+      "grading": {
+        "numeric_tolerance": 0.001,
+        "required_checks": [
+          "route",
+          "dt_action",
+          "experiment",
+          "metric",
+          "answer_factuality"
+        ],
+        "notes": "Numerical answers should match expected_result within tolerance after rounding; state/ranking answers should match exact labels and selected bearing IDs."
+      }
+    },
+    {
+      "id": "dt_trend_007",
+      "question": "Does the crest factor trend of bearing_3 in 1st_test suggest impulsive vibration?",
+      "category": "dt_only",
+      "subcategory": "trend",
+      "expected_route": "dt_only",
+      "expected_tools": [
+        "dt"
+      ],
+      "expected_dt_query": {
+        "action": "trend",
+        "experiment": "1st_test",
+        "bearing_id": "bearing_3",
+        "metric": "crest_factor",
+        "window": 100,
+        "time_policy": "full_available_sequence",
+        "sequence_index": null
+      },
+      "expected_result": {
+        "experiment": "1st_test",
+        "bearing_id": "bearing_3",
+        "metric": "crest_factor",
+        "samples": 2156,
+        "window": 100,
+        "early_mean": 4.508882,
+        "late_mean": 8.694345,
+        "delta": 4.185463,
+        "percent_change": 0.928271,
+        "trend": "increasing",
+        "latest_sequence_index": 2155,
+        "latest_timestamp": "2003-11-25 23:39:56",
+        "latest_health_state": "failure_near"
+      },
+      "reference_answer": "The crest_factor trend for 1st_test/bearing_3 increases: early mean=4.509, late mean=8.694, delta=4.185, latest_state=failure_near.",
+      "grading": {
+        "numeric_tolerance": 0.001,
+        "required_checks": [
+          "route",
+          "dt_action",
+          "experiment",
+          "bearing_id",
+          "metric",
+          "answer_factuality"
+        ],
+        "notes": "Numerical answers should match expected_result within tolerance after rounding; state/ranking answers should match exact labels and selected bearing IDs."
+      }
+    },
+    {
+      "id": "dt_trend_008",
+      "question": "When does bearing_3 in 1st_test begin to show clear degradation?",
+      "category": "dt_only",
+      "subcategory": "trend",
+      "expected_route": "dt_only",
+      "expected_tools": [
+        "dt"
+      ],
+      "expected_dt_query": {
+        "action": "first_degradation",
+        "experiment": "1st_test",
+        "bearing_id": "bearing_3",
+        "state_order": [
+          "early_degradation",
+          "degradation",
+          "failure_near"
+        ],
+        "time_policy": "full_available_sequence",
+        "sequence_index": null
+      },
+      "expected_result": {
+        "experiment": "1st_test",
+        "bearing_id": "bearing_3",
+        "found": true,
+        "sequence_index": 183,
+        "timestamp": "2003-10-29 19:09:46",
+        "health_state": "early_degradation",
+        "health_index": 0.200908,
+        "rms": 0.160557,
+        "kurtosis": 3.625123,
+        "crest_factor": 4.734723,
+        "high_band_energy_ratio": 0.161692,
+        "spectral_entropy": 0.375186,
+        "evidence": ""
+      },
+      "reference_answer": "1st_test/bearing_3 first shows clear degradation at sequence_index 183 (2003-10-29 19:09:46), with state=early_degradation and health_index=0.201.",
+      "grading": {
+        "numeric_tolerance": 0.001,
+        "required_checks": [
+          "route",
+          "dt_action",
+          "experiment",
+          "bearing_id",
+          "answer_factuality"
+        ],
+        "notes": "Numerical answers should match expected_result within tolerance after rounding; state/ranking answers should match exact labels and selected bearing IDs."
+      }
+    },
+    {
+      "id": "dt_trend_009",
+      "question": "Which feature trend changes earliest for bearing_3 in 1st_test?",
+      "category": "dt_only",
+      "subcategory": "trend",
+      "expected_route": "dt_only",
+      "expected_tools": [
+        "dt"
+      ],
+      "expected_dt_query": {
+        "action": "earliest_feature_change",
+        "experiment": "1st_test",
+        "bearing_id": "bearing_3",
+        "features": [
+          "rms",
+          "kurtosis",
+          "crest_factor",
+          "high_band_energy_ratio",
+          "spectral_entropy"
+        ],
+        "baseline_window": 100,
+        "z_threshold": 3.0,
+        "time_policy": "full_available_sequence",
+        "sequence_index": null
+      },
+      "expected_result": {
+        "experiment": "1st_test",
+        "bearing_id": "bearing_3",
+        "baseline_window": 100,
+        "z_threshold": 3.0,
+        "features": [
+          {
+            "feature": "rms",
+            "baseline_mean": 0.132417,
+            "baseline_std": 0.000804,
+            "first_crossing": {
+              "feature": "rms",
+              "sequence_index": 156,
+              "timestamp": "2003-10-29 14:39:46",
+              "value": 0.160638,
+              "z_score": 35.106868,
+              "health_state": "normal"
+            }
+          },
+          {
+            "feature": "kurtosis",
+            "baseline_mean": 3.509401,
+            "baseline_std": 0.084885,
+            "first_crossing": {
+              "feature": "kurtosis",
+              "sequence_index": 262,
+              "timestamp": "2003-10-31 04:39:46",
+              "value": 3.967759,
+              "z_score": 5.399738,
+              "health_state": "early_degradation"
+            }
+          },
+          {
+            "feature": "crest_factor",
+            "baseline_mean": 4.508882,
+            "baseline_std": 0.394761,
+            "first_crossing": {
+              "feature": "crest_factor",
+              "sequence_index": 304,
+              "timestamp": "2003-10-31 13:21:44",
+              "value": 5.811639,
+              "z_score": 3.300119,
+              "health_state": "early_degradation"
+            }
+          },
+          {
+            "feature": "high_band_energy_ratio",
+            "baseline_mean": 0.172873,
+            "baseline_std": 0.004824,
+            "first_crossing": {
+              "feature": "high_band_energy_ratio",
+              "sequence_index": 2010,
+              "timestamp": "2003-11-24 02:51:24",
+              "value": 0.188934,
+              "z_score": 3.329723,
+              "health_state": "failure_near"
+            }
+          },
+          {
+            "feature": "spectral_entropy",
+            "baseline_mean": 0.375325,
+            "baseline_std": 0.00593,
+            "first_crossing": {
+              "feature": "spectral_entropy",
+              "sequence_index": 107,
+              "timestamp": "2003-10-23 02:14:13",
+              "value": 0.393583,
+              "z_score": 3.079037,
+              "health_state": "normal"
+            }
+          }
+        ],
+        "earliest_feature_change": {
+          "feature": "spectral_entropy",
+          "sequence_index": 107,
+          "timestamp": "2003-10-23 02:14:13",
+          "value": 0.393583,
+          "z_score": 3.079037,
+          "health_state": "normal"
+        }
+      },
+      "reference_answer": "The earliest feature change for 1st_test/bearing_3 is spectral_entropy at sequence_index 107 (2003-10-23 02:14:13), z_score=3.079, value=0.394.",
+      "grading": {
+        "numeric_tolerance": 0.001,
+        "required_checks": [
+          "route",
+          "dt_action",
+          "experiment",
+          "bearing_id",
+          "features",
+          "answer_factuality"
+        ],
+        "notes": "Numerical answers should match expected_result within tolerance after rounding; state/ranking answers should match exact labels and selected bearing IDs."
+      }
+    },
+    {
+      "id": "dt_trend_010",
+      "question": "Compare the RMS trend and kurtosis trend of bearing_3 in 1st_test.",
+      "category": "dt_only",
+      "subcategory": "trend",
+      "expected_route": "dt_only",
+      "expected_tools": [
+        "dt"
+      ],
+      "expected_dt_query": {
+        "action": "compare_metric_trends",
+        "experiment": "1st_test",
+        "bearing_id": "bearing_3",
+        "window": 100,
+        "metrics": [
+          "rms",
+          "kurtosis"
+        ],
+        "time_policy": "full_available_sequence",
+        "sequence_index": null
+      },
+      "expected_result": {
+        "experiment": "1st_test",
+        "bearing_id": "bearing_3",
+        "window": 100,
+        "trends": [
+          {
+            "experiment": "1st_test",
+            "bearing_id": "bearing_3",
+            "metric": "rms",
+            "samples": 2156,
+            "window": 100,
+            "early_mean": 0.132417,
+            "late_mean": 0.218031,
+            "delta": 0.085614,
+            "percent_change": 0.646546,
+            "trend": "increasing",
+            "latest_sequence_index": 2155,
+            "latest_timestamp": "2003-11-25 23:39:56",
+            "latest_health_state": "failure_near"
+          },
+          {
+            "experiment": "1st_test",
+            "bearing_id": "bearing_3",
+            "metric": "kurtosis",
+            "samples": 2156,
+            "window": 100,
+            "early_mean": 3.509401,
+            "late_mean": 7.656574,
+            "delta": 4.147174,
+            "percent_change": 1.181733,
+            "trend": "increasing",
+            "latest_sequence_index": 2155,
+            "latest_timestamp": "2003-11-25 23:39:56",
+            "latest_health_state": "failure_near"
+          }
+        ]
+      },
+      "reference_answer": "For 1st_test/bearing_3, the trend comparison is: rms: early=0.132, late=0.218, delta=0.086; kurtosis: early=3.509, late=7.657, delta=4.147.",
+      "grading": {
+        "numeric_tolerance": 0.001,
+        "required_checks": [
+          "route",
+          "dt_action",
+          "experiment",
+          "bearing_id",
+          "answer_factuality"
+        ],
+        "notes": "Numerical answers should match expected_result within tolerance after rounding; state/ranking answers should match exact labels and selected bearing IDs."
+      }
+    }
+  ]
+}

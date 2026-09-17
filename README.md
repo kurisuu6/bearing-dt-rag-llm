@@ -14,10 +14,7 @@ The current main experimental setting uses the IMS bearing dataset for DT querie
 
 The repository does not include the IMS raw dataset, `SKF.pdf`, parsed SKF
 chapters, generated RAG chunks, vector indexes, DT databases, or manuscript
-files. These materials are excluded by `.gitignore` and must be obtained or
-generated locally according to their respective terms of use. The repository
-contains only code, reviewed question data, and metric-only experiment
-summaries.
+files. These materials must be obtained or generated locally according to their respective terms of use. The repository contains only code, reviewed question data, and metric-only experiment summaries.
 
 ## Repository Layout
 
@@ -29,8 +26,8 @@ DT/
   dt_llm_planner.py                 LLM planner for DT query parameters
   evaluate_dt_benchmark.py          Rule-based DT benchmark evaluation
   evaluate_dt_benchmark_llm.py      LLM-planner DT benchmark evaluation
-  outputs/                          Generated DT database and CSV exports
-  eval/                             DT benchmark files and results
+  eval/
+  README.md
 
 SKF-RAG/
   parse_skf_with_llamaparse.py      Parse SKF PDF into markdown JSON
@@ -39,9 +36,6 @@ SKF-RAG/
                                     Build RAG chunks from parsed SKF JSON
   build_skf_1_11_rag.py             Build combined chapter 1-11 RAG corpus
   build_llamaindex_vector_index.py  Build LlamaIndex vector index
-  chapter_*/                        Per-chapter parsed files and chunks
-  chapters_01_11/                   Main combined RAG corpus and vector index
-  archive/                          Older one-off scripts
 
 agent/
   bearing_agent.py                  Integrated router + DT + RAG agent
@@ -54,11 +48,12 @@ agent/
   evaluate_agent.py                 Integrated agent evaluation
   trace_question_flow.py            Single-question trace/debug tool
   check_eval_env.py                 Environment-variable check
+  build_rag_only_gold_chunk_dataset.py
+  build_dt_rag_gold_chunk_dataset.py
   eval/                             Active datasets and experiment results
-  archive/                          Older one-off scripts
 
-configs/                            Reserved config directory
 docs/                               Project notes
+requirements.txt
 ```
 
 ## Environment
@@ -146,10 +141,24 @@ python3 DT/dt_query_tools.py latest-state \
 
 ## SKF RAG Pipeline
 
-The current main RAG corpus is:
+Before building the vector index, the SKF PDF is parsed into structured JSON files using LlamaParse. The parser extracts page-level Markdown content and tables while preserving the original page numbers.
 
-```text
-SKF-RAG/chapters_01_11/skf_chapters_01_11_rag_chunks_llamaindex.json
+```bash
+python3 SKF-RAG/parse_skf_with_llamaparse.py \
+  --pdf SKF-RAG/SKF.pdf \
+  --page-range "PAGE_START-PAGE_END" \
+  --output SKF-RAG/chapter_XX/chapter_XX_llama_raw.json
+```  
+
+The parsed chapter files are then used to construct RAG chunks. The chunking process preserves the heading structure and page metadata, while tables are stored as independent chunks. Text chunks use a default size of 650 tokens with a 90-token overlap.
+
+```bash
+python3 SKF-RAG/build_skf_rag_chunks_llamaindex.py \
+  --input SKF-RAG/chapter_XX/chapter_XX_llama_cleaned.json \
+  --output SKF-RAG/chapter_XX/chapter_XX_rag_chunks_llamaindex.json \
+  --chapter "CHAPTER_NAME" \
+  --chunk-size 650 \
+  --chunk-overlap 90
 ```
 
 The preferred vector index uses the HTTP embedding service:
@@ -440,6 +449,5 @@ Current DT+RAG results:
 
 - The current main RAG scope is SKF chapters 1-11.
 - Chapter 12 has parsed/chunked artifacts, but it is not part of the current main experimental index.
-- `agent/eval/archive/` and `SKF-RAG/archive/` contain older smoke tests, temporary scripts, failed variants, and previous experiment attempts.
 - RAGAS judge calls can time out when using a large local model through a gateway. Use smaller pilot runs, `--request-timeout`, `--metric-retry-attempts`, and `--ragas-workers 1` when debugging.
 - The pydantic warning that appears during some runs is a dependency warning and does not normally affect results.

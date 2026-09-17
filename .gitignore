@@ -26,7 +26,8 @@ DT/IMS.zip
 # Generated DT data, databases, and evaluation artifacts
 DT/outputs/
 DT/outputs_smoke/
-DT/eval/
+DT/eval/**
+!DT/eval/dt_benchmark_v1.json
 *.db
 *.sqlite
 *.sqlite3
@@ -45,6 +46,10 @@ agent/eval/**
 !agent/eval/
 !agent/eval/agent_english_questions_v2.json
 !agent/eval/*_means.csv
+!agent/eval/rag_only_gold_chunk_dataset_v2_reviewed.json
+!agent/eval/rag_only_reference_answers_gold_v2_reviewed.json
+!agent/eval/dt_rag_gold_chunk_dataset_v1.json
+!agent/eval/dt_rag_reference_answers_gold_v1.json
 
 # Optional generated indexes / caches
 **/storage/

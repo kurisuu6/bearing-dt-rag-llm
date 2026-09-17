@@ -1,0 +1,2006 @@
+[
+  {
+    "id": "rag_ch01_001",
+    "category": "rag_only",
+    "subcategory": "skf_manual",
+    "chapter": 1,
+    "chapter_title": "Basics",
+    "question": "Which bearing parts and geometric features are named in the SKF rolling-bearing terminology diagram?",
+    "ground_truth": "The SKF rolling-bearing terminology diagram names the following bearing parts and geometric features: inner ring, outer ring, rolling element (ball, cylindrical roller, needle roller, tapered roller, spherical roller, toroidal roller), cage, capping device, seal, shield, outer ring outside diameter, inner ring bore, inner ring shoulder diameter, outer ring shoulder diameter, snap ring groove, snap ring, outer ring side face, anchor recess for capping device, outer ring raceway, inner ring raceway, recess for capping device, inner ring side face, chamfer, bearing pitch circle diameter, total bearing width, guide flange, retaining flange, contact angle, shaft washer, rolling element and cage assembly, housing washer, housing washer with sphered seat surface, and seat washer.",
+    "reference_answer": "The SKF rolling-bearing terminology diagram names the following bearing parts and geometric features: inner ring, outer ring, rolling element (ball, cylindrical roller, needle roller, tapered roller, spherical roller, toroidal roller), cage, capping device, seal, shield, outer ring outside diameter, inner ring bore, inner ring shoulder diameter, outer ring shoulder diameter, snap ring groove, snap ring, outer ring side face, anchor recess for capping device, outer ring raceway, inner ring raceway, recess for capping device, inner ring side face, chamfer, bearing pitch circle diameter, total bearing width, guide flange, retaining flange, contact angle, shaft washer, rolling element and cage assembly, housing washer, housing washer with sphered seat surface, and seat washer.",
+    "evidence_boundary": "The answer is based solely on the terminology provided in the gold SKF chunk.",
+    "source_chunk_ids": [
+      "ch1_text_001_terminology"
+    ],
+    "gold_chunk_id": "ch1_text_001_terminology",
+    "secondary_chunk_ids": [],
+    "source_pages": [
+      14,
+      15
+    ],
+    "source_chunks": [
+      {
+        "chunk_id": "ch1_text_001_terminology",
+        "type": "text",
+        "chapter": "Basics",
+        "section": "Terminology",
+        "heading_path": [
+          "Basics",
+          "Terminology"
+        ],
+        "page_start": 14,
+        "page_end": 15,
+        "text": "Chapter: Basics Section: Terminology Heading path: Basics > Terminology Pages: 14-15 # Terminology Bearings (→ fig. 1) 1 Inner ring 2 Outer ring 3 Rolling element: ball, cylindrical roller, needle roller, tapered roller, spherical roller, toroidal roller 4 Cage 5 Capping device Seal – made of elastomer, contact (shown in figure) or non-contact Shield – made of sheet steel, non-contact 6 Outer ring outside diameter 7 Inner ring bore 8 Inner ring shoulder diameter 9 Outer ring shoulder diameter 10 Snap ring groove 11 Snap ring 12 Outer ring side face 13 Anchor recess for capping device 14 Outer ring raceway 15 Inner ring raceway 16 Recess for capping device 17 Inner ring side face 18 Chamfer 19 Bearing pitch circle diameter 20 Total bearing width 21 Guide flange 22 Retaining flange 23 Contact angle 24 Shaft washer 25 Rolling element and cage assembly 26 Housing washer 27 Housing washer with sphered seat surface 28 Seat washer Engineering drawings of different bearing types with numbered parts corresponding to the terminology list: Deep groove ball bearing, Tapered roller bearing, Double direction thrust ball bearing, and Spherical roller thrust bearing. # Terminology Bearing arrangements (→ fig. 2) 1 Cylindrical roller bearing 2 Four-point contact ball bearing 3 Housing 4 Shaft 5 Shaft abutment shoulder 6 Shaft diameter 7 Locking plate 8 Radial shaft seal 9 Distance ring 10 Housing bore 11 Housing cover 12 Snap ring Engineering drawing of bearing arrangements with numbered callouts 1 through 12 Housings (→ fig. 3) 1 Housing cap 2 Housing base 3 Housing foot 4 Attachment bolt 5 Cap bolt 6 Dimple 7 Grease fitting 8 Hole for eye bolt Engineering drawing of an SNL plummer (pillow) block housing with numbered callouts 1 through 8 SNL plummer (pillow) block housing Seals (→ fig. 4) 1 Rubber shell 2 Sheet steel reinforcement 3 Seal lip 4 Auxiliary seal lip 5 Garter spring 6 Seal counterface Engineering drawing of a radial shaft seal cross-section with numbered callouts 1 through 6 Radial shaft seal"
+      }
+    ],
+    "source_mode": "full_corpus_llm_gold_chunk_annotation",
+    "generation_note": "Reference answer generated from one LLM-selected gold SKF chunk.",
+    "annotation_model": "gpt-4o-mini"
+  },
+  {
+    "id": "rag_ch01_002",
+    "category": "rag_only",
+    "subcategory": "skf_manual",
+    "chapter": 1,
+    "chapter_title": "Basics",
+    "question": "What is the difference between locating and non-locating bearing arrangements?",
+    "ground_truth": "Locating bearing arrangements support the shaft radially and locate it axially in both directions, typically fixed in position on the shaft and in the housing. Non-locating bearing arrangements provide radial support and accommodate axial displacement of the shaft relative to the housing, allowing for thermal expansion.",
+    "reference_answer": "Locating bearing arrangements support the shaft radially and locate it axially in both directions, typically fixed in position on the shaft and in the housing. Non-locating bearing arrangements provide radial support and accommodate axial displacement of the shaft relative to the housing, allowing for thermal expansion.",
+    "evidence_boundary": "The chunk provides a general overview of locating and non-locating bearing arrangements without specific examples of applications or detailed operational contexts.",
+    "source_chunk_ids": [
+      "ch1_text_029_bearing_arrangements"
+    ],
+    "gold_chunk_id": "ch1_text_029_bearing_arrangements",
+    "secondary_chunk_ids": [
+      "ch4_text_007_using_locating_stabilizing_rings",
+      "ch1_text_040_methods_of_bearing_location"
+    ],
+    "source_pages": [
+      34
+    ],
+    "source_chunks": [
+      {
+        "chunk_id": "ch1_text_029_bearing_arrangements",
+        "type": "text",
+        "chapter": "Basics",
+        "section": "Bearing arrangements",
+        "heading_path": [
+          "Basics",
+          "Bearing arrangements",
+          "Types of bearing arrangements",
+          "Locating and non-locating bearing arrangements"
+        ],
+        "page_start": 34,
+        "page_end": 34,
+        "text": "Chapter: Basics Section: Bearing arrangements Subsection: Types of bearing arrangements Subsubsection: Locating and non-locating bearing arrangements Heading path: Basics > Bearing arrangements > Types of bearing arrangements > Locating and non-locating bearing arrangements Pages: 34-34 ### Locating and non-locating bearing arrangements Arrangements with a locating and non-locating bearing are most common (→ fig. 9). The bearing in the locating position, which is typically positioned at the drive end of a machine, supports the shaft radially and locates it axially in both directions. It must, therefore, be fixed in position both on the shaft and in the housing. Suitable bearing types for the locating position include: * deep groove ball bearings (→ fig. 9) * self-aligning ball bearings * spherical roller bearings (→ fig. 10, left) * double row or paired single row angular contact ball bearings * matched tapered roller bearings * cylindrical roller bearings (NJ and HJ, and NUP design bearings) Engineering drawing of a locating and non-locating bearing arrangement with deep groove ball bearings, labeled Fig. 9 Engineering drawing of a locating and non-locating bearing arrangement with spherical roller bearings, labeled Fig. 10 Combinations of a radial bearing that can accommodate a purely radial load and a bearing that takes the thrust load can also be used, e.g. an NU design cylindrical roller bearing and a four-point contact ball bearing (→ fig. 11). The bearing in the non-locating position provides radial support and if needed, accommodates axial displacement of the shaft, relative to the housing, as a result of thermal expansion. Some bearings can take axial displacement within the bearing. Typical bearing types with this capability include: * CARB toroidal roller bearings * cylindrical roller bearings with flanges on one ring only, i.e. N and NU design bearings Engineering drawing of a bearing arrangement with an NU design cylindrical roller bearing and a four-point contact ball bearing, labeled Fig. 11 For other bearings in the non-locating position, axial displacement takes place between one of"
+      }
+    ],
+    "source_mode": "full_corpus_llm_gold_chunk_annotation",
+    "generation_note": "Reference answer generated from one LLM-selected gold SKF chunk.",
+    "annotation_model": "gpt-4o-mini"
+  },
+  {
+    "id": "rag_ch01_003",
+    "category": "rag_only",
+    "subcategory": "skf_manual",
+    "chapter": 1,
+    "chapter_title": "Basics",
+    "question": "In SKF bearing arrangements, what radial-load role can a radial bearing provide?",
+    "ground_truth": "In the selected SKF evidence, a radial bearing is treated as a bearing that provides radial support and can accommodate a purely radial load. If thrust load also has to be carried, SKF describes using a bearing combination, such as a radial bearing together with a bearing that takes the thrust load. The evidence also notes that a non-locating bearing provides radial support and may accommodate axial shaft displacement caused by thermal expansion.",
+    "reference_answer": "In the selected SKF evidence, a radial bearing is treated as a bearing that provides radial support and can accommodate a purely radial load. If thrust load also has to be carried, SKF describes using a bearing combination, such as a radial bearing together with a bearing that takes the thrust load. The evidence also notes that a non-locating bearing provides radial support and may accommodate axial shaft displacement caused by thermal expansion.",
+    "evidence_boundary": "The gold chunk explains radial-load support in bearing arrangements; it is not a full catalogue-style definition of every radial bearing type.",
+    "source_chunk_ids": [
+      "ch1_text_029_bearing_arrangements"
+    ],
+    "gold_chunk_id": "ch1_text_029_bearing_arrangements",
+    "secondary_chunk_ids": [],
+    "source_pages": [
+      34
+    ],
+    "source_chunks": [
+      {
+        "chunk_id": "ch1_text_029_bearing_arrangements",
+        "type": "text",
+        "chapter": "Basics",
+        "section": "Bearing arrangements",
+        "heading_path": [
+          "Basics",
+          "Bearing arrangements",
+          "Types of bearing arrangements",
+          "Locating and non-locating bearing arrangements"
+        ],
+        "page_start": 34,
+        "page_end": 34,
+        "text": "Chapter: Basics Section: Bearing arrangements Subsection: Types of bearing arrangements Subsubsection: Locating and non-locating bearing arrangements Heading path: Basics > Bearing arrangements > Types of bearing arrangements > Locating and non-locating bearing arrangements Pages: 34-34 ### Locating and non-locating bearing arrangements Arrangements with a locating and non-locating bearing are most common (→ fig. 9). The bearing in the locating position, which is typically positioned at the drive end of a machine, supports the shaft radially and locates it axially in both directions. It must, therefore, be fixed in position both on the shaft and in the housing. Suitable bearing types for the locating position include: * deep groove ball bearings (→ fig. 9) * self-aligning ball bearings * spherical roller bearings (→ fig. 10, left) * double row or paired single row angular contact ball bearings * matched tapered roller bearings * cylindrical roller bearings (NJ and HJ, and NUP design bearings) Engineering drawing of a locating and non-locating bearing arrangement with deep groove ball bearings, labeled Fig. 9 Engineering drawing of a locating and non-locating bearing arrangement with spherical roller bearings, labeled Fig. 10 Combinations of a radial bearing that can accommodate a purely radial load and a bearing that takes the thrust load can also be used, e.g. an NU design cylindrical roller bearing and a four-point contact ball bearing (→ fig. 11). The bearing in the non-locating position provides radial support and if needed, accommodates axial displacement of the shaft, relative to the housing, as a result of thermal expansion. Some bearings can take axial displacement within the bearing. Typical bearing types with this capability include: * CARB toroidal roller bearings * cylindrical roller bearings with flanges on one ring only, i.e. N and NU design bearings Engineering drawing of a bearing arrangement with an NU design cylindrical roller bearing and a four-point contact ball bearing, labeled Fig. 11 For other bearings in the non-locating position, axial displacement takes place between one of"
+      }
+    ],
+    "source_mode": "full_corpus_llm_gold_chunk_annotation_manual_review",
+    "generation_note": "Reference answer reviewed and corrected from one manually selected gold SKF chunk.",
+    "annotation_model": "gpt-4o-mini",
+    "review_status": "manual_reviewed"
+  },
+  {
+    "id": "rag_ch01_004",
+    "category": "rag_only",
+    "subcategory": "skf_manual",
+    "chapter": 1,
+    "chapter_title": "Basics",
+    "question": "According to SKF, what is bearing internal clearance and what general operational clearance or preload rules apply?",
+    "ground_truth": "SKF defines bearing internal clearance as the distance one bearing ring can move relative to the other in the radial or axial direction. Initial clearance before mounting is normally greater than operational clearance because fits and thermal expansion expand or compress the rings. Operational clearance is important for satisfactory operation: ball bearings should normally have virtually zero clearance or slight preload, cylindrical, spherical and CARB toroidal roller bearings should retain residual clearance, and tapered roller bearings should normally retain clearance unless stiffness is required through preload.",
+    "reference_answer": "SKF defines bearing internal clearance as the distance one bearing ring can move relative to the other in the radial or axial direction. Initial clearance before mounting is normally greater than operational clearance because fits and thermal expansion expand or compress the rings. Operational clearance is important for satisfactory operation: ball bearings should normally have virtually zero clearance or slight preload, cylindrical, spherical and CARB toroidal roller bearings should retain residual clearance, and tapered roller bearings should normally retain clearance unless stiffness is required through preload.",
+    "evidence_boundary": "The gold chunk addresses clearance and preload rules; it does not describe a full arrangement design workflow.",
+    "source_chunk_ids": [
+      "ch1_text_027_bearing_internal_clearance"
+    ],
+    "gold_chunk_id": "ch1_text_027_bearing_internal_clearance",
+    "secondary_chunk_ids": [],
+    "source_pages": [
+      33
+    ],
+    "source_chunks": [
+      {
+        "chunk_id": "ch1_text_027_bearing_internal_clearance",
+        "type": "text",
+        "chapter": "Basics",
+        "section": "Bearing internal clearance",
+        "heading_path": [
+          "Basics",
+          "Bearing internal clearance"
+        ],
+        "page_start": 33,
+        "page_end": 33,
+        "text": "Chapter: Basics Section: Bearing internal clearance Heading path: Basics > Bearing internal clearance Pages: 33-33 # Bearing internal clearance Bearing internal clearance is defined as the total distance through which one bearing ring can be moved relative to the other (→ **fig. 8**): * in the radial direction (radial internal clearance) * in the axial direction (axial internal clearance) It is necessary to distinguish between the internal clearance of a bearing before mounting (→ **Appendix E**, starting on **page 388**) and the internal clearance in a mounted bearing that has reached its operating temperature (operational clearance). The initial internal clearance (before mounting) is greater than the operational clearance because different degrees of interference in the fits and differences in thermal expansion of the bearing rings and the associated components cause the rings to be expanded or compressed. The radial internal clearance of a bearing is of considerable importance to achieve satisfactory operation. As a general rule: * Ball bearings should always have an operational clearance that is virtually zero, or there may be a slight preload. * Cylindrical, spherical and CARB toroidal roller bearings should always have some residual clearance during operation. * Tapered roller bearings should always have some residual clearance, except in bearing arrangements where stiffness is desired, such as pinion bearing arrangements where the bearings are mounted with a certain amount of preload. **NOTE:** Where operating and mounting conditions differ from the normal, e.g. where interference fits are used for both bearing rings or unusual temperatures prevail, bearings with greater or smaller internal clearance than Normal may be required. In these cases, SKF recommends checking residual clearance in the bearing after it has been mounted."
+      }
+    ],
+    "source_mode": "full_corpus_llm_gold_chunk_annotation_manual_review",
+    "generation_note": "Reference answer reviewed and corrected from one manually selected gold SKF chunk.",
+    "annotation_model": "gpt-4o-mini",
+    "review_status": "manual_reviewed"
+  },
+  {
+    "id": "rag_ch01_005",
+    "category": "rag_only",
+    "subcategory": "skf_manual",
+    "chapter": 1,
+    "chapter_title": "Basics",
+    "question": "What information is contained in basic bearing designations?",
+    "ground_truth": "Basic bearing designations contain information about the bearing type, ISO dimension series, and size code. The first figure or letter identifies the bearing type, the next two figures indicate the ISO dimension series (width/height and diameter), and the last two figures provide the size code, which when multiplied by 5 gives the bore diameter in millimeters.",
+    "reference_answer": "Basic bearing designations contain information about the bearing type, ISO dimension series, and size code. The first figure or letter identifies the bearing type, the next two figures indicate the ISO dimension series (width/height and diameter), and the last two figures provide the size code, which when multiplied by 5 gives the bore diameter in millimeters.",
+    "evidence_boundary": "The chunk does not provide specific examples of bearing types or detailed explanations of each designation.",
+    "source_chunk_ids": [
+      "ch1_text_011_designation_system_for_rolling_bearings"
+    ],
+    "gold_chunk_id": "ch1_text_011_designation_system_for_rolling_bearings",
+    "secondary_chunk_ids": [
+      "ch1_table_003_part_05",
+      "ch1_table_003_part_04"
+    ],
+    "source_pages": [
+      26
+    ],
+    "source_chunks": [
+      {
+        "chunk_id": "ch1_text_011_designation_system_for_rolling_bearings",
+        "type": "text",
+        "chapter": "Basics",
+        "section": "Designation system for rolling bearings",
+        "heading_path": [
+          "Basics",
+          "Designation system for rolling bearings",
+          "Basic designations"
+        ],
+        "page_start": 26,
+        "page_end": 26,
+        "text": "Chapter: Basics Section: Designation system for rolling bearings Subsection: Basic designations Heading path: Basics > Designation system for rolling bearings > Basic designations Pages: 26-26 ## Basic designations All SKF standard bearings have a characteristic basic designation, which generally consists of three, four or five figures or a combination of letters and figures. The design of the system used for almost all standard ball and roller bearing types is shown schematically in **diagram 1**. The figures and combinations of letters and figures have the following meaning: * The first figure or the first letter or combination of letters identifies the bearing type and eventually a basic variant. * The following two figures identify the ISO dimension series; the first figure indicates the width or height series (dimensions B, T or H) and the second the diameter series (dimension D). * The last two figures of the basic designation give the size code of the bearing; when multiplied by 5, the bore diameter in millimetres is obtained. The most important exceptions to the basic bearing designation system are listed here. **1** In a few cases, the figure for the bearing type or the first figure of the dimension series identification is omitted. These figures are shown in brackets in **diagram 1**. **2** Bearings with bore diameters of 10, 12, 15 or 17 mm have the following size code identifications: 00 = 10 mm 01 = 12 mm 02 = 15 mm 03 = 17 mm **3** For bearings having a bore diameter smaller than 10 mm, or 500 mm and larger, the bore diameter is generally given in millimetres and is not coded. The size identification is separated from the rest of the bearing designation by an oblique stroke, e.g. 618/8 (d = 8 mm) or 511/530 (d = 530 mm). This is also true of standard bearings in accordance with ISO 15:1998 that have bore diameters of 22, 28 or 32 mm, e.g. 62/22 (d = 22 mm)."
+      }
+    ],
+    "source_mode": "full_corpus_llm_gold_chunk_annotation",
+    "generation_note": "Reference answer generated from one LLM-selected gold SKF chunk.",
+    "annotation_model": "gpt-4o-mini"
+  },
+  {
+    "id": "rag_ch02_001",
+    "category": "rag_only",
+    "subcategory": "skf_manual",
+    "chapter": 2,
+    "chapter_title": "Mounting rolling bearings",
+    "question": "What cleanliness precautions does SKF recommend before mounting rolling bearings?",
+    "ground_truth": "Before mounting rolling bearings, SKF emphasizes cleanliness. Bearings should be stored in a cool, dry place, packages should not be opened until installation, and mounting should be done in a dry, dust-free area away from swarf and dust. Bearings, mating parts and lubricant should be clean and free from damaging contaminants, and exposed mounting positions should be protected from dust, dirt and moisture until installation is complete.",
+    "reference_answer": "Before mounting rolling bearings, SKF emphasizes cleanliness. Bearings should be stored in a cool, dry place, packages should not be opened until installation, and mounting should be done in a dry, dust-free area away from swarf and dust. Bearings, mating parts and lubricant should be clean and free from damaging contaminants, and exposed mounting positions should be protected from dust, dirt and moisture until installation is complete.",
+    "evidence_boundary": "The gold chunk focuses on cleanliness precautions before mounting.",
+    "source_chunk_ids": [
+      "ch2_text_003_preparations_prior_to_mounting"
+    ],
+    "gold_chunk_id": "ch2_text_003_preparations_prior_to_mounting",
+    "secondary_chunk_ids": [],
+    "source_pages": [
+      50,
+      51
+    ],
+    "source_chunks": [
+      {
+        "chunk_id": "ch2_text_003_preparations_prior_to_mounting",
+        "type": "text",
+        "chapter": "Mounting rolling bearings",
+        "section": "Preparations prior to mounting",
+        "heading_path": [
+          "Mounting rolling bearings",
+          "Preparations prior to mounting",
+          "Cleanliness"
+        ],
+        "page_start": 50,
+        "page_end": 51,
+        "text": "Chapter: Mounting rolling bearings Section: Preparations prior to mounting Subsection: Cleanliness Heading path: Mounting rolling bearings > Preparations prior to mounting > Cleanliness Pages: 50-51 ## Cleanliness Cleanliness is essential to long bearing service life. Cleanliness begins in the storage room. Store bearings in a cool, dry area, on shelves that are not subjected to vibrations from adjacent machinery (→ *Storage of bearings, seals and lubricants*, starting on **page 41**). Do not open the bearing package until it is time to install the bearing. Whenever possible, install bearings in a dry, dust-free area, away from metalworking or other machines producing swarf and dust. Make sure that the bearings and all mating parts, including the lubricant, are clean and free from damaging contaminants. When bearings have to be mounted in an unprotected area, which is often the case with Engineering drawings showing shaft and bearing measurements labeled with letters a, b and numbers 1, 2, 3, 4 ## Cleanliness large bearings, steps need to be taken to protect the bearing and mounting position from contaminants such as dust, dirt and moisture, until installation has been completed. This can be done by covering or wrapping bearings, machine components etc. with plastic or foil. **NOTE:** It is better to prevent bearings from becoming dirty than to clean them. Many bearing types cannot be separated and are therefore difficult to clean."
+      }
+    ],
+    "source_mode": "full_corpus_llm_gold_chunk_annotation_manual_review",
+    "generation_note": "Reference answer reviewed and corrected from one manually selected gold SKF chunk.",
+    "annotation_model": "gpt-4o-mini",
+    "review_status": "manual_reviewed"
+  },
+  {
+    "id": "rag_ch02_002",
+    "category": "rag_only",
+    "subcategory": "skf_manual",
+    "chapter": 2,
+    "chapter_title": "Mounting rolling bearings",
+    "question": "In SKF's oil injection method, how are lock nuts or hydraulic nuts positioned for tapered shaft, adapter sleeve, or withdrawal sleeve mounting?",
+    "ground_truth": "To mount bearings with a tapered bore on a tapered seat or sleeve, screw the lock nut or hydraulic nut onto the shaft or sleeve until the bearing is firmly in position. If using a withdrawal sleeve, ensure the hydraulic nut is applied with the piston facing outward and leave a gap corresponding to the axial mounting distance.",
+    "reference_answer": "To mount bearings with a tapered bore on a tapered seat or sleeve, screw the lock nut or hydraulic nut onto the shaft or sleeve until the bearing is firmly in position. If using a withdrawal sleeve, ensure the hydraulic nut is applied with the piston facing outward and leave a gap corresponding to the axial mounting distance.",
+    "evidence_boundary": "The chunk provides general mounting instructions but does not specify detailed procedures for tapered bore bearings on tapered seats.",
+    "source_chunk_ids": [
+      "ch2_text_030_cold_mounting"
+    ],
+    "gold_chunk_id": "ch2_text_030_cold_mounting",
+    "secondary_chunk_ids": [
+      "ch2_text_023_cold_mounting",
+      "ch2_text_014_cold_mounting"
+    ],
+    "source_pages": [
+      66,
+      67
+    ],
+    "source_chunks": [
+      {
+        "chunk_id": "ch2_text_030_cold_mounting",
+        "type": "text",
+        "chapter": "Mounting rolling bearings",
+        "section": "Cold mounting",
+        "heading_path": [
+          "Mounting rolling bearings",
+          "Cold mounting",
+          "Oil injection method",
+          "Oil injection method: Step-by-step"
+        ],
+        "page_start": 66,
+        "page_end": 67,
+        "text": "**6** Put the accessories in place. Tapered shaft: * Screw the lock nut or hydraulic nut onto the shaft until the bearing is firmly in position. Adapter sleeve: * Screw the lock nut or hydraulic nut onto the sleeve until the bearing is firmly in position. Withdrawal sleeve: * When using a hydraulic nut or applying the SKF Drive-up Method to drive the sleeve into the bearing bore, screw the nut onto the sleeve with the piston facing outward, leaving at least a gap corresponding to the axial mounting distance. Provide a stop on the shaft, e.g. an end plate for the piston to work against. **Fig. 29** Steps 5 and 6: Put the bearing and accessories in place. Engineering drawing of tapered shaft mounting Engineering drawing of adapter sleeve mounting Engineering drawing of withdrawal sleeve mounting Tapered shaft Adapter sleeve Withdrawal sleeve"
+      }
+    ],
+    "source_mode": "full_corpus_llm_gold_chunk_annotation",
+    "generation_note": "Reference answer generated from one LLM-selected gold SKF chunk.",
+    "annotation_model": "gpt-4o-mini"
+  },
+  {
+    "id": "rag_ch02_003",
+    "category": "rag_only",
+    "subcategory": "skf_manual",
+    "chapter": 2,
+    "chapter_title": "Mounting rolling bearings",
+    "question": "What temperature-control and handling precautions does SKF give for hot mounting rolling bearings?",
+    "ground_truth": "For hot mounting, SKF states that temperature control is essential. Open bearings should not be heated above 120 °C (250 °F), and sealed bearings should not be heated above 80 °C (175 °F). Once heated, the bearing should be placed against its shoulder quickly and held there until it cools. SKF recommends using a bearing handling tool and lifting tackle, especially for medium-size and large bearings, and warns never to use an open flame or strike the bearing directly.",
+    "reference_answer": "For hot mounting, SKF states that temperature control is essential. Open bearings should not be heated above 120 °C (250 °F), and sealed bearings should not be heated above 80 °C (175 °F). Once heated, the bearing should be placed against its shoulder quickly and held there until it cools. SKF recommends using a bearing handling tool and lifting tackle, especially for medium-size and large bearings, and warns never to use an open flame or strike the bearing directly.",
+    "evidence_boundary": "The gold chunk focuses on hot-mounting temperature control, handling and safety precautions.",
+    "source_chunk_ids": [
+      "ch2_text_034_hot_mounting"
+    ],
+    "gold_chunk_id": "ch2_text_034_hot_mounting",
+    "secondary_chunk_ids": [
+      "ch2_text_056_mounting_instructions_by_bearing_type",
+      "ch3_text_030_mounting_roller_bearing_units_with_a_cylindrical_locking_collar"
+    ],
+    "source_pages": [
+      72
+    ],
+    "source_chunks": [
+      {
+        "chunk_id": "ch2_text_034_hot_mounting",
+        "type": "text",
+        "chapter": "Mounting rolling bearings",
+        "section": "Hot mounting",
+        "heading_path": [
+          "Mounting rolling bearings",
+          "Hot mounting"
+        ],
+        "page_start": 72,
+        "page_end": 72,
+        "text": "Chapter: Mounting rolling bearings Section: Hot mounting Heading path: Mounting rolling bearings > Hot mounting Pages: 72-72 # Hot mounting The requisite difference in temperature between the bearing ring and shaft or housing depends on the degree of interference and the diameter of the bearing seat. When heating bearings, temperature control is essential: * Do not heat open bearings to more than 120 °C (250 °F). * Do not heat sealed bearings above 80 °C (175 °F) because of their grease fill and/or seal material. Illustration showing a bearing being heated with an open flame, which is crossed out with a red X to indicate it is prohibited. For housings, a moderate increase in temperature, from 20 up to 50 °C (35 up to 90 °F), is normally sufficient, since the degree of interference is seldom large. Once a bearing has been heated, the objective is to get that bearing in place, up against its shoulder as quickly as possible and keep it there until the bearing has cooled. To do this, SKF recommends using a bearing handling tool and lifting tackle, especially when mounting medium-size and large bearings (→ figs. 7 to 9 on page 50). **CAUTION**: When mounting a bearing, never strike it directly with any hard object such as a steel hammer or a chisel, and never apply the mounting force through the rolling elements. Illustration of an SKF electric hot plate used for heating bearings. To heat a bearing or housing to the proper temperature quickly and safely, SKF offers a wide assortment of heaters. The following is a listing of available heating techniques and their typical uses. **CAUTION**: Never heat a bearing using an open flame (→ fig. 35)!"
+      }
+    ],
+    "source_mode": "full_corpus_llm_gold_chunk_annotation",
+    "generation_note": "Reference answer generated from one LLM-selected gold SKF chunk.",
+    "annotation_model": "gpt-4o-mini",
+    "answer_review_status": "question_rewrite_aligned"
+  },
+  {
+    "id": "rag_ch02_004",
+    "category": "rag_only",
+    "subcategory": "skf_manual",
+    "chapter": 2,
+    "chapter_title": "Mounting rolling bearings",
+    "question": "Which SKF method is preferred for mounting sealed spherical roller bearings with a tapered bore?",
+    "ground_truth": "SKF states that sealed spherical roller bearings with a tapered bore are preferably mounted using the SKF Drive-up Method.",
+    "reference_answer": "SKF states that sealed spherical roller bearings with a tapered bore are preferably mounted using the SKF Drive-up Method.",
+    "evidence_boundary": "The gold chunk names the preferred method but does not describe the full Drive-up Method procedure.",
+    "source_chunk_ids": [
+      "ch2_text_072_mounting_instructions_by_bearing_type"
+    ],
+    "gold_chunk_id": "ch2_text_072_mounting_instructions_by_bearing_type",
+    "secondary_chunk_ids": [
+      "ch2_text_054_mounting_instructions_by_bearing_type",
+      "ch2_text_014_cold_mounting"
+    ],
+    "source_pages": [
+      94
+    ],
+    "source_chunks": [
+      {
+        "chunk_id": "ch2_text_072_mounting_instructions_by_bearing_type",
+        "type": "text",
+        "chapter": "Mounting rolling bearings",
+        "section": "Mounting instructions by bearing type",
+        "heading_path": [
+          "Mounting rolling bearings",
+          "Mounting instructions by bearing type",
+          "Mounting spherical roller and CARB toroidal roller bearings",
+          "Sealed spherical roller bearings"
+        ],
+        "page_start": 94,
+        "page_end": 94,
+        "text": "Chapter: Mounting rolling bearings Section: Mounting instructions by bearing type Subsection: Mounting spherical roller and CARB toroidal roller bearings Subsubsection: Sealed spherical roller bearings Heading path: Mounting rolling bearings > Mounting instructions by bearing type > Mounting spherical roller and CARB toroidal roller bearings > Sealed spherical roller bearings Pages: 94-94 ### Sealed spherical roller bearings Sealed spherical roller bearings typically do not require relubrication. However, when operating conditions are arduous, relubrication might be necessary. Bearings in the lower size range (d < 100 mm) have a protective polymer band that covers the lubrication groove and holes in the outer ring. If relubrication is expected, the polymer band must be removed from these bearings before mounting (→ **fig. 71**). **NOTE:** For additional information about relubrication, refer to *Relubrication*, starting on **page 192**. Sealed spherical roller bearings with a tapered bore are preferably mounted using the SKF Drive-up Method (→ *SKF Drive-up Method*, starting on **page 57**). Engineering drawing showing vertical mounting of bearings using handling tools to keep components centrally arranged."
+      }
+    ],
+    "source_mode": "full_corpus_llm_gold_chunk_annotation",
+    "generation_note": "Reference answer generated from one LLM-selected gold SKF chunk.",
+    "annotation_model": "gpt-4o-mini",
+    "answer_review_status": "question_rewrite_aligned"
+  },
+  {
+    "id": "rag_ch02_005",
+    "category": "rag_only",
+    "subcategory": "skf_manual",
+    "chapter": 2,
+    "chapter_title": "Mounting rolling bearings",
+    "question": "After oil-injection mounting is complete, what residual-clearance check does SKF recommend?",
+    "ground_truth": "After mounting with the oil injection method, SKF states that the oil should be allowed to drain, the residual radial internal clearance should be checked with a feeler gauge, and if the residual clearance matches the recommended values, the oil supply can be disconnected and the oil duct replaced. The bearing should then be secured with the appropriate locking device.",
+    "reference_answer": "After mounting with the oil injection method, SKF states that the oil should be allowed to drain, the residual radial internal clearance should be checked with a feeler gauge, and if the residual clearance matches the recommended values, the oil supply can be disconnected and the oil duct replaced. The bearing should then be secured with the appropriate locking device.",
+    "evidence_boundary": "The gold chunk describes post-mounting checks for the oil injection method, not every possible bearing type.",
+    "source_chunk_ids": [
+      "ch2_text_032_cold_mounting"
+    ],
+    "gold_chunk_id": "ch2_text_032_cold_mounting",
+    "secondary_chunk_ids": [],
+    "source_pages": [
+      69,
+      70
+    ],
+    "source_chunks": [
+      {
+        "chunk_id": "ch2_text_032_cold_mounting",
+        "type": "text",
+        "chapter": "Mounting rolling bearings",
+        "section": "Cold mounting",
+        "heading_path": [
+          "Mounting rolling bearings",
+          "Cold mounting",
+          "Oil injection method",
+          "Oil injection method: Step-by-step"
+        ],
+        "page_start": 69,
+        "page_end": 70,
+        "text": "Chapter: Mounting rolling bearings Section: Cold mounting Subsection: Oil injection method Subsubsection: Oil injection method: Step-by-step Heading path: Mounting rolling bearings > Cold mounting > Oil injection method > Oil injection method: Step-by-step Pages: 69-70 ### Oil injection method: Step-by-step **Step 9:** Inject oil under high pressure to separate the mating surfaces. Engineering drawings showing oil injection for tapered shaft, adapter sleeve, and withdrawal sleeve **Step 10:** Drive up the bearing. Engineering drawings showing driving up the bearing for tapered shaft, adapter sleeve, and withdrawal sleeve ### Oil injection method: Step-by-step **11** When mounting is complete, open the oil release valve to the pump(s) used for oil injection. Allow the oil to drain for at least 20 minutes. **CAUTION:** When using the SKF Drive-up Method, do not release the pressure to the hydraulic nut at this stage. **12** Check the residual radial internal clearance using a feeler gauge. **NOTE:** When using the SKF Drive-up Method, it is not necessary to check radial internal clearance after mounting. **13** If the residual clearance is in accordance with the recommended values, disconnect the oil supply to the shaft or sleeve (including the extension pipe), remove the fitting and replace the oil duct. **NOTE:** When using the SKF Drive-up Method, open the oil release valve on the pump that operates the hydraulic nut. To empty the nut, return the piston to the start position by screwing the nut up the thread. **14** Where applicable, remove the lock nut, hydraulic nut or the screws on the end plate. The assembly will not come free. **15** Secure the bearing with the appropriate locking device (→ **fig. 33**): * For KM or KML lock nuts, use the appropriate MB or MBL lock washer. * For HM 30 and HM 31 series lock nuts, use the supplied locking clip and bolt. * For applications with an end plate, use bolts and appropriate spring washers. Step 15: Secure the bearing. Engineering drawing of bearing on tapered shaft Engineering drawing of bearing on adapter sleeve Engineering drawing of bearing on withdrawal sleeve Tapered shaft Adapter sleeve Withdrawal sleeve"
+      }
+    ],
+    "source_mode": "full_corpus_llm_gold_chunk_annotation_manual_review",
+    "generation_note": "Reference answer reviewed and corrected from one manually selected gold SKF chunk.",
+    "annotation_model": "gpt-4o-mini",
+    "review_status": "manual_reviewed"
+  },
+  {
+    "id": "rag_ch02_006",
+    "category": "rag_only",
+    "subcategory": "skf_manual",
+    "chapter": 2,
+    "chapter_title": "Mounting rolling bearings",
+    "question": "What direct-strike and force-application warning does SKF give for cold mounting rolling bearings?",
+    "ground_truth": "SKF warns that during mounting a bearing must never be struck directly with a hard object such as a steel hammer or chisel, and the mounting force must never be applied through the rolling elements. Incorrect force application can therefore damage the bearing during mounting.",
+    "reference_answer": "SKF warns that during mounting a bearing must never be struck directly with a hard object such as a steel hammer or chisel, and the mounting force must never be applied through the rolling elements. Incorrect force application can therefore damage the bearing during mounting.",
+    "evidence_boundary": "The gold chunk gives the direct mounting-force warning but does not enumerate all possible damage modes.",
+    "source_chunk_ids": [
+      "ch2_text_014_cold_mounting"
+    ],
+    "gold_chunk_id": "ch2_text_014_cold_mounting",
+    "secondary_chunk_ids": [],
+    "source_pages": [
+      57
+    ],
+    "source_chunks": [
+      {
+        "chunk_id": "ch2_text_014_cold_mounting",
+        "type": "text",
+        "chapter": "Mounting rolling bearings",
+        "section": "Cold mounting",
+        "heading_path": [
+          "Mounting rolling bearings",
+          "Cold mounting"
+        ],
+        "page_start": 57,
+        "page_end": 57,
+        "text": "Chapter: Mounting rolling bearings Section: Cold mounting Heading path: Mounting rolling bearings > Cold mounting Pages: 57-57 # Cold mounting For cold mounting, there is a choice of methods: * mechanical methods * the SKF Drive-up Method * the oil injection method * measuring inner ring expansion (SensorMount) Mechanical methods are usually used to drive small bearings with a cylindrical or tapered bore onto a shaft or into a housing. The other three methods are only used to drive up bearings with a tapered bore onto a tapered seat. **CAUTION:** When mounting a bearing, never strike it directly with any hard object such as a steel hammer or a chisel, and never apply the mounting force through the rolling elements."
+      }
+    ],
+    "source_mode": "full_corpus_llm_gold_chunk_annotation_manual_review",
+    "generation_note": "Reference answer reviewed and corrected from one manually selected gold SKF chunk.",
+    "annotation_model": "gpt-4o-mini",
+    "review_status": "manual_reviewed"
+  },
+  {
+    "id": "rag_ch03_001",
+    "category": "rag_only",
+    "subcategory": "skf_manual",
+    "chapter": 3,
+    "chapter_title": "Mounting bearing units",
+    "question": "What preparatory checks does SKF recommend before mounting a bearing unit?",
+    "ground_truth": "When mounting bearing units, SKF says to check that the shaft is clean and free of burrs, verify that the shaft bearing seat is within tolerance, prepare the shaft surface according to the locking method, clean the support surface, check the recommended flatness, ensure the bearing bore and housing base are clean if reused, and use appropriate bolts or studs and washers.",
+    "reference_answer": "When mounting bearing units, SKF says to check that the shaft is clean and free of burrs, verify that the shaft bearing seat is within tolerance, prepare the shaft surface according to the locking method, clean the support surface, check the recommended flatness, ensure the bearing bore and housing base are clean if reused, and use appropriate bolts or studs and washers.",
+    "evidence_boundary": "The gold chunk covers preparatory checks before mounting bearing units.",
+    "source_chunk_ids": [
+      "ch3_text_005_preparations_prior_to_mounting"
+    ],
+    "gold_chunk_id": "ch3_text_005_preparations_prior_to_mounting",
+    "secondary_chunk_ids": [],
+    "source_pages": [
+      105
+    ],
+    "source_chunks": [
+      {
+        "chunk_id": "ch3_text_005_preparations_prior_to_mounting",
+        "type": "text",
+        "chapter": "Mounting bearing units",
+        "section": "Preparations prior to mounting",
+        "heading_path": [
+          "Mounting bearing units",
+          "Preparations prior to mounting"
+        ],
+        "page_start": 105,
+        "page_end": 105,
+        "text": "Chapter: Mounting bearing units Section: Preparations prior to mounting Heading path: Mounting bearing units > Preparations prior to mounting Pages: 105-105 # Preparations prior to mounting Prior to mounting a bearing unit, do the following: * Make sure that the shaft is clean and free of any burrs. If not, remove the burrs and chamfer the shaft end with an emery cloth or a fine file. Wipe the shaft clean. * Check that the shaft bearing seat is within tolerance, preferably at two cross-sections and in four directions (→ fig. 3). * For bearing units that use grub (set) screws, an eccentric locking collar or a cylindrical locking collar, apply a thin coat of light oil to the shaft. * For bearing units that use an adapter sleeve or SKF ConCentra locking method, use a clean cloth to make sure that the bearing seat on the shaft is dry and free of grease. * Clean the support surface for the unit and check that the recommended flatness is within IT7 tolerance grade. * If the unit is used again after removal, make sure that the bearing bore and housing base are clean. * If shims are needed to elevate the centre height of the unit, make sure that the shim covers the complete contact surface between the unit base and the support surface. * SKF recommends using 8.8 class bolts or studs and a washer in accordance with ISO 7089:2000 or 7090:2000 and a spring washer, to attach ball and roller bearing units to the base. Hexagonal head bolts in accordance with ISO 4014:1999 are appropriate. Alternatively, hexagonal socket head cap screws in accordance with ISO 4762:1988 can be used. * Bearing units should not be removed from their original packaging until immediately before they are mounted; this protects the units from contaminants, especially in harsh environments. Engineering drawing showing shaft measurement points 1 and 2, and cross-section directions A, B, C, and D."
+      }
+    ],
+    "source_mode": "full_corpus_llm_gold_chunk_annotation_manual_review",
+    "generation_note": "Reference answer reviewed and corrected from one manually selected gold SKF chunk.",
+    "annotation_model": "gpt-4o-mini",
+    "review_status": "manual_reviewed"
+  },
+  {
+    "id": "rag_ch03_002",
+    "category": "rag_only",
+    "subcategory": "skf_manual",
+    "chapter": 3,
+    "chapter_title": "Mounting bearing units",
+    "question": "Which common shaft-locking methods does SKF list for bearing units?",
+    "ground_truth": "SKF states that bearing units can be located on the shaft by several common locking methods: grub or set screw locking, a single grub screw eccentric locking collar, adapter sleeve locking, the SKF ConCentra locking mechanism, and a double grub screw cylindrical collar locking arrangement.",
+    "reference_answer": "SKF states that bearing units can be located on the shaft by several common locking methods: grub or set screw locking, a single grub screw eccentric locking collar, adapter sleeve locking, the SKF ConCentra locking mechanism, and a double grub screw cylindrical collar locking arrangement.",
+    "evidence_boundary": "The gold chunk lists typical shaft locking methods rather than detailed step-by-step installation.",
+    "source_chunk_ids": [
+      "ch3_text_002_what_to_remember"
+    ],
+    "gold_chunk_id": "ch3_text_002_what_to_remember",
+    "secondary_chunk_ids": [],
+    "source_pages": [
+      98
+    ],
+    "source_chunks": [
+      {
+        "chunk_id": "ch3_text_002_what_to_remember",
+        "type": "text",
+        "chapter": "Mounting bearing units",
+        "section": "What to remember",
+        "heading_path": [
+          "Mounting bearing units",
+          "What to remember"
+        ],
+        "page_start": 98,
+        "page_end": 98,
+        "text": "Chapter: Mounting bearing units Section: What to remember Heading path: Mounting bearing units > What to remember Pages: 98-98 # What to remember SKF bearing units are available in three different housing styles and, depending on the bearing type and unit size, there is a choice of methods to locate the unit on the shaft. The most common methods are (→ **fig. 1**): * grub (set) screw locking (**a**) * single grub (set) screw eccentric locking collar (**b**) * adapter sleeve locking (**c**) * SKF ConCentra locking mechanism (**d, e**) * double grub (set) screw cylindrical collar locking (**f**) When selecting a replacement unit, match the following elements of the original ball or roller bearing: * the shaft locking method (→ **fig. 1** and **table 1 on page 96**) * the housing style (→ **figs. 2a to 2t**, starting on **page 95** and **table 2 on page 100**) * the sealing method (→ **table 1 on page 96**) * the inner ring that can be extended on either one or both sides (ball bearing units) * the locating or non-locating position (roller bearing units) For additional information about SKF maintenance and lubrication products and tools, visit [www.skf.com](http://www.skf.com) and [www.mapro.skf.com](http://www.mapro.skf.com) . The SKF Reliability Maintenance Institute (RMI) offers a comprehensive range of training courses (→ **Training**, starting on **page 326**). Contact your local SKF representative for additional information, or visit [www.skf.com/services](http://www.skf.com/services) ."
+      }
+    ],
+    "source_mode": "full_corpus_llm_gold_chunk_annotation_manual_review",
+    "generation_note": "Reference answer reviewed and corrected from one manually selected gold SKF chunk.",
+    "annotation_model": "gpt-4o-mini",
+    "review_status": "manual_reviewed"
+  },
+  {
+    "id": "rag_ch03_003",
+    "category": "rag_only",
+    "subcategory": "skf_manual",
+    "chapter": 3,
+    "chapter_title": "Mounting bearing units",
+    "question": "What mounting steps does SKF give for roller bearing units with a cylindrical locking collar?",
+    "ground_truth": "For roller bearing units with a cylindrical locking collar, SKF gives steps for plummer block, flanged and take-up units. Important steps include determining locating and non-locating positions, mounting components between the units, sliding the units onto the shaft with the locking device facing outward, carefully aligning the units, tightening attachment bolts to recommended torque values, respecting permissible misalignment, aligning the shaft axially, and tightening the grub screws in the locking collar.",
+    "reference_answer": "For roller bearing units with a cylindrical locking collar, SKF gives steps for plummer block, flanged and take-up units. Important steps include determining locating and non-locating positions, mounting components between the units, sliding the units onto the shaft with the locking device facing outward, carefully aligning the units, tightening attachment bolts to recommended torque values, respecting permissible misalignment, aligning the shaft axially, and tightening the grub screws in the locking collar.",
+    "evidence_boundary": "The gold chunk covers a specific roller bearing unit and cylindrical locking collar case.",
+    "source_chunk_ids": [
+      "ch3_text_030_mounting_roller_bearing_units_with_a_cylindrical_locking_collar"
+    ],
+    "gold_chunk_id": "ch3_text_030_mounting_roller_bearing_units_with_a_cylindrical_locking_collar",
+    "secondary_chunk_ids": [],
+    "source_pages": [
+      123
+    ],
+    "source_chunks": [
+      {
+        "chunk_id": "ch3_text_030_mounting_roller_bearing_units_with_a_cylindrical_locking_collar",
+        "type": "text",
+        "chapter": "Mounting bearing units",
+        "section": "Mounting roller bearing units with a cylindrical locking collar",
+        "heading_path": [
+          "Mounting bearing units",
+          "Mounting roller bearing units with a cylindrical locking collar"
+        ],
+        "page_start": 123,
+        "page_end": 123,
+        "text": "Chapter: Mounting bearing units Section: Mounting roller bearing units with a cylindrical locking collar Heading path: Mounting bearing units > Mounting roller bearing units with a cylindrical locking collar Pages: 123-123 # Mounting roller bearing units with a cylindrical locking collar When mounting roller bearing units with a cylindrical locking collar (→ **fig. 1f, page 95**), carefully follow the guidelines provided under *Preparations prior to mounting* on **page 101** as well as the additional guidelines below: 1 Determine the position of the locating and non-locating unit on the shaft. The locating unit should always be on the drive side. 2 Mount any components located between the two bearing units onto the shaft. 3 a) Plummer (pillow) block units: Slide a unit onto each shaft end with the locking device facing outward. Carefully align both units. Fit the attachment bolts and tighten them using the recommended torque values listed in **table 5** on **page 105**. The maximum permissible misalignment of the shaft relative to the units is 1,5°. b) Flanged units: Support the shaft in mounting position between the machine walls. Slide a unit onto each shaft end. If not provided with a shoulder, carefully align both units. Fit the attachment bolts and tighten them using the recommended torque values listed in **table 5** on **page 105**. The maximum permissible misalignment of the shaft relative to the units is 1,5°. c) Take-up units: Slide a unit onto each shaft end with the locking device facing outward. Install the shaft/units assembly into take-up frames and connect the adjustment screws via the cast hole in the units (→ **fig. 34**). Carefully align both units. The maximum permissible misalignment of the shaft relative to the units is 1,5°. 4 Align the shaft in the bearing arrangement axially. 5 Tighten both grub (set) screws in the cylindrical locking collar that grip the shaft through drilled holes in the inner ring of the locating unit to the tightening torque values listed in **table 3** on **page 102**."
+      }
+    ],
+    "source_mode": "full_corpus_llm_gold_chunk_annotation_manual_review",
+    "generation_note": "Reference answer reviewed and corrected from one manually selected gold SKF chunk.",
+    "annotation_model": "gpt-4o-mini",
+    "review_status": "manual_reviewed"
+  },
+  {
+    "id": "rag_ch03_004",
+    "category": "rag_only",
+    "subcategory": "skf_manual",
+    "chapter": 3,
+    "chapter_title": "Mounting bearing units",
+    "question": "How should set screw locking be applied when mounting insert bearing units?",
+    "ground_truth": "When mounting insert bearing units with grub (set) screw locking, first align the shaft axially in the bearing arrangement and turn it a few times. Then, tighten the grub (set) screws in the inner ring of both units to the specified torque values. Finally, check that the bearing arrangement can freely rotate by turning the shaft again.",
+    "reference_answer": "When mounting insert bearing units with grub (set) screw locking, first align the shaft axially in the bearing arrangement and turn it a few times. Then, tighten the grub (set) screws in the inner ring of both units to the specified torque values. Finally, check that the bearing arrangement can freely rotate by turning the shaft again.",
+    "evidence_boundary": "The chunk does not provide specific torque values or detailed procedures beyond the steps mentioned.",
+    "source_chunk_ids": [
+      "ch3_text_010_mounting_ball_bearing_units_with_grub_set_screw_locking"
+    ],
+    "gold_chunk_id": "ch3_text_010_mounting_ball_bearing_units_with_grub_set_screw_locking",
+    "secondary_chunk_ids": [
+      "ch3_text_009_mounting_ball_bearing_units_with_grub_set_screw_locking",
+      "ch3_text_008_mounting_ball_bearing_units_with_grub_set_screw_locking"
+    ],
+    "source_pages": [
+      110
+    ],
+    "source_chunks": [
+      {
+        "chunk_id": "ch3_text_010_mounting_ball_bearing_units_with_grub_set_screw_locking",
+        "type": "text",
+        "chapter": "Mounting bearing units",
+        "section": "Mounting ball bearing units with grub (set) screw locking",
+        "heading_path": [
+          "Mounting bearing units",
+          "Mounting ball bearing units with grub (set) screw locking"
+        ],
+        "page_start": 110,
+        "page_end": 110,
+        "text": "Chapter: Mounting bearing units Section: Mounting ball bearing units with grub (set) screw locking Heading path: Mounting bearing units > Mounting ball bearing units with grub (set) screw locking Pages: 110-110 # Mounting ball bearing units with grub (set) screw locking ##Ball bearing units with a pressed steel housing **CAUTION:** Units with a pressed steel housing cannot compensate for misalignment once the attachment bolts or nuts have been fully tightened, unless the plummer (pillow) block units are equipped with a rubber seating ring (cartridge). 5 If possible, align the shaft in the bearing arrangement axially (→ **figs. 4 on page 104**) and turn it a few times. 6 Tighten the grub (set) screws in the inner ring of both units to the tightening torque values listed in **table 3 on page 102**. 7 If possible, check that the bearing arrangement can freely rotate by turning the shaft a few times."
+      }
+    ],
+    "source_mode": "full_corpus_llm_gold_chunk_annotation",
+    "generation_note": "Reference answer generated from one LLM-selected gold SKF chunk.",
+    "annotation_model": "gpt-4o-mini"
+  },
+  {
+    "id": "rag_ch03_005",
+    "category": "rag_only",
+    "subcategory": "skf_manual",
+    "chapter": 3,
+    "chapter_title": "Mounting bearing units",
+    "question": "What is the mounting procedure for bearing units with an eccentric locking collar?",
+    "ground_truth": "To mount bearing units with an eccentric locking collar, first align both housings using the shaft and tighten the attachment bolts to the recommended torque values. Place the eccentric locking collar on the inner ring extension and snug it in the main direction of rotation. Then, tighten the collar to its final position using a hook spanner or a hammer and drift punch, and secure the grub screw to the specified torque values. Finally, if possible, align the shaft axially and check for free rotation by turning the shaft a few times.",
+    "reference_answer": "To mount bearing units with an eccentric locking collar, first align both housings using the shaft and tighten the attachment bolts to the recommended torque values. Place the eccentric locking collar on the inner ring extension and snug it in the main direction of rotation. Then, tighten the collar to its final position using a hook spanner or a hammer and drift punch, and secure the grub screw to the specified torque values. Finally, if possible, align the shaft axially and check for free rotation by turning the shaft a few times.",
+    "evidence_boundary": "The procedure is limited to the information provided in the gold SKF chunk regarding mounting ball bearing units with an eccentric locking collar.",
+    "source_chunk_ids": [
+      "ch3_text_014_mounting_ball_bearing_units_with_an_eccentric_locking_collar"
+    ],
+    "gold_chunk_id": "ch3_text_014_mounting_ball_bearing_units_with_an_eccentric_locking_collar",
+    "secondary_chunk_ids": [],
+    "source_pages": [
+      112
+    ],
+    "source_chunks": [
+      {
+        "chunk_id": "ch3_text_014_mounting_ball_bearing_units_with_an_eccentric_locking_collar",
+        "type": "text",
+        "chapter": "Mounting bearing units",
+        "section": "Mounting ball bearing units with an eccentric locking collar",
+        "heading_path": [
+          "Mounting bearing units",
+          "Mounting ball bearing units with an eccentric locking collar",
+          "Ball bearing units with a pressed steel housing"
+        ],
+        "page_start": 112,
+        "page_end": 112,
+        "text": "5 Carefully align both housings, e.g. using the shaft, and tighten the attachment bolts using the recommended torque values listed in **table 5 on page 105**. NOTE: When relubrication of the unit is required, the maximum permissible misalignment of the shaft relative to the unit is 2°. Otherwise, misalignment of up to 5° can be accommodated. **CAUTION: Units with a pressed steel housing cannot compensate for misalignment once the attachment bolts or nuts have been fully tightened, unless the plummer (pillow) block units are equipped with a rubber seating ring (cartridge).** 7 Place an eccentric locking collar on the inner ring extension of each unit and snug tightening them in the main direction of rotation. Tighten the locking collar to its final position using either a hook spanner with a stud engaging the hole in the circumference of the collar or a hammer and drift punch. Tighten the grub (set) screw in the locking collar of each unit to the tightening torque values listed in **table 3 on page 102**. 6 If possible, align the shaft in the bearing arrangement axially (→ **fig. 8 on page 107**) and turn it a few times. 8 If applicable, check that the bearing arrangement can freely rotate by turning the shaft a few times."
+      }
+    ],
+    "source_mode": "full_corpus_llm_gold_chunk_annotation",
+    "generation_note": "Reference answer generated from one LLM-selected gold SKF chunk.",
+    "annotation_model": "gpt-4o-mini"
+  },
+  {
+    "id": "rag_ch03_006",
+    "category": "rag_only",
+    "subcategory": "skf_manual",
+    "chapter": 3,
+    "chapter_title": "Mounting bearing units",
+    "question": "What does SKF say about mounting take-up units with a cylindrical locking collar?",
+    "ground_truth": "For take-up units, SKF states that a unit should be slid onto each shaft end with the locking device facing outward, the shaft and unit assembly should be installed into take-up frames, and the adjustment screws should be connected through the cast hole in the units. Both units should be carefully aligned, with a maximum permissible shaft misalignment of 1.5 degrees for this case.",
+    "reference_answer": "For take-up units, SKF states that a unit should be slid onto each shaft end with the locking device facing outward, the shaft and unit assembly should be installed into take-up frames, and the adjustment screws should be connected through the cast hole in the units. Both units should be carefully aligned, with a maximum permissible shaft misalignment of 1.5 degrees for this case.",
+    "evidence_boundary": "The gold chunk discusses take-up units within the mounting procedure for roller bearing units with a cylindrical locking collar.",
+    "source_chunk_ids": [
+      "ch3_text_030_mounting_roller_bearing_units_with_a_cylindrical_locking_collar"
+    ],
+    "gold_chunk_id": "ch3_text_030_mounting_roller_bearing_units_with_a_cylindrical_locking_collar",
+    "secondary_chunk_ids": [],
+    "source_pages": [
+      123
+    ],
+    "source_chunks": [
+      {
+        "chunk_id": "ch3_text_030_mounting_roller_bearing_units_with_a_cylindrical_locking_collar",
+        "type": "text",
+        "chapter": "Mounting bearing units",
+        "section": "Mounting roller bearing units with a cylindrical locking collar",
+        "heading_path": [
+          "Mounting bearing units",
+          "Mounting roller bearing units with a cylindrical locking collar"
+        ],
+        "page_start": 123,
+        "page_end": 123,
+        "text": "Chapter: Mounting bearing units Section: Mounting roller bearing units with a cylindrical locking collar Heading path: Mounting bearing units > Mounting roller bearing units with a cylindrical locking collar Pages: 123-123 # Mounting roller bearing units with a cylindrical locking collar When mounting roller bearing units with a cylindrical locking collar (→ **fig. 1f, page 95**), carefully follow the guidelines provided under *Preparations prior to mounting* on **page 101** as well as the additional guidelines below: 1 Determine the position of the locating and non-locating unit on the shaft. The locating unit should always be on the drive side. 2 Mount any components located between the two bearing units onto the shaft. 3 a) Plummer (pillow) block units: Slide a unit onto each shaft end with the locking device facing outward. Carefully align both units. Fit the attachment bolts and tighten them using the recommended torque values listed in **table 5** on **page 105**. The maximum permissible misalignment of the shaft relative to the units is 1,5°. b) Flanged units: Support the shaft in mounting position between the machine walls. Slide a unit onto each shaft end. If not provided with a shoulder, carefully align both units. Fit the attachment bolts and tighten them using the recommended torque values listed in **table 5** on **page 105**. The maximum permissible misalignment of the shaft relative to the units is 1,5°. c) Take-up units: Slide a unit onto each shaft end with the locking device facing outward. Install the shaft/units assembly into take-up frames and connect the adjustment screws via the cast hole in the units (→ **fig. 34**). Carefully align both units. The maximum permissible misalignment of the shaft relative to the units is 1,5°. 4 Align the shaft in the bearing arrangement axially. 5 Tighten both grub (set) screws in the cylindrical locking collar that grip the shaft through drilled holes in the inner ring of the locating unit to the tightening torque values listed in **table 3** on **page 102**."
+      }
+    ],
+    "source_mode": "full_corpus_llm_gold_chunk_annotation_manual_review",
+    "generation_note": "Reference answer reviewed and corrected from one manually selected gold SKF chunk.",
+    "annotation_model": "gpt-4o-mini",
+    "review_status": "manual_reviewed"
+  },
+  {
+    "id": "rag_ch04_001",
+    "category": "rag_only",
+    "subcategory": "skf_manual",
+    "chapter": 4,
+    "chapter_title": "Mounting bearing housings",
+    "question": "What preparation checks does SKF recommend before mounting bearing housings?",
+    "ground_truth": "Before mounting bearing housings, SKF says to make sure the work area is clean, study drawings or instructions to determine assembly order, keep necessary parts and tools available, check that the housing support surface is clean and unpainted, verify that the support surface meets flatness and rigidity requirements, and clean reused housings while replacing worn parts.",
+    "reference_answer": "Before mounting bearing housings, SKF says to make sure the work area is clean, study drawings or instructions to determine assembly order, keep necessary parts and tools available, check that the housing support surface is clean and unpainted, verify that the support surface meets flatness and rigidity requirements, and clean reused housings while replacing worn parts.",
+    "evidence_boundary": "The gold chunk covers preparation before mounting bearing housings.",
+    "source_chunk_ids": [
+      "ch4_text_004_preparations_prior_to_mounting"
+    ],
+    "gold_chunk_id": "ch4_text_004_preparations_prior_to_mounting",
+    "secondary_chunk_ids": [],
+    "source_pages": [
+      134
+    ],
+    "source_chunks": [
+      {
+        "chunk_id": "ch4_text_004_preparations_prior_to_mounting",
+        "type": "text",
+        "chapter": "Mounting bearing housings",
+        "section": "Preparations prior to mounting",
+        "heading_path": [
+          "Mounting bearing housings",
+          "Preparations prior to mounting"
+        ],
+        "page_start": 134,
+        "page_end": 134,
+        "text": "Chapter: Mounting bearing housings Section: Preparations prior to mounting Heading path: Mounting bearing housings > Preparations prior to mounting Pages: 134-134 # Preparations prior to mounting Prior to mounting, do the following: * Make sure that the work area is clean. * Study any drawings or instructions to determine the correct order in which to assemble the various components. * Make sure that all the necessary parts and tools are at hand. * Check that the support surface of the housing is clean. The support surface should not be painted. * Check that the support surface conforms to the requirements for flatness and rigidity. To prevent deformation to the housing bore, SKF recommends that the flatness of the surface is within IT7 tolerance grade (→ Appendix C, page 385). The surface should be finished to R<sub>a</sub> ≤ 12,5 µm. * Before reusing a housing, clean the housing thoroughly and replace all wear parts, e.g. contact seals, O-rings or rubber cords. Illustration showing hands placing a shim under a bearing housing, labeled Fig. 4"
+      }
+    ],
+    "source_mode": "full_corpus_llm_gold_chunk_annotation_manual_review",
+    "generation_note": "Reference answer reviewed and corrected from one manually selected gold SKF chunk.",
+    "annotation_model": "gpt-4o-mini",
+    "review_status": "manual_reviewed"
+  },
+  {
+    "id": "rag_ch04_002",
+    "category": "rag_only",
+    "subcategory": "skf_manual",
+    "chapter": 4,
+    "chapter_title": "Mounting bearing housings",
+    "question": "What bolt selection and tightening guidance does SKF give for mounting bearing housings?",
+    "ground_truth": "SKF recommends attaching housings to the support surface with suitable bolts, nuts and washers when no specific recommendations are available. It states that 8.8 class bolts or nuts can be used when the load acts vertically to the support surface, while 10.9 class bolts or nuts should be used when the load does not act vertically. Cap bolts and attachment bolts should be tightened to the recommended torque values.",
+    "reference_answer": "SKF recommends attaching housings to the support surface with suitable bolts, nuts and washers when no specific recommendations are available. It states that 8.8 class bolts or nuts can be used when the load acts vertically to the support surface, while 10.9 class bolts or nuts should be used when the load does not act vertically. Cap bolts and attachment bolts should be tightened to the recommended torque values.",
+    "evidence_boundary": "The gold chunk supports bolt selection and tightening; support-surface flatness is covered more directly in a separate preparation chunk.",
+    "source_chunk_ids": [
+      "ch4_text_006_bolts"
+    ],
+    "gold_chunk_id": "ch4_text_006_bolts",
+    "secondary_chunk_ids": [],
+    "source_pages": [
+      135
+    ],
+    "source_chunks": [
+      {
+        "chunk_id": "ch4_text_006_bolts",
+        "type": "text",
+        "chapter": "Mounting bearing housings",
+        "section": "Bolts",
+        "heading_path": [
+          "Mounting bearing housings",
+          "Bolts"
+        ],
+        "page_start": 135,
+        "page_end": 135,
+        "text": "Chapter: Mounting bearing housings Section: Bolts Heading path: Mounting bearing housings > Bolts Pages: 135-135 # Bolts If recommendations about the attachment bolts or nuts are not available, SKF recommends using the following to attach the housing to the support surface (→ **fig. 5**): * hexagon head bolts in accordance with EN ISO 4014:2000 * hexagon socket head cap bolts in accordance with EN ISO 4762:1998 * hexagon nuts in accordance with EN ISO 4032:2000 * flat washers in accordance with EN ISO 7089 Engineering drawing of a hexagon head bolt, a hexagon socket head cap bolt, and a hexagon nut with a flat washer. If the load acts vertically to the support surface, 8.8 class bolts or nuts can be used. If the load does not act vertically, 10.9 class bolts or nuts should be used. Tighten all cap bolts and attachment bolts using the recommended torque values listed in **table 4**. Inch series housings use cap bolts from various classes. Tighten the cap bolts on these housings using the torque values listed in the mounting instructions supplied with the housings. <sup>1)</sup> For inch series housings, the recommended tightening torque is supplied with the housing."
+      }
+    ],
+    "source_mode": "full_corpus_llm_gold_chunk_annotation_manual_review",
+    "generation_note": "Reference answer reviewed and corrected from one manually selected gold SKF chunk.",
+    "annotation_model": "gpt-4o-mini",
+    "review_status": "manual_reviewed"
+  },
+  {
+    "id": "rag_ch04_003",
+    "category": "rag_only",
+    "subcategory": "skf_manual",
+    "chapter": 4,
+    "chapter_title": "Mounting bearing housings",
+    "question": "Before mounting bearing housings, what support-surface checks does SKF recommend?",
+    "ground_truth": "Before mounting bearing housings, SKF recommends checking that the housing support surface is clean and unpainted and that it meets flatness and rigidity requirements. To prevent deformation of the housing bore, SKF recommends a surface flatness within IT7 tolerance grade and a surface finish of Ra <= 12.5 micrometres.",
+    "reference_answer": "Before mounting bearing housings, SKF recommends checking that the housing support surface is clean and unpainted and that it meets flatness and rigidity requirements. To prevent deformation of the housing bore, SKF recommends a surface flatness within IT7 tolerance grade and a surface finish of Ra <= 12.5 micrometres.",
+    "evidence_boundary": "The gold chunk supports support-surface checks before housing mounting.",
+    "source_chunk_ids": [
+      "ch4_text_004_preparations_prior_to_mounting"
+    ],
+    "gold_chunk_id": "ch4_text_004_preparations_prior_to_mounting",
+    "secondary_chunk_ids": [
+      "ch4_text_010_mounting_standard_split_plummer_pillow_block_housings",
+      "ch6_text_029_shaft_alignment"
+    ],
+    "source_pages": [
+      134
+    ],
+    "source_chunks": [
+      {
+        "chunk_id": "ch4_text_004_preparations_prior_to_mounting",
+        "type": "text",
+        "chapter": "Mounting bearing housings",
+        "section": "Preparations prior to mounting",
+        "heading_path": [
+          "Mounting bearing housings",
+          "Preparations prior to mounting"
+        ],
+        "page_start": 134,
+        "page_end": 134,
+        "text": "Chapter: Mounting bearing housings Section: Preparations prior to mounting Heading path: Mounting bearing housings > Preparations prior to mounting Pages: 134-134 # Preparations prior to mounting Prior to mounting, do the following: * Make sure that the work area is clean. * Study any drawings or instructions to determine the correct order in which to assemble the various components. * Make sure that all the necessary parts and tools are at hand. * Check that the support surface of the housing is clean. The support surface should not be painted. * Check that the support surface conforms to the requirements for flatness and rigidity. To prevent deformation to the housing bore, SKF recommends that the flatness of the surface is within IT7 tolerance grade (→ Appendix C, page 385). The surface should be finished to R<sub>a</sub> ≤ 12,5 µm. * Before reusing a housing, clean the housing thoroughly and replace all wear parts, e.g. contact seals, O-rings or rubber cords. Illustration showing hands placing a shim under a bearing housing, labeled Fig. 4"
+      }
+    ],
+    "source_mode": "full_corpus_llm_gold_chunk_annotation",
+    "generation_note": "Reference answer generated from one LLM-selected gold SKF chunk.",
+    "annotation_model": "gpt-4o-mini",
+    "answer_review_status": "question_rewrite_aligned"
+  },
+  {
+    "id": "rag_ch05_001",
+    "category": "rag_only",
+    "subcategory": "skf_manual",
+    "chapter": 5,
+    "chapter_title": "Installing seals",
+    "question": "What should be considered when installing radial shaft seals?",
+    "ground_truth": "When installing radial shaft seals, ensure the seal dimensions match the shaft diameter and housing bore, verify the seal can withstand the media, operating temperature, and speed, check for any damage, clean the seal if dirty, chamfer the housing bore corners, meet SKF's requirements for dimensional accuracy, roughness, and hardness, chamfer or round all shaft edges, and lightly coat the seal with the appropriate lubricant.",
+    "reference_answer": "When installing radial shaft seals, ensure the seal dimensions match the shaft diameter and housing bore, verify the seal can withstand the media, operating temperature, and speed, check for any damage, clean the seal if dirty, chamfer the housing bore corners, meet SKF's requirements for dimensional accuracy, roughness, and hardness, chamfer or round all shaft edges, and lightly coat the seal with the appropriate lubricant.",
+    "evidence_boundary": "The information is based solely on the provided SKF chunk regarding preparations prior to installation.",
+    "source_chunk_ids": [
+      "ch5_text_004_preparations_prior_to_installation"
+    ],
+    "gold_chunk_id": "ch5_text_004_preparations_prior_to_installation",
+    "secondary_chunk_ids": [
+      "ch1_text_044_sealing_arrangements",
+      "ch8_text_016_inspection_during_a_machine_shutdown"
+    ],
+    "source_pages": [
+      150
+    ],
+    "source_chunks": [
+      {
+        "chunk_id": "ch5_text_004_preparations_prior_to_installation",
+        "type": "text",
+        "chapter": "Installing seals",
+        "section": "Preparations prior to installation",
+        "heading_path": [
+          "Installing seals",
+          "Preparations prior to installation"
+        ],
+        "page_start": 150,
+        "page_end": 150,
+        "text": "Chapter: Installing seals Section: Preparations prior to installation Heading path: Installing seals > Preparations prior to installation Pages: 150-150 # Preparations prior to installation To obtain a reliable seal and achieve the best results, do the following: * Make sure that the dimensions of the selected seal match those of the shaft diameter and housing bore. * Make sure that the selected seal can withstand the media as well as the operating temperature and speed. * Check the seal for any damage, e.g. dents, scores or cuts. Never use a damaged seal. * Carefully clean the seal if it has become dirty. Use warm soapy water (not above 30 °C (85 °F)) and allow the seal to dry at room temperature. * Chamfer and blend the housing bore corner to prevent damage to the outside surface of the seal. * The housing bore and counterface on the shaft should meet the requirements given by SKF with regard to dimensional and form accuracy, roughness and hardness. * All shaft edges over which the seal lip must pass should be chamfered or rounded. * Lightly coat the seal with the lubricant that will be used for the application. PTFE seal lips should not be pre-lubricated unless they are used in applications that run dry."
+      }
+    ],
+    "source_mode": "full_corpus_llm_gold_chunk_annotation",
+    "generation_note": "Reference answer generated from one LLM-selected gold SKF chunk.",
+    "annotation_model": "gpt-4o-mini"
+  },
+  {
+    "id": "rag_ch05_002",
+    "category": "rag_only",
+    "subcategory": "skf_manual",
+    "chapter": 5,
+    "chapter_title": "Installing seals",
+    "question": "How can seal lip damage be avoided during installation?",
+    "ground_truth": "To avoid seal lip damage during installation, cover all grooves, keyways, cross holes, splines, threads, and any sharp edges with a thin-walled protective cap. Use a sleeve if the shoulder of a stepped shaft is not chamfered or rounded. Ensure the installation tool is free of burrs or sharp edges, and use protective caps or sleeves for PTFE seals.",
+    "reference_answer": "To avoid seal lip damage during installation, cover all grooves, keyways, cross holes, splines, threads, and any sharp edges with a thin-walled protective cap. Use a sleeve if the shoulder of a stepped shaft is not chamfered or rounded. Ensure the installation tool is free of burrs or sharp edges, and use protective caps or sleeves for PTFE seals.",
+    "evidence_boundary": "The provided information specifically addresses installation procedures to prevent seal lip damage.",
+    "source_chunk_ids": [
+      "ch5_text_009_installing_a_radial_shaft_seal_over_a_shaft"
+    ],
+    "gold_chunk_id": "ch5_text_009_installing_a_radial_shaft_seal_over_a_shaft",
+    "secondary_chunk_ids": [
+      "ch5_text_004_preparations_prior_to_installation",
+      "ch4_text_009_installing_split_or_solid_seals"
+    ],
+    "source_pages": [
+      154
+    ],
+    "source_chunks": [
+      {
+        "chunk_id": "ch5_text_009_installing_a_radial_shaft_seal_over_a_shaft",
+        "type": "text",
+        "chapter": "Installing seals",
+        "section": "Installing a radial shaft seal over a shaft",
+        "heading_path": [
+          "Installing seals",
+          "Installing a radial shaft seal over a shaft"
+        ],
+        "page_start": 154,
+        "page_end": 154,
+        "text": "Chapter: Installing seals Section: Installing a radial shaft seal over a shaft Heading path: Installing seals > Installing a radial shaft seal over a shaft Pages: 154-154 # Installing a radial shaft seal over a shaft When installing a seal over a shaft, SKF recommends the following: * Cover all grooves, keyways, cross holes, splines, threads, and any other sharp edges with a thin-walled (< 0,5 mm) protective cap (→ fig. 14). * Use a sleeve when the shoulder of a stepped shaft is not chamfered or rounded (→ fig. 15). The outside surface of protective caps and sleeves should be coated with the same lubricant as the seal and counterface. The outside surface and lead-in chamfer of the installation tool should be free of any burrs or sharp edges. Radial shaft seals made of PTFE should always be installed using a protective cap or sleeve. If, after the seals have been installed, the housing or machine is to be painted, the seals must be protected from the paint. Discs cut from cardboard (→ fig. 16) can be used. Engineering drawing showing a radial shaft seal being installed over a shaft using a protective cap Engineering drawing showing a radial shaft seal being installed over a stepped shaft using a sleeve Engineering drawing showing a cardboard disc being used to protect a seal during painting"
+      }
+    ],
+    "source_mode": "full_corpus_llm_gold_chunk_annotation",
+    "generation_note": "Reference answer generated from one LLM-selected gold SKF chunk.",
+    "annotation_model": "gpt-4o-mini"
+  },
+  {
+    "id": "rag_ch06_001",
+    "category": "rag_only",
+    "subcategory": "skf_manual",
+    "chapter": 6,
+    "chapter_title": "Alignment",
+    "question": "Why is shaft alignment important for bearing service life?",
+    "ground_truth": "Shaft alignment is important for bearing service life because properly aligned shafts minimize induced bearing loads, which leads to the longest bearing service life.",
+    "reference_answer": "Shaft alignment is important for bearing service life because properly aligned shafts minimize induced bearing loads, which leads to the longest bearing service life.",
+    "evidence_boundary": "The chunk does not provide specific values or additional details on the impact of misalignment beyond the general benefits listed.",
+    "source_chunk_ids": [
+      "ch6_text_016_shaft_alignment"
+    ],
+    "gold_chunk_id": "ch6_text_016_shaft_alignment",
+    "secondary_chunk_ids": [
+      "ch8_text_001_introduction",
+      "ch1_text_023_service_life"
+    ],
+    "source_pages": [
+      171
+    ],
+    "source_chunks": [
+      {
+        "chunk_id": "ch6_text_016_shaft_alignment",
+        "type": "text",
+        "chapter": "Alignment",
+        "section": "Shaft alignment",
+        "heading_path": [
+          "Alignment",
+          "Shaft alignment"
+        ],
+        "page_start": 171,
+        "page_end": 171,
+        "text": "Chapter: Alignment Section: Shaft alignment Heading path: Alignment > Shaft alignment Pages: 171-171 # Shaft alignment All shafts, straight or offset, rotate about an axis called the rotational centre. In any power transmission application, the most efficient energy transfer occurs when two connected shafts are collinear, i.e. when the rotational centres of the shafts form a single straight line under normal operating conditions. Any deviation from this collinear state is referred to as misalignment. The benefits of properly aligned shafts include: * minimized induced bearing loads that result in longest bearing service life * reduced wear on belts, pulleys, couplings and seals that result in extended maintenance intervals * reduced friction losses, noise and vibration levels that result in improved energy efficiency * reduced shaft bending that results in lower vibration and stress levels"
+      }
+    ],
+    "source_mode": "full_corpus_llm_gold_chunk_annotation",
+    "generation_note": "Reference answer generated from one LLM-selected gold SKF chunk.",
+    "annotation_model": "gpt-4o-mini"
+  },
+  {
+    "id": "rag_ch06_002",
+    "category": "rag_only",
+    "subcategory": "skf_manual",
+    "chapter": 6,
+    "chapter_title": "Alignment",
+    "question": "What traditional and laser methods does SKF describe for belt alignment?",
+    "ground_truth": "For belt alignment, SKF describes traditional methods using mechanical tools such as straightedges, tape measures, wire, string, feeler gauges, spirit levels and calibrated cones. It also describes laser belt alignment methods, which provide precise measurements and adjustments.",
+    "reference_answer": "For belt alignment, SKF describes traditional methods using mechanical tools such as straightedges, tape measures, wire, string, feeler gauges, spirit levels and calibrated cones. It also describes laser belt alignment methods, which provide precise measurements and adjustments.",
+    "evidence_boundary": "The gold chunk specifically discusses belt alignment methods.",
+    "source_chunk_ids": [
+      "ch6_text_040_belt_alignment"
+    ],
+    "gold_chunk_id": "ch6_text_040_belt_alignment",
+    "secondary_chunk_ids": [
+      "ch6_text_025_shaft_alignment",
+      "ch6_text_022_shaft_alignment"
+    ],
+    "source_pages": [
+      180
+    ],
+    "source_chunks": [
+      {
+        "chunk_id": "ch6_text_040_belt_alignment",
+        "type": "text",
+        "chapter": "Alignment",
+        "section": "Belt alignment",
+        "heading_path": [
+          "Alignment",
+          "Belt alignment",
+          "Belt alignment methods",
+          "Traditional belt alignment methods"
+        ],
+        "page_start": 180,
+        "page_end": 180,
+        "text": "Chapter: Alignment Section: Belt alignment Subsection: Belt alignment methods Subsubsection: Traditional belt alignment methods Heading path: Alignment > Belt alignment > Belt alignment methods > Traditional belt alignment methods Pages: 180-180 ### Traditional belt alignment methods Traditional alignment methods are quick but often inaccurate. With these methods, mechanical tools such as straightedges, tape measures, wire, string, feeler gauges, spirit levels and calibrated cones are used.### Laser belt alignment methods In contrast with traditional belt alignment tools, laser equipment enables measurements and adjustments to be made with incredible precision. Laser belt alignment tools are grouped according to the parts of the pulleys that are aligned: * the pulley grooves * the pulley faces"
+      }
+    ],
+    "source_mode": "full_corpus_llm_gold_chunk_annotation",
+    "generation_note": "Reference answer generated from one LLM-selected gold SKF chunk.",
+    "annotation_model": "gpt-4o-mini",
+    "answer_review_status": "question_rewrite_aligned"
+  },
+  {
+    "id": "rag_ch06_003",
+    "category": "rag_only",
+    "subcategory": "skf_manual",
+    "chapter": 6,
+    "chapter_title": "Alignment",
+    "question": "What problems can poor offset-drive alignment cause according to SKF?",
+    "ground_truth": "SKF states that poorly aligned offset drives can lead to increased vibration levels, energy loss, premature wear and even complete failure through shearing. Proper alignment is needed to avoid these undesirable results.",
+    "reference_answer": "SKF states that poorly aligned offset drives can lead to increased vibration levels, energy loss, premature wear and even complete failure through shearing. Proper alignment is needed to avoid these undesirable results.",
+    "evidence_boundary": "The gold chunk discusses offset drive alignment specifically, not every bearing arrangement.",
+    "source_chunk_ids": [
+      "ch6_text_032_offset_drive_alignment"
+    ],
+    "gold_chunk_id": "ch6_text_032_offset_drive_alignment",
+    "secondary_chunk_ids": [],
+    "source_pages": [
+      179
+    ],
+    "source_chunks": [
+      {
+        "chunk_id": "ch6_text_032_offset_drive_alignment",
+        "type": "text",
+        "chapter": "Alignment",
+        "section": "Offset drive alignment",
+        "heading_path": [
+          "Alignment",
+          "Offset drive alignment"
+        ],
+        "page_start": 179,
+        "page_end": 179,
+        "text": "Chapter: Alignment Section: Offset drive alignment Heading path: Alignment > Offset drive alignment Pages: 179-179 # Offset drive alignment In an offset drive, power is transferred from the drive to the driven unit by an offset, intermediate shaft. Often referred to as a cardan shaft, an offset drive typically has a universal joint at each end of the shaft. The most common cardan shaft arrangement is the Z-configuration (→ fig. 18), typically used in the paper industry. Engineering drawing of a Z-configuration cardan shaft arrangement, labeled Fig. 18 Why offset drives need to be aligned precisely It is a common misconception that offset drives can tolerate a large alignment error and therefore do not need to be precision aligned. On the contrary, poorly aligned offset drives can lead to increased vibration levels, energy loss, premature wear and even complete failure through shearing. To compensate for these undesirable results, offset drives require equal deflection angles in the joints and precision alignment of the drive and driven shafts. Engineering drawing showing laser alignment of an offset drive with a virtual rotational centre, labeled Fig. 19"
+      }
+    ],
+    "source_mode": "full_corpus_llm_gold_chunk_annotation_manual_review",
+    "generation_note": "Reference answer reviewed and corrected from one manually selected gold SKF chunk.",
+    "annotation_model": "gpt-4o-mini",
+    "review_status": "manual_reviewed"
+  },
+  {
+    "id": "rag_ch06_004",
+    "category": "rag_only",
+    "subcategory": "skf_manual",
+    "chapter": 6,
+    "chapter_title": "Alignment",
+    "question": "How should belt drives or coupled shafts be aligned to protect bearings?",
+    "ground_truth": "Belt drives or coupled shafts should be aligned to ensure that the grooves of the drive and driven pulleys are properly aligned, which minimizes wear on the belts and extends the service life of both belts and bearings.",
+    "reference_answer": "Belt drives or coupled shafts should be aligned to ensure that the grooves of the drive and driven pulleys are properly aligned, which minimizes wear on the belts and extends the service life of both belts and bearings.",
+    "evidence_boundary": "The chunk does not provide specific alignment procedures or values.",
+    "source_chunk_ids": [
+      "ch6_text_036_belt_alignment"
+    ],
+    "gold_chunk_id": "ch6_text_036_belt_alignment",
+    "secondary_chunk_ids": [
+      "ch6_text_040_belt_alignment",
+      "ch3_text_019_mounting_skf_concentra_ball_bearing_units"
+    ],
+    "source_pages": [
+      180
+    ],
+    "source_chunks": [
+      {
+        "chunk_id": "ch6_text_036_belt_alignment",
+        "type": "text",
+        "chapter": "Alignment",
+        "section": "Belt alignment",
+        "heading_path": [
+          "Alignment",
+          "Belt alignment"
+        ],
+        "page_start": 180,
+        "page_end": 180,
+        "text": "Chapter: Alignment Section: Belt alignment Heading path: Alignment > Belt alignment Pages: 180-180 # Belt alignment Belt alignment or, more precisely, pulley alignment, is a principal maintenance activity. When pulleys are not aligned properly, additional loads are induced. The aim of belt alignment is to align the grooves of the drive and driven pulleys so that the belts run with minimal wear. The benefits of properly aligned belts include: * extended service life of belts and bearings * reduced vibration and noise levels * energy savings Photograph of a belt and pulley system with a laser alignment tool"
+      }
+    ],
+    "source_mode": "full_corpus_llm_gold_chunk_annotation",
+    "generation_note": "Reference answer generated from one LLM-selected gold SKF chunk.",
+    "annotation_model": "gpt-4o-mini"
+  },
+  {
+    "id": "rag_ch07_001",
+    "category": "rag_only",
+    "subcategory": "skf_manual",
+    "chapter": 7,
+    "chapter_title": "Lubrication",
+    "question": "What is the role of lubrication in bearing operation?",
+    "ground_truth": "SKF states that bearing service life depends on delivering the correct amount of an appropriate lubricant at the proper time. Both insufficient and excessive lubrication negatively affect bearing performance and can lead to premature bearing failure and machine downtime. Effective lubrication and good lubrication practices help reduce premature failures.",
+    "reference_answer": "SKF states that bearing service life depends on delivering the correct amount of an appropriate lubricant at the proper time. Both insufficient and excessive lubrication negatively affect bearing performance and can lead to premature bearing failure and machine downtime. Effective lubrication and good lubrication practices help reduce premature failures.",
+    "evidence_boundary": "The gold chunk gives the general role of lubrication in bearing operation.",
+    "source_chunk_ids": [
+      "ch7_text_001_introduction"
+    ],
+    "gold_chunk_id": "ch7_text_001_introduction",
+    "secondary_chunk_ids": [],
+    "source_pages": [
+      184
+    ],
+    "source_chunks": [
+      {
+        "chunk_id": "ch7_text_001_introduction",
+        "type": "text",
+        "chapter": "Lubrication",
+        "section": "Introduction",
+        "heading_path": [
+          "Lubrication",
+          "Introduction"
+        ],
+        "page_start": 184,
+        "page_end": 184,
+        "text": "Chapter: Lubrication Section: Introduction Heading path: Lubrication > Introduction Pages: 184-184 # Introduction To optimize the service life of a bearing arrangement, the correct amount of an appropriate lubricant must be delivered at the proper time. Just as an insufficient amount of lubricant will affect bearing performance negatively, so will an excessive amount of lubricant. Either way, the result can be the same: premature bearing failure and costly machine downtime. Inadequate lubrication accounts for approximately 36% of all bearing failures. This includes failures caused by the following: * improper lubricant selection * insufficient lubricant * excessive lubricant * inappropriate relubrication intervals * lubricant not reaching the bearing due to poor bearing arrangement design, incorrect machine assembly or blocked piping Add to this the bearing failures caused by a contaminated lubricant supply and the percentage of lubrication-related bearing failures can jump as high as 50%. Effective lubrication and good lubrication practices can help to significantly reduce premature bearing failures and machine downtime. To meet that goal, SKF offers a comprehensive assortment of lubricants and lubrication systems as well as programs to help with lubricant selection and determine relubrication intervals. Only lubrication for rolling bearings is presented in this chapter. For information about lubricating other types of bearings, visit [www.skf.com/bearings](http://www.skf.com/bearings) , or contact the SKF application engineering service. For additional information about SKF maintenance and lubrication products and tools, visit [www.skf.com/lubrication](http://www.skf.com/lubrication) and [www.mapro.skf.com](http://www.mapro.skf.com) . For information about the SKF programs LuBase, DialSet and the SKF Lubrication Planner, visit [www.skf.com/lubrication](http://www.skf.com/lubrication) or [www.aptitudexchange.com](http://www.aptitudexchange.com) . The SKF Reliability Maintenance Institute (RMI) offers a comprehensive range of training courses in lubrication (→ *Training*, starting on page 326). Contact your local SKF representative for addition ... [truncated]"
+      }
+    ],
+    "source_mode": "full_corpus_llm_gold_chunk_annotation_manual_review",
+    "generation_note": "Reference answer reviewed and corrected from one manually selected gold SKF chunk.",
+    "annotation_model": "gpt-4o-mini",
+    "review_status": "manual_reviewed"
+  },
+  {
+    "id": "rag_ch07_002",
+    "category": "rag_only",
+    "subcategory": "skf_manual",
+    "chapter": 7,
+    "chapter_title": "Lubrication",
+    "question": "How should grease relubrication intervals be selected for rolling bearings?",
+    "ground_truth": "Grease relubrication intervals for rolling bearings should be selected based on various factors including application, bearing type, load, operating temperatures, rotational speed, shaft orientation, external influences, and contamination details. It is essential to check the machinery manufacturer's recommendations and gather relevant information before calculating the intervals. The relubrication interval can be determined using specific factors such as the speed factor A, bearing factor b_f, and load ratio C/P.",
+    "reference_answer": "Grease relubrication intervals for rolling bearings should be selected based on various factors including application, bearing type, load, operating temperatures, rotational speed, shaft orientation, external influences, and contamination details. It is essential to check the machinery manufacturer's recommendations and gather relevant information before calculating the intervals. The relubrication interval can be determined using specific factors such as the speed factor A, bearing factor b_f, and load ratio C/P.",
+    "evidence_boundary": "The information provided is based on general guidelines and does not include specific numerical values or detailed procedures for calculating relubrication intervals.",
+    "source_chunk_ids": [
+      "ch7_text_028_grease_lubrication"
+    ],
+    "gold_chunk_id": "ch7_text_028_grease_lubrication",
+    "secondary_chunk_ids": [
+      "ch7_text_033_grease_lubrication",
+      "ch1_text_025_service_life"
+    ],
+    "source_pages": [
+      196
+    ],
+    "source_chunks": [
+      {
+        "chunk_id": "ch7_text_028_grease_lubrication",
+        "type": "text",
+        "chapter": "Lubrication",
+        "section": "Grease lubrication",
+        "heading_path": [
+          "Lubrication",
+          "Grease lubrication",
+          "Relubrication",
+          "Relubrication intervals"
+        ],
+        "page_start": 196,
+        "page_end": 196,
+        "text": "Chapter: Lubrication Section: Grease lubrication Subsection: Relubrication Subsubsection: Relubrication intervals Heading path: Lubrication > Grease lubrication > Relubrication > Relubrication intervals Pages: 196-196 ### Relubrication intervals Relubrication intervals depend on many related factors. Be sure to check the machinery manufacturer's recommendations prior to developing a relubrication programme. If that is not possible, gather all relevant information before calculating relubrication intervals: * application * bearing type and boundary dimensions * bearing load * operating and ambient temperatures * rotational speed * shaft orientation * external influences, e.g. vibration, oscillation * contamination details The relubrication interval t<sub>f</sub> can be obtained from **diagram 1** as a function of: * the speed factor A * the bearing factor b<sub>f</sub> * the load ratio C/P where A = n d<sub>m</sub> [mm/min] n = rotational speed [r/min] d<sub>m</sub> = bearing mean diameter \\= 0,5 (d + D) [mm] b<sub>f</sub> = bearing factor depending on the bearing type, and load conditions (for axially loaded spherical roller bearings) (→ **table 7, page 194**) If a bearing failure analysis indicates that there has been a problem with heat and/or lubrication, first check that the appropriate grease was used. If so, check the recommended limits for the speed factor A in **table 7, page 194**. If the speed factor of the application is greater than those listed, switching to an oil bath or circulating oil system may substantially increase bearing service life. The relubrication intervals in **diagram 1** are estimates, based on the following operating conditions: * an operating temperature of 70 °C (*160 °F*) * lubrication with good quality lithium based grease * a horizontal shaft * a rotating inner ring * a clean environment When bearing operating conditions differ, adjust the relubrication intervals according to the information provided in **table 8, page 195**."
+      }
+    ],
+    "source_mode": "full_corpus_llm_gold_chunk_annotation",
+    "generation_note": "Reference answer generated from one LLM-selected gold SKF chunk.",
+    "annotation_model": "gpt-4o-mini"
+  },
+  {
+    "id": "rag_ch07_003",
+    "category": "rag_only",
+    "subcategory": "skf_manual",
+    "chapter": 7,
+    "chapter_title": "Lubrication",
+    "question": "Why does SKF say grease is widely used for rolling bearings, and what should be considered when choosing between grease and oil?",
+    "ground_truth": "Grease is the most widely used lubricant for rolling bearings due to its advantages over oil and cost-effectiveness. Less than 20% of rolling bearings are lubricated with oil. The choice between grease and oil lubrication depends on the application, operating conditions, and lubricant delivery method.",
+    "reference_answer": "Grease is the most widely used lubricant for rolling bearings due to its advantages over oil and cost-effectiveness. Less than 20% of rolling bearings are lubricated with oil. The choice between grease and oil lubrication depends on the application, operating conditions, and lubricant delivery method.",
+    "evidence_boundary": "The chunk does not provide specific details on the advantages or disadvantages of grease versus oil lubrication.",
+    "source_chunk_ids": [
+      "ch7_text_004_introduction"
+    ],
+    "gold_chunk_id": "ch7_text_004_introduction",
+    "secondary_chunk_ids": [
+      "ch7_table_022_part_01"
+    ],
+    "source_pages": [
+      186
+    ],
+    "source_chunks": [
+      {
+        "chunk_id": "ch7_text_004_introduction",
+        "type": "text",
+        "chapter": "Lubrication",
+        "section": "Introduction",
+        "heading_path": [
+          "Lubrication",
+          "Introduction",
+          "Grease versus oil"
+        ],
+        "page_start": 186,
+        "page_end": 186,
+        "text": "Chapter: Lubrication Section: Introduction Subsection: Grease versus oil Heading path: Lubrication > Introduction > Grease versus oil Pages: 186-186 ## Grease versus oil Grease is the most widely used lubricant for rolling bearings because it has many advantages over oil and is normally more cost-effective. Less than 20% of rolling bearings are lubricated with oil. It is essential to match the lubricant to the application and operating conditions, but it is also important to consider the lubricant delivery method, installation and maintenance. When choosing between grease and oil lubrication, many factors should be taken into consideration (→ table 1)."
+      }
+    ],
+    "source_mode": "full_corpus_llm_gold_chunk_annotation",
+    "generation_note": "Reference answer generated from one LLM-selected gold SKF chunk.",
+    "annotation_model": "gpt-4o-mini"
+  },
+  {
+    "id": "rag_ch07_004",
+    "category": "rag_only",
+    "subcategory": "skf_manual",
+    "chapter": 7,
+    "chapter_title": "Lubrication",
+    "question": "What factors does SKF list as causing grease in a bearing arrangement to deteriorate?",
+    "ground_truth": "SKF states that grease deteriorates under the influence of time, temperature, mechanical working, ageing and ingress of contaminants, gradually losing its lubricating properties. Proper relubrication depends on the grease type, grease quantity and relubrication interval.",
+    "reference_answer": "SKF states that grease deteriorates under the influence of time, temperature, mechanical working, ageing and ingress of contaminants, gradually losing its lubricating properties. Proper relubrication depends on the grease type, grease quantity and relubrication interval.",
+    "evidence_boundary": "The gold chunk focuses on grease deterioration factors; liquid and gaseous oil contaminants are covered in separate oil-lubrication chunks.",
+    "source_chunk_ids": [
+      "ch7_text_027_grease_lubrication"
+    ],
+    "gold_chunk_id": "ch7_text_027_grease_lubrication",
+    "secondary_chunk_ids": [],
+    "source_pages": [
+      196
+    ],
+    "source_chunks": [
+      {
+        "chunk_id": "ch7_text_027_grease_lubrication",
+        "type": "text",
+        "chapter": "Lubrication",
+        "section": "Grease lubrication",
+        "heading_path": [
+          "Lubrication",
+          "Grease lubrication",
+          "Relubrication"
+        ],
+        "page_start": 196,
+        "page_end": 196,
+        "text": "Chapter: Lubrication Section: Grease lubrication Subsection: Relubrication Heading path: Lubrication > Grease lubrication > Relubrication Pages: 196-196 ## Relubrication Grease does not last forever. Under the influence of time, temperature, mechanical working, ageing and the ingress of contaminants, grease in a bearing arrangement deteriorates and gradually loses its lubricating properties. Relubrication is the addition of fresh grease into a bearing arrangement after a certain period of operation. There are three critical factors to proper relubrication: the type of grease, the quantity of grease and the relubrication interval. The quantity of grease and relubrication interval depend greatly on whether the grease is applied manually or automatically. Sealed bearings are normally lubricated for life and typically do not require relubrication. However, when operating conditions are arduous, relubrication might be necessary. Therefore, a number of sealed bearing types have relubrication features."
+      }
+    ],
+    "source_mode": "full_corpus_llm_gold_chunk_annotation_manual_review",
+    "generation_note": "Reference answer reviewed and corrected from one manually selected gold SKF chunk.",
+    "annotation_model": "gpt-4o-mini",
+    "review_status": "manual_reviewed"
+  },
+  {
+    "id": "rag_ch07_005",
+    "category": "rag_only",
+    "subcategory": "skf_manual",
+    "chapter": 7,
+    "chapter_title": "Lubrication",
+    "question": "What factors determine the correct grease quantity for a bearing?",
+    "ground_truth": "The correct grease quantity for a bearing is determined by the size of the bearing. For bearings with relubrication features, the suitable quantity is calculated using the formula G_p = 0.002 D B, while for bearings that can only be relubricated from the side, the formula is G_p = 0.005 D B, where G_p is the grease quantity to be added, D is the bearing outside diameter, and B is the total bearing width.",
+    "reference_answer": "The correct grease quantity for a bearing is determined by the size of the bearing. For bearings with relubrication features, the suitable quantity is calculated using the formula G_p = 0.002 D B, while for bearings that can only be relubricated from the side, the formula is G_p = 0.005 D B, where G_p is the grease quantity to be added, D is the bearing outside diameter, and B is the total bearing width.",
+    "evidence_boundary": "The chunk provides specific formulas for calculating grease quantity based on bearing size but does not cover other potential factors.",
+    "source_chunk_ids": [
+      "ch7_text_032_grease_lubrication"
+    ],
+    "gold_chunk_id": "ch7_text_032_grease_lubrication",
+    "secondary_chunk_ids": [
+      "ch7_text_022_grease_lubrication",
+      "ch4_text_010_mounting_standard_split_plummer_pillow_block_housings"
+    ],
+    "source_pages": [
+      200
+    ],
+    "source_chunks": [
+      {
+        "chunk_id": "ch7_text_032_grease_lubrication",
+        "type": "text",
+        "chapter": "Lubrication",
+        "section": "Grease lubrication",
+        "heading_path": [
+          "Lubrication",
+          "Grease lubrication",
+          "Relubrication",
+          "Relubrication procedures"
+        ],
+        "page_start": 200,
+        "page_end": 200,
+        "text": "Chapter: Lubrication Section: Grease lubrication Subsection: Relubrication Subsubsection: Relubrication procedures Heading path: Lubrication > Grease lubrication > Relubrication > Relubrication procedures Pages: 200-200 ### Relubrication procedures Replenishment Since only the grease in the bearing should be replaced, the quantity needed for replenishment depends purely on the size of the bearing. Some bearings are provided with relubrication features in the inner or outer ring to facilitate efficient relubrication through the centre of the bearing (→ fig. 5). The suitable quantity of grease for replenishment is then $$ G_p = 0,002 D B $$ Other bearings can only be relubricated from the side (→ fig. 6). The suitable quantity of grease for replenishment is then $$ G_p = 0,005 D B $$ where **G<sub>p</sub>** = grease quantity to be added when replenishing [g] **D** = bearing outside diameter [mm] **B** = total bearing width (for thrust bearings, use height H) [mm] Bearing arrangements in housings that have contact seals, i.e. double-lip or four-lip seals, should be equipped with a grease escape hole to enable used and excess grease to purge from the arrangement. The escape hole should be positioned on the same side as the lock nut and therefore, on the side opposite the grease fitting (→ fig. 7). Bearing arrangements with non-contact seals such as labyrinth seals do not require a grease escape hole as the used and excess grease is pressed out between the gaps of the labyrinth when fresh grease is introduced (→ fig. 8). Grease should be replenished in the early stages of lubricant deterioration. For grease replenishment, SKF recommends the following: 1 If a different grease is being introduced, check that the greases are compatible (→ *Grease compatibility*, starting on **page 200**). 2 Clean the grease fitting. 3 Replenish the grease while the machine is operating. If this is not possible, rotate the shaft by hand."
+      }
+    ],
+    "source_mode": "full_corpus_llm_gold_chunk_annotation",
+    "generation_note": "Reference answer generated from one LLM-selected gold SKF chunk.",
+    "annotation_model": "gpt-4o-mini"
+  },
+  {
+    "id": "rag_ch07_006",
+    "category": "rag_only",
+    "subcategory": "skf_manual",
+    "chapter": 7,
+    "chapter_title": "Lubrication",
+    "question": "When should oil lubrication be preferred over grease lubrication?",
+    "ground_truth": "Oil lubrication is recommended for higher speeds.",
+    "reference_answer": "Oil lubrication is recommended for higher speeds.",
+    "evidence_boundary": "The chunk does not provide additional specific conditions for preferring oil over grease lubrication.",
+    "source_chunk_ids": [
+      "ch7_text_031_grease_lubrication"
+    ],
+    "gold_chunk_id": "ch7_text_031_grease_lubrication",
+    "secondary_chunk_ids": [
+      "ch7_text_004_introduction",
+      "ch7_table_022_part_01"
+    ],
+    "source_pages": [
+      198,
+      199
+    ],
+    "source_chunks": [
+      {
+        "chunk_id": "ch7_text_031_grease_lubrication",
+        "type": "text",
+        "chapter": "Lubrication",
+        "section": "Grease lubrication",
+        "heading_path": [
+          "Lubrication",
+          "Grease lubrication",
+          "Relubrication",
+          "Relubrication procedures"
+        ],
+        "page_start": 198,
+        "page_end": 199,
+        "text": "Chapter: Lubrication Section: Grease lubrication Subsection: Relubrication Subsubsection: Relubrication procedures Heading path: Lubrication > Grease lubrication > Relubrication > Relubrication procedures Pages: 198-199 ### Relubrication procedures The choice of a relubrication procedure generally depends on the application, the operating conditions and the relubrication interval t<sub>f</sub>. There are two primary relubrication procedures: replenishment and continuous relubrication (→ **table 9**). <sup>1)</sup> The bearing factors and recommended practical limits for the speed factor A apply to bearings with standard internal geometry and standard cages. For alternative internal bearing designs and special cages, contact the SKF application engineering service. <sup>2)</sup> The t<sub>f</sub> value obtained from diagram 1, page 193 needs to be divided by a factor of 10. <sup>3)</sup> Not applicable. For these C/P values, SKF does not recommend a full complement bearing, but a bearing with a cage instead. <sup>4)</sup> For higher speeds, oil lubrication is recommended. ### Relubrication procedures <sup>1)</sup> For full complement and thrust bearings, do not extend the interval. <sup>2)</sup> Contact the SKF application engineering service. <sup>3)</sup> For severely contaminated conditions, consider sealed SKF bearings or continuous relubrication. <sup>4)</sup> For P, PH, M and MR cages, there is no need for adjustment."
+      }
+    ],
+    "source_mode": "full_corpus_llm_gold_chunk_annotation",
+    "generation_note": "Reference answer generated from one LLM-selected gold SKF chunk.",
+    "annotation_model": "gpt-4o-mini"
+  },
+  {
+    "id": "rag_ch07_007",
+    "category": "rag_only",
+    "subcategory": "skf_manual",
+    "chapter": 7,
+    "chapter_title": "Lubrication",
+    "question": "What consequence does SKF give for insufficient or excessive lubrication?",
+    "ground_truth": "SKF states that both insufficient lubrication and excessive lubrication negatively affect bearing performance. In either case, the result can be premature bearing failure and costly machine downtime. The same SKF passage identifies insufficient lubricant and excessive lubricant as lubrication-related failure causes.",
+    "reference_answer": "SKF states that both insufficient lubrication and excessive lubrication negatively affect bearing performance. In either case, the result can be premature bearing failure and costly machine downtime. The same SKF passage identifies insufficient lubricant and excessive lubricant as lubrication-related failure causes.",
+    "evidence_boundary": "The gold chunk describes consequences rather than a detailed symptom list.",
+    "source_chunk_ids": [
+      "ch7_text_001_introduction"
+    ],
+    "gold_chunk_id": "ch7_text_001_introduction",
+    "secondary_chunk_ids": [],
+    "source_pages": [
+      184
+    ],
+    "source_chunks": [
+      {
+        "chunk_id": "ch7_text_001_introduction",
+        "type": "text",
+        "chapter": "Lubrication",
+        "section": "Introduction",
+        "heading_path": [
+          "Lubrication",
+          "Introduction"
+        ],
+        "page_start": 184,
+        "page_end": 184,
+        "text": "Chapter: Lubrication Section: Introduction Heading path: Lubrication > Introduction Pages: 184-184 # Introduction To optimize the service life of a bearing arrangement, the correct amount of an appropriate lubricant must be delivered at the proper time. Just as an insufficient amount of lubricant will affect bearing performance negatively, so will an excessive amount of lubricant. Either way, the result can be the same: premature bearing failure and costly machine downtime. Inadequate lubrication accounts for approximately 36% of all bearing failures. This includes failures caused by the following: * improper lubricant selection * insufficient lubricant * excessive lubricant * inappropriate relubrication intervals * lubricant not reaching the bearing due to poor bearing arrangement design, incorrect machine assembly or blocked piping Add to this the bearing failures caused by a contaminated lubricant supply and the percentage of lubrication-related bearing failures can jump as high as 50%. Effective lubrication and good lubrication practices can help to significantly reduce premature bearing failures and machine downtime. To meet that goal, SKF offers a comprehensive assortment of lubricants and lubrication systems as well as programs to help with lubricant selection and determine relubrication intervals. Only lubrication for rolling bearings is presented in this chapter. For information about lubricating other types of bearings, visit [www.skf.com/bearings](http://www.skf.com/bearings) , or contact the SKF application engineering service. For additional information about SKF maintenance and lubrication products and tools, visit [www.skf.com/lubrication](http://www.skf.com/lubrication) and [www.mapro.skf.com](http://www.mapro.skf.com) . For information about the SKF programs LuBase, DialSet and the SKF Lubrication Planner, visit [www.skf.com/lubrication](http://www.skf.com/lubrication) or [www.aptitudexchange.com](http://www.aptitudexchange.com) . The SKF Reliability Maintenance Institute (RMI) offers a comprehensive range of training courses in lubrication (→ *Training*, starting on page 326). Contact your local SKF representative for addition ... [truncated]"
+      }
+    ],
+    "source_mode": "full_corpus_llm_gold_chunk_annotation_manual_review",
+    "generation_note": "Reference answer reviewed and corrected from one manually selected gold SKF chunk.",
+    "annotation_model": "gpt-4o-mini",
+    "review_status": "manual_reviewed"
+  },
+  {
+    "id": "rag_ch07_008",
+    "category": "rag_only",
+    "subcategory": "skf_manual",
+    "chapter": 7,
+    "chapter_title": "Lubrication",
+    "question": "When selecting oil, how does SKF relate oil temperature to bearing housing temperature?",
+    "ground_truth": "When selecting oil, SKF notes that operating and ambient temperatures should be considered and that oil temperature is usually 3 to 11 °C (5 to 20 °F) higher than the bearing housing temperature.",
+    "reference_answer": "When selecting oil, SKF notes that operating and ambient temperatures should be considered and that oil temperature is usually 3 to 11 °C (5 to 20 °F) higher than the bearing housing temperature.",
+    "evidence_boundary": "The gold chunk supports the oil-temperature relation used during oil selection.",
+    "source_chunk_ids": [
+      "ch7_text_047_oil_lubrication"
+    ],
+    "gold_chunk_id": "ch7_text_047_oil_lubrication",
+    "secondary_chunk_ids": [
+      "ch7_text_049_oil_lubrication",
+      "ch7_text_048_oil_lubrication"
+    ],
+    "source_pages": [
+      207,
+      208
+    ],
+    "source_chunks": [
+      {
+        "chunk_id": "ch7_text_047_oil_lubrication",
+        "type": "text",
+        "chapter": "Lubrication",
+        "section": "Oil lubrication",
+        "heading_path": [
+          "Lubrication",
+          "Oil lubrication",
+          "How to select a suitable oil"
+        ],
+        "page_start": 207,
+        "page_end": 208,
+        "text": "Chapter: Lubrication Section: Oil lubrication Subsection: How to select a suitable oil Heading path: Lubrication > Oil lubrication > How to select a suitable oil Pages: 207-208 ## How to select a suitable oil Standard mineral oils provide adequate lubrication for most applications that are oil lubricated. Synthetic oils should only be selected if they can be justified, as they are normally much more expensive. When selecting an oil, it is best to consider all contributing factors. Always gather the relevant SKF logo ## How to select a suitable oil information first, before starting the selection process: * application * bearing type and boundary dimensions * bearing load * operating and ambient temperatures * rotational speed * shaft orientation * external influences e.g. vibration, oscillation * contamination details **CAUTION:** Be careful not to just substitute oil from one lubricant manufacturer with oil from a different manufacturer. They may not be identical or compatible. **NOTE:** When determining the operating temperature of a bearing, keep in mind that the oil temperature is usually 3 to 11 °C (5 to 20 °F) higher than the bearing housing temperature."
+      }
+    ],
+    "source_mode": "full_corpus_llm_gold_chunk_annotation",
+    "generation_note": "Reference answer generated from one LLM-selected gold SKF chunk.",
+    "annotation_model": "gpt-4o-mini",
+    "answer_review_status": "question_rewrite_aligned"
+  },
+  {
+    "id": "rag_ch07_009",
+    "category": "rag_only",
+    "subcategory": "skf_manual",
+    "chapter": 7,
+    "chapter_title": "Lubrication",
+    "question": "What lubricant inspection and handling practices does SKF recommend before use?",
+    "ground_truth": "SKF recommends visually checking greases and oils before use. Grease should be checked for abnormal oil separation, mildew, water or discolouration; oil should be checked for water or discolouration, and cloudy oil usually indicates water contamination. SKF also recommends wiping container edges before opening, using clean containers and professional tools, and using protective gloves when handling lubricants.",
+    "reference_answer": "SKF recommends visually checking greases and oils before use. Grease should be checked for abnormal oil separation, mildew, water or discolouration; oil should be checked for water or discolouration, and cloudy oil usually indicates water contamination. SKF also recommends wiping container edges before opening, using clean containers and professional tools, and using protective gloves when handling lubricants.",
+    "evidence_boundary": "The gold chunk covers lubricant inspection and handling practices, not long-term warehouse storage conditions.",
+    "source_chunk_ids": [
+      "ch7_text_003_introduction"
+    ],
+    "gold_chunk_id": "ch7_text_003_introduction",
+    "secondary_chunk_ids": [],
+    "source_pages": [
+      185
+    ],
+    "source_chunks": [
+      {
+        "chunk_id": "ch7_text_003_introduction",
+        "type": "text",
+        "chapter": "Lubrication",
+        "section": "Introduction",
+        "heading_path": [
+          "Lubrication",
+          "Introduction",
+          "Inspection, handling and disposal of lubricants"
+        ],
+        "page_start": 185,
+        "page_end": 185,
+        "text": "Chapter: Lubrication Section: Introduction Subsection: Inspection, handling and disposal of lubricants Heading path: Lubrication > Introduction > Inspection, handling and disposal of lubricants Pages: 185-185 ## Inspection, handling and disposal of lubricants Inspection of lubricants Regardless of the date of manufacture, greases and oils should be checked visually prior to use. For grease, check for abnormal oil separation and any signs of mildew, water or discolouration. For oil, check for any water or discolouration. If the oil looks cloudy, it usually means it is contaminated with water. **NOTE:** When visually inspecting grease, keep in mind that some oil separation is normal. Recommended lubricant handling practices Proper lubricant handling procedures are very important. SKF recommends that you do the following: * Wipe the edges of lubricant containers before opening them to prevent the entry of contaminants. * Use clean containers when dispensing lubricants. * Use professional tools. **CAUTION:** Direct contact with petroleum products may cause allergic reactions! Read the material safety datasheets before handling lubricants and use protective gloves at all times. Material safety datasheets Material safety datasheets (MSDS) provide essential information about the physical and chemical properties of a lubricant. They also present recommended precautions and exposure control procedures. **NOTE:** Material safety datasheets for SKF bearing greases are available online at [www.mapro.skf.com](http://www.mapro.skf.com) . Lubricant disposal Improper disposal of lubricants can be hazardous to the community and the environment. Dispose of all lubricants in accordance with national and local laws and regulations and good environmental safety practices."
+      }
+    ],
+    "source_mode": "full_corpus_llm_gold_chunk_annotation_manual_review",
+    "generation_note": "Reference answer reviewed and corrected from one manually selected gold SKF chunk.",
+    "annotation_model": "gpt-4o-mini",
+    "review_status": "manual_reviewed"
+  },
+  {
+    "id": "rag_ch08_001",
+    "category": "rag_only",
+    "subcategory": "skf_manual",
+    "chapter": 8,
+    "chapter_title": "Inspection",
+    "question": "What bearing-damage detection stages and methods are shown in SKF's inspection-during-operation table?",
+    "ground_truth": "SKF presents bearing inspection during operation as a staged detection process: damage is initiated early, SKF enveloped acceleration technology can provide pre-warning, standard vibration monitoring detects problems at a mid-stage, listen-and-feel methods detect them later, and bearing failure is the final stage.",
+    "reference_answer": "SKF presents bearing inspection during operation as a staged detection process: damage is initiated early, SKF enveloped acceleration technology can provide pre-warning, standard vibration monitoring detects problems at a mid-stage, listen-and-feel methods detect them later, and bearing failure is the final stage.",
+    "evidence_boundary": "The gold table describes detection methods and timing rather than a full maintenance checklist.",
+    "source_chunk_ids": [
+      "ch8_table_002_part_01"
+    ],
+    "gold_chunk_id": "ch8_table_002_part_01",
+    "secondary_chunk_ids": [],
+    "source_pages": [
+      224
+    ],
+    "source_chunks": [
+      {
+        "chunk_id": "ch8_table_002_part_01",
+        "type": "table",
+        "chapter": "Inspection",
+        "section": "Inspection during operation",
+        "heading_path": [
+          "Inspection",
+          "Inspection during operation"
+        ],
+        "page_start": 224,
+        "page_end": 224,
+        "text": "Chapter: Inspection Section: Inspection during operation Heading path: Inspection > Inspection during operation Page: 224 Table ID: p224_t1 | Detection Method / Event | Relative Timing / Stage | | ----------------------------------------------------- | ----------------------- | | Damage initiated | Early stage | | Detection using SKF enveloped acceleration technology | Pre-warning time starts | | Detection by standard vibration monitoring | Mid-stage | | Detection by \"Listen and feel\" | Late stage | | Bearing failure | Final stage |"
+      }
+    ],
+    "source_mode": "full_corpus_llm_gold_chunk_annotation_manual_review",
+    "generation_note": "Reference answer reviewed and corrected from one manually selected gold SKF chunk.",
+    "annotation_model": "gpt-4o-mini",
+    "review_status": "manual_reviewed"
+  },
+  {
+    "id": "rag_ch08_002",
+    "category": "rag_only",
+    "subcategory": "skf_manual",
+    "chapter": 8,
+    "chapter_title": "Inspection",
+    "question": "How can vibration monitoring help detect developing rolling bearing problems?",
+    "ground_truth": "Vibration monitoring helps detect developing rolling bearing problems by analyzing vibration levels and frequencies. An increase in vibration levels typically indicates the onset of a mechanical problem, and each type of fault generates a unique vibration frequency. By measuring these frequencies, particularly in the high and very high ranges, it is possible to identify damage in rolling bearings and gain early indications of potential issues.",
+    "reference_answer": "Vibration monitoring helps detect developing rolling bearing problems by analyzing vibration levels and frequencies. An increase in vibration levels typically indicates the onset of a mechanical problem, and each type of fault generates a unique vibration frequency. By measuring these frequencies, particularly in the high and very high ranges, it is possible to identify damage in rolling bearings and gain early indications of potential issues.",
+    "evidence_boundary": "The chunk does not provide specific examples of vibration frequencies associated with particular bearing problems.",
+    "source_chunk_ids": [
+      "ch8_text_009_inspection_during_operation"
+    ],
+    "gold_chunk_id": "ch8_text_009_inspection_during_operation",
+    "secondary_chunk_ids": [
+      "ch11_text_009_bearing_damage",
+      "ch8_text_001_introduction"
+    ],
+    "source_pages": [
+      226
+    ],
+    "source_chunks": [
+      {
+        "chunk_id": "ch8_text_009_inspection_during_operation",
+        "type": "text",
+        "chapter": "Inspection",
+        "section": "Inspection during operation",
+        "heading_path": [
+          "Inspection",
+          "Inspection during operation",
+          "Vibration monitoring for rolling bearings"
+        ],
+        "page_start": 226,
+        "page_end": 226,
+        "text": "Chapter: Inspection Section: Inspection during operation Subsection: Vibration monitoring for rolling bearings Heading path: Inspection > Inspection during operation > Vibration monitoring for rolling bearings Pages: 226-226 ## Vibration monitoring for rolling bearings The need for vibration monitoring comes from three fundamental facts: * All machines vibrate. * The onset of a mechanical problem is usually accompanied by an increase in vibration levels. * The nature of the fault can be determined from the vibration characteristics. Each mechanical problem generates a unique vibration frequency. Therefore, this frequency should be analyzed to help identify the root cause. To capture the vibration frequency, a transducer (a piezoelectric sensor) is strategically placed on the machine. There is a broad range of frequencies that can be generated by various machine faults: * low frequency range, 0 to 2 kHz * high frequency range, 2 to 50 kHz * very high frequency range, > 50 kHz Low frequency vibrations are caused, for example, by structural resonance, misalignment or mechanical looseness. High and very high frequencies include those generated by damage (defects) in rolling bearings. Therefore, by measuring the amplitude in terms of acceleration, it is possible to gain a very early indication of developing bearing problems."
+      }
+    ],
+    "source_mode": "full_corpus_llm_gold_chunk_annotation",
+    "generation_note": "Reference answer generated from one LLM-selected gold SKF chunk.",
+    "annotation_model": "gpt-4o-mini"
+  },
+  {
+    "id": "rag_ch09_001",
+    "category": "rag_only",
+    "subcategory": "skf_manual",
+    "chapter": 9,
+    "chapter_title": "Troubleshooting",
+    "question": "What symptoms indicate possible bearing trouble during operation?",
+    "ground_truth": "Symptoms indicating possible bearing trouble during operation include excessive heat, excessive noise levels, excessive vibration levels, excessive shaft movement, and excessive frictional moment to rotate the shaft.",
+    "reference_answer": "Symptoms indicating possible bearing trouble during operation include excessive heat, excessive noise levels, excessive vibration levels, excessive shaft movement, and excessive frictional moment to rotate the shaft.",
+    "evidence_boundary": "The symptoms are listed in the provided SKF chunk.",
+    "source_chunk_ids": [
+      "ch9_table_002_part_01"
+    ],
+    "gold_chunk_id": "ch9_table_002_part_01",
+    "secondary_chunk_ids": [
+      "ch8_table_002_part_01",
+      "ch9_text_014_trouble_conditions_and_their_solutions"
+    ],
+    "source_pages": [
+      236
+    ],
+    "source_chunks": [
+      {
+        "chunk_id": "ch9_table_002_part_01",
+        "type": "table",
+        "chapter": "Troubleshooting",
+        "section": "Common symptoms of bearing trouble",
+        "heading_path": [
+          "Troubleshooting",
+          "Common symptoms of bearing trouble"
+        ],
+        "page_start": 236,
+        "page_end": 236,
+        "text": "Chapter: Troubleshooting Section: Common symptoms of bearing trouble Heading path: Troubleshooting > Common symptoms of bearing trouble Page: 236 Table ID: p236_t1 | Common symptoms of bearing trouble | Table 1 | | ---------------------------------- | -------------------------------------------------------------------------- | | A | Excessive heat \\&rarr; table 1a | | B | Excessive noise levels \\&rarr; table 1b | | C | Excessive vibration levels \\&rarr; table 1c, page 234 | | D | Excessive shaft movement \\&rarr; table 1d, page 234 | | E | Excessive frictional moment to rotate the shaft \\&rarr; table 1e, page 235 |"
+      }
+    ],
+    "source_mode": "full_corpus_llm_gold_chunk_annotation",
+    "generation_note": "Reference answer generated from one LLM-selected gold SKF chunk.",
+    "annotation_model": "gpt-4o-mini"
+  },
+  {
+    "id": "rag_ch09_002",
+    "category": "rag_only",
+    "subcategory": "skf_manual",
+    "chapter": 9,
+    "chapter_title": "Troubleshooting",
+    "question": "According to SKF troubleshooting guidance, what can cause spalled rolling surfaces due to fatigue or surface-initiated fatigue?",
+    "ground_truth": "SKF troubleshooting guidance links spalled rolling surfaces due to material fatigue to abnormal operating conditions such as misalignment, oval clamping or material defects. It also links surface initiated fatigue to inadequate lubrication that causes metal-to-metal contact, with causes such as too-low viscosity at operating temperature, wear particles and ingress of contaminants.",
+    "reference_answer": "SKF troubleshooting guidance links spalled rolling surfaces due to material fatigue to abnormal operating conditions such as misalignment, oval clamping or material defects. It also links surface initiated fatigue to inadequate lubrication that causes metal-to-metal contact, with causes such as too-low viscosity at operating temperature, wear particles and ingress of contaminants.",
+    "evidence_boundary": "The gold chunk covers selected troubleshooting causes for spalled rolling surfaces.",
+    "source_chunk_ids": [
+      "ch9_text_014_trouble_conditions_and_their_solutions"
+    ],
+    "gold_chunk_id": "ch9_text_014_trouble_conditions_and_their_solutions",
+    "secondary_chunk_ids": [
+      "ch9_text_013_trouble_conditions_and_their_solutions",
+      "ch9_text_012_trouble_conditions_and_their_solutions"
+    ],
+    "source_pages": [
+      253
+    ],
+    "source_chunks": [
+      {
+        "chunk_id": "ch9_text_014_trouble_conditions_and_their_solutions",
+        "type": "text",
+        "chapter": "Troubleshooting",
+        "section": "Trouble conditions and their solutions",
+        "heading_path": [
+          "Troubleshooting",
+          "Trouble conditions and their solutions"
+        ],
+        "page_start": 253,
+        "page_end": 253,
+        "text": "Chapter: Troubleshooting Section: Trouble conditions and their solutions Heading path: Troubleshooting > Trouble conditions and their solutions Pages: 253-253 ## Trouble conditions and their solutions **Table 2 cont.** Photograph of a spalled bearing ring **Rolling surfaces are spalled due to material fatigue** Considerations during operation: • Pure material fatigue in a high quality rolling bearing is becoming rare. • Fatigue spalling is the result of an abnormal operating condition that leads to higher stress in the bearing, such as misalignment, oval clamping (pinching) or the result of material defects such as inclusions or poor quality steel. Actions: • Only use high quality bearings. • Check damaged bearings for misalignment. Realign where necessary. • Check damaged bearings for possible oval clamping (pinching). Repair and machine seats where necessary. • → *Bearing damage and their causes* , starting on **page 288** . Photograph of surface initiated fatigue on a bearing **Rolling surfaces are spalled due to surface initiated fatigue** Considerations during operation: • Inadequate lubrication leads to metal-to-metal contact between the rolling surfaces. • Causes include but are not limited to: viscosity too low at operating temperature, wear particles and ingress of contaminants. Actions: • Review operating viscosity of the lubricant, taking real operating conditions into consideration. • To discharge wear particles, consider more frequent relubrication. • Check the condition of the sealing arrangement. • → *Bearing damage and their causes* , starting on **page 288** . Photograph of surface damage on a bearing **Rolling surfaces are spalled, initiated from surface damage** Considerations during mounting or operation: • Surface initiated damage includes conditions such as brinelling from impact, false brinelling from vibration, water etching, particle denting, passage of electric current, etc. Actions: • Identify the source of the damage and take appropriate action, e.g. eliminate impact through the rolling elements during mounting, replace seals to prevent ingress of contaminants, ground equipment properly, etc. • → *Bearing damage and ... [truncated]"
+      }
+    ],
+    "source_mode": "full_corpus_llm_gold_chunk_annotation",
+    "generation_note": "Reference answer generated from one LLM-selected gold SKF chunk.",
+    "annotation_model": "gpt-4o-mini",
+    "answer_review_status": "question_rewrite_aligned"
+  },
+  {
+    "id": "rag_ch09_003",
+    "category": "rag_only",
+    "subcategory": "skf_manual",
+    "chapter": 9,
+    "chapter_title": "Troubleshooting",
+    "question": "What lubrication and operating-condition checks does SKF recommend for spalled rolling surfaces?",
+    "ground_truth": "For spalled rolling surfaces, SKF recommends checking damaged bearings for misalignment and realigning where necessary, checking for possible oval clamping and repairing or machining seats where necessary. For lubrication-related surface initiated fatigue, SKF recommends reviewing operating lubricant viscosity, considering more frequent relubrication to discharge wear particles, and checking the sealing arrangement.",
+    "reference_answer": "For spalled rolling surfaces, SKF recommends checking damaged bearings for misalignment and realigning where necessary, checking for possible oval clamping and repairing or machining seats where necessary. For lubrication-related surface initiated fatigue, SKF recommends reviewing operating lubricant viscosity, considering more frequent relubrication to discharge wear particles, and checking the sealing arrangement.",
+    "evidence_boundary": "The gold chunk supports troubleshooting checks for fatigue and surface-initiated fatigue on rolling surfaces.",
+    "source_chunk_ids": [
+      "ch9_text_014_trouble_conditions_and_their_solutions"
+    ],
+    "gold_chunk_id": "ch9_text_014_trouble_conditions_and_their_solutions",
+    "secondary_chunk_ids": [
+      "ch9_text_013_trouble_conditions_and_their_solutions",
+      "ch9_text_010_trouble_conditions_and_their_solutions"
+    ],
+    "source_pages": [
+      253
+    ],
+    "source_chunks": [
+      {
+        "chunk_id": "ch9_text_014_trouble_conditions_and_their_solutions",
+        "type": "text",
+        "chapter": "Troubleshooting",
+        "section": "Trouble conditions and their solutions",
+        "heading_path": [
+          "Troubleshooting",
+          "Trouble conditions and their solutions"
+        ],
+        "page_start": 253,
+        "page_end": 253,
+        "text": "Chapter: Troubleshooting Section: Trouble conditions and their solutions Heading path: Troubleshooting > Trouble conditions and their solutions Pages: 253-253 ## Trouble conditions and their solutions **Table 2 cont.** Photograph of a spalled bearing ring **Rolling surfaces are spalled due to material fatigue** Considerations during operation: • Pure material fatigue in a high quality rolling bearing is becoming rare. • Fatigue spalling is the result of an abnormal operating condition that leads to higher stress in the bearing, such as misalignment, oval clamping (pinching) or the result of material defects such as inclusions or poor quality steel. Actions: • Only use high quality bearings. • Check damaged bearings for misalignment. Realign where necessary. • Check damaged bearings for possible oval clamping (pinching). Repair and machine seats where necessary. • → *Bearing damage and their causes* , starting on **page 288** . Photograph of surface initiated fatigue on a bearing **Rolling surfaces are spalled due to surface initiated fatigue** Considerations during operation: • Inadequate lubrication leads to metal-to-metal contact between the rolling surfaces. • Causes include but are not limited to: viscosity too low at operating temperature, wear particles and ingress of contaminants. Actions: • Review operating viscosity of the lubricant, taking real operating conditions into consideration. • To discharge wear particles, consider more frequent relubrication. • Check the condition of the sealing arrangement. • → *Bearing damage and their causes* , starting on **page 288** . Photograph of surface damage on a bearing **Rolling surfaces are spalled, initiated from surface damage** Considerations during mounting or operation: • Surface initiated damage includes conditions such as brinelling from impact, false brinelling from vibration, water etching, particle denting, passage of electric current, etc. Actions: • Identify the source of the damage and take appropriate action, e.g. eliminate impact through the rolling elements during mounting, replace seals to prevent ingress of contaminants, ground equipment properly, etc. • → *Bearing damage and ... [truncated]"
+      }
+    ],
+    "source_mode": "full_corpus_llm_gold_chunk_annotation",
+    "generation_note": "Reference answer generated from one LLM-selected gold SKF chunk.",
+    "annotation_model": "gpt-4o-mini",
+    "answer_review_status": "question_rewrite_aligned"
+  },
+  {
+    "id": "rag_ch09_004",
+    "category": "rag_only",
+    "subcategory": "skf_manual",
+    "chapter": 9,
+    "chapter_title": "Troubleshooting",
+    "question": "What SKF troubleshooting actions are recommended for surface-initiated fatigue on rolling surfaces?",
+    "ground_truth": "For surface initiated fatigue on rolling surfaces, SKF recommends reviewing the operating viscosity of the lubricant under real operating conditions, considering more frequent relubrication to discharge wear particles, and checking the condition of the sealing arrangement.",
+    "reference_answer": "For surface initiated fatigue on rolling surfaces, SKF recommends reviewing the operating viscosity of the lubricant under real operating conditions, considering more frequent relubrication to discharge wear particles, and checking the condition of the sealing arrangement.",
+    "evidence_boundary": "The gold chunk supports troubleshooting actions for surface initiated fatigue.",
+    "source_chunk_ids": [
+      "ch9_text_014_trouble_conditions_and_their_solutions"
+    ],
+    "gold_chunk_id": "ch9_text_014_trouble_conditions_and_their_solutions",
+    "secondary_chunk_ids": [
+      "ch9_table_012_part_01",
+      "ch9_text_010_trouble_conditions_and_their_solutions"
+    ],
+    "source_pages": [
+      253
+    ],
+    "source_chunks": [
+      {
+        "chunk_id": "ch9_text_014_trouble_conditions_and_their_solutions",
+        "type": "text",
+        "chapter": "Troubleshooting",
+        "section": "Trouble conditions and their solutions",
+        "heading_path": [
+          "Troubleshooting",
+          "Trouble conditions and their solutions"
+        ],
+        "page_start": 253,
+        "page_end": 253,
+        "text": "Chapter: Troubleshooting Section: Trouble conditions and their solutions Heading path: Troubleshooting > Trouble conditions and their solutions Pages: 253-253 ## Trouble conditions and their solutions **Table 2 cont.** Photograph of a spalled bearing ring **Rolling surfaces are spalled due to material fatigue** Considerations during operation: • Pure material fatigue in a high quality rolling bearing is becoming rare. • Fatigue spalling is the result of an abnormal operating condition that leads to higher stress in the bearing, such as misalignment, oval clamping (pinching) or the result of material defects such as inclusions or poor quality steel. Actions: • Only use high quality bearings. • Check damaged bearings for misalignment. Realign where necessary. • Check damaged bearings for possible oval clamping (pinching). Repair and machine seats where necessary. • → *Bearing damage and their causes* , starting on **page 288** . Photograph of surface initiated fatigue on a bearing **Rolling surfaces are spalled due to surface initiated fatigue** Considerations during operation: • Inadequate lubrication leads to metal-to-metal contact between the rolling surfaces. • Causes include but are not limited to: viscosity too low at operating temperature, wear particles and ingress of contaminants. Actions: • Review operating viscosity of the lubricant, taking real operating conditions into consideration. • To discharge wear particles, consider more frequent relubrication. • Check the condition of the sealing arrangement. • → *Bearing damage and their causes* , starting on **page 288** . Photograph of surface damage on a bearing **Rolling surfaces are spalled, initiated from surface damage** Considerations during mounting or operation: • Surface initiated damage includes conditions such as brinelling from impact, false brinelling from vibration, water etching, particle denting, passage of electric current, etc. Actions: • Identify the source of the damage and take appropriate action, e.g. eliminate impact through the rolling elements during mounting, replace seals to prevent ingress of contaminants, ground equipment properly, etc. • → *Bearing damage and ... [truncated]"
+      }
+    ],
+    "source_mode": "full_corpus_llm_gold_chunk_annotation",
+    "generation_note": "Reference answer generated from one LLM-selected gold SKF chunk.",
+    "annotation_model": "gpt-4o-mini",
+    "answer_review_status": "question_rewrite_aligned"
+  },
+  {
+    "id": "rag_ch09_005",
+    "category": "rag_only",
+    "subcategory": "skf_manual",
+    "chapter": 9,
+    "chapter_title": "Troubleshooting",
+    "question": "What SKF troubleshooting checks are recommended when rolling surfaces are spalled due to material fatigue?",
+    "ground_truth": "When rolling surfaces are spalled due to material fatigue, SKF recommends checking damaged bearings for misalignment and realigning where necessary. It also recommends checking for possible oval clamping or pinching and repairing or machining seats where necessary.",
+    "reference_answer": "When rolling surfaces are spalled due to material fatigue, SKF recommends checking damaged bearings for misalignment and realigning where necessary. It also recommends checking for possible oval clamping or pinching and repairing or machining seats where necessary.",
+    "evidence_boundary": "The gold chunk supports troubleshooting checks for material-fatigue spalling.",
+    "source_chunk_ids": [
+      "ch9_text_014_trouble_conditions_and_their_solutions"
+    ],
+    "gold_chunk_id": "ch9_text_014_trouble_conditions_and_their_solutions",
+    "secondary_chunk_ids": [
+      "ch9_text_013_trouble_conditions_and_their_solutions",
+      "ch9_text_012_trouble_conditions_and_their_solutions"
+    ],
+    "source_pages": [
+      253
+    ],
+    "source_chunks": [
+      {
+        "chunk_id": "ch9_text_014_trouble_conditions_and_their_solutions",
+        "type": "text",
+        "chapter": "Troubleshooting",
+        "section": "Trouble conditions and their solutions",
+        "heading_path": [
+          "Troubleshooting",
+          "Trouble conditions and their solutions"
+        ],
+        "page_start": 253,
+        "page_end": 253,
+        "text": "Chapter: Troubleshooting Section: Trouble conditions and their solutions Heading path: Troubleshooting > Trouble conditions and their solutions Pages: 253-253 ## Trouble conditions and their solutions **Table 2 cont.** Photograph of a spalled bearing ring **Rolling surfaces are spalled due to material fatigue** Considerations during operation: • Pure material fatigue in a high quality rolling bearing is becoming rare. • Fatigue spalling is the result of an abnormal operating condition that leads to higher stress in the bearing, such as misalignment, oval clamping (pinching) or the result of material defects such as inclusions or poor quality steel. Actions: • Only use high quality bearings. • Check damaged bearings for misalignment. Realign where necessary. • Check damaged bearings for possible oval clamping (pinching). Repair and machine seats where necessary. • → *Bearing damage and their causes* , starting on **page 288** . Photograph of surface initiated fatigue on a bearing **Rolling surfaces are spalled due to surface initiated fatigue** Considerations during operation: • Inadequate lubrication leads to metal-to-metal contact between the rolling surfaces. • Causes include but are not limited to: viscosity too low at operating temperature, wear particles and ingress of contaminants. Actions: • Review operating viscosity of the lubricant, taking real operating conditions into consideration. • To discharge wear particles, consider more frequent relubrication. • Check the condition of the sealing arrangement. • → *Bearing damage and their causes* , starting on **page 288** . Photograph of surface damage on a bearing **Rolling surfaces are spalled, initiated from surface damage** Considerations during mounting or operation: • Surface initiated damage includes conditions such as brinelling from impact, false brinelling from vibration, water etching, particle denting, passage of electric current, etc. Actions: • Identify the source of the damage and take appropriate action, e.g. eliminate impact through the rolling elements during mounting, replace seals to prevent ingress of contaminants, ground equipment properly, etc. • → *Bearing damage and ... [truncated]"
+      }
+    ],
+    "source_mode": "full_corpus_llm_gold_chunk_annotation",
+    "generation_note": "Reference answer generated from one LLM-selected gold SKF chunk.",
+    "annotation_model": "gpt-4o-mini",
+    "answer_review_status": "question_rewrite_aligned"
+  },
+  {
+    "id": "rag_ch10_001",
+    "category": "rag_only",
+    "subcategory": "skf_manual",
+    "chapter": 10,
+    "chapter_title": "Dismounting",
+    "question": "What precautions does SKF give when dismounting bearing housings that will be reused?",
+    "ground_truth": "When dismounting bearing housings that will be reused, SKF recommends keeping the components of each housing together because the base and cap are not interchangeable. It also recommends handling all metal parts of solid seals carefully, not hitting the housing directly with a hammer, and performing required lockout/tagout procedures before starting work.",
+    "reference_answer": "When dismounting bearing housings that will be reused, SKF recommends keeping the components of each housing together because the base and cap are not interchangeable. It also recommends handling all metal parts of solid seals carefully, not hitting the housing directly with a hammer, and performing required lockout/tagout procedures before starting work.",
+    "evidence_boundary": "The gold chunk specifically addresses dismounting bearing housings for reuse.",
+    "source_chunk_ids": [
+      "ch10_text_040_dismounting_bearing_housings"
+    ],
+    "gold_chunk_id": "ch10_text_040_dismounting_bearing_housings",
+    "secondary_chunk_ids": [
+      "ch10_text_031_dismounting_bearing_units",
+      "ch10_text_021_dismounting_rolling_bearings"
+    ],
+    "source_pages": [
+      282
+    ],
+    "source_chunks": [
+      {
+        "chunk_id": "ch10_text_040_dismounting_bearing_housings",
+        "type": "text",
+        "chapter": "Dismounting",
+        "section": "Dismounting bearing housings",
+        "heading_path": [
+          "Dismounting",
+          "Dismounting bearing housings",
+          "What to remember"
+        ],
+        "page_start": 282,
+        "page_end": 282,
+        "text": "Chapter: Dismounting Section: Dismounting bearing housings Subsection: What to remember Heading path: Dismounting > Dismounting bearing housings > What to remember Pages: 282-282 ## What to remember If a housing is to be used again, always dismount it carefully, taking the following into consideration: * Keep the components of each housing together. The base and cap of individual housings are not interchangeable. The base and cap of SKF SNL, SONL and SAF housings are marked with a serial number. * Handle all metal parts of solid seals carefully. * Do not hit the housing directly with a hammer. **WARNING** To minimize the chance of serious injuries, prior to starting any work, perform required lockout/tagout procedures."
+      }
+    ],
+    "source_mode": "full_corpus_llm_gold_chunk_annotation",
+    "generation_note": "Reference answer generated from one LLM-selected gold SKF chunk.",
+    "annotation_model": "gpt-4o-mini",
+    "answer_review_status": "question_rewrite_aligned"
+  },
+  {
+    "id": "rag_ch10_002",
+    "category": "rag_only",
+    "subcategory": "skf_manual",
+    "chapter": 10,
+    "chapter_title": "Dismounting",
+    "question": "What tools or methods are used to dismount bearings without damaging adjacent parts?",
+    "ground_truth": "To dismount bearings without damaging adjacent parts, special pullers (extractors) are used. For small deep groove ball bearings, pullers are designed for bore diameters ranging from 10 to 100 mm and 30 to 160 mm. The puller arms grip the inner ring raceway while being supported by the outer ring.",
+    "reference_answer": "To dismount bearings without damaging adjacent parts, special pullers (extractors) are used. For small deep groove ball bearings, pullers are designed for bore diameters ranging from 10 to 100 mm and 30 to 160 mm. The puller arms grip the inner ring raceway while being supported by the outer ring.",
+    "evidence_boundary": "The chunk provides specific details about the pullers but does not cover other methods or tools.",
+    "source_chunk_ids": [
+      "ch10_text_028_dismounting_rolling_bearings"
+    ],
+    "gold_chunk_id": "ch10_text_028_dismounting_rolling_bearings",
+    "secondary_chunk_ids": [
+      "ch10_text_021_dismounting_rolling_bearings",
+      "ch10_text_022_dismounting_rolling_bearings"
+    ],
+    "source_pages": [
+      273
+    ],
+    "source_chunks": [
+      {
+        "chunk_id": "ch10_text_028_dismounting_rolling_bearings",
+        "type": "text",
+        "chapter": "Dismounting",
+        "section": "Dismounting rolling bearings",
+        "heading_path": [
+          "Dismounting",
+          "Dismounting rolling bearings",
+          "Dismounting a bearing from a shaft and a solid housing simultaneously"
+        ],
+        "page_start": 273,
+        "page_end": 273,
+        "text": "Chapter: Dismounting Section: Dismounting rolling bearings Subsection: Dismounting a bearing from a shaft and a solid housing simultaneously Heading path: Dismounting > Dismounting rolling bearings > Dismounting a bearing from a shaft and a solid housing simultaneously Pages: 273-273 ## Dismounting a bearing from a shaft and a solid housing simultaneously To dismount small deep groove ball bearings from a shaft and a solid housing simultaneously, special pullers (extractors) have been designed. **Fig. 33** shows a puller designed for bearings with a bore diameter ranging from 10 to 100 mm. The puller arms are placed between the balls and grip the inner ring raceway, while being supported by the outer ring. Illustration of a puller for bearings with 10 to 100 mm bore diameter, labeled Fig. 33 **Fig. 34** shows a puller designed for bearings with a bore diameter ranging from 30 to 160 mm. To apply the puller, the bearing cage needs to be removed first. The puller arms at the end are ball shaped with two flats. They are placed between the balls and grip both the inner and outer ring raceways. Illustration of a puller for bearings with 30 to 160 mm bore diameter, labeled Fig. 34 For additional information about internal bearing puller kits, visit [www.mapro.skf.com](http://www.mapro.skf.com) ."
+      }
+    ],
+    "source_mode": "full_corpus_llm_gold_chunk_annotation",
+    "generation_note": "Reference answer generated from one LLM-selected gold SKF chunk.",
+    "annotation_model": "gpt-4o-mini"
+  },
+  {
+    "id": "rag_ch10_003",
+    "category": "rag_only",
+    "subcategory": "skf_manual",
+    "chapter": 10,
+    "chapter_title": "Dismounting",
+    "question": "How does SKF's oil injection method help dismount bearings on tapered shafts?",
+    "ground_truth": "Bearings with interference fits can be safely dismounted using the oil injection method. This involves injecting oil with a viscosity of about 900 mm²/s at 20 °C (70 °F) under high pressure between the tapered mating surfaces, which reduces friction and creates an axial force to separate the bearing from its seat. It is important to attach a lock nut to the shaft end to limit bearing travel when it comes loose.",
+    "reference_answer": "Bearings with interference fits can be safely dismounted using the oil injection method. This involves injecting oil with a viscosity of about 900 mm²/s at 20 °C (70 °F) under high pressure between the tapered mating surfaces, which reduces friction and creates an axial force to separate the bearing from its seat. It is important to attach a lock nut to the shaft end to limit bearing travel when it comes loose.",
+    "evidence_boundary": "The provided chunk specifically describes the oil injection method for dismounting bearings fitted on tapered shafts.",
+    "source_chunk_ids": [
+      "ch10_text_012_dismounting_rolling_bearings"
+    ],
+    "gold_chunk_id": "ch10_text_012_dismounting_rolling_bearings",
+    "secondary_chunk_ids": [
+      "ch10_text_028_dismounting_rolling_bearings",
+      "ch10_text_004_dismounting_rolling_bearings"
+    ],
+    "source_pages": [
+      264
+    ],
+    "source_chunks": [
+      {
+        "chunk_id": "ch10_text_012_dismounting_rolling_bearings",
+        "type": "text",
+        "chapter": "Dismounting",
+        "section": "Dismounting rolling bearings",
+        "heading_path": [
+          "Dismounting",
+          "Dismounting rolling bearings",
+          "Dismounting a bearing fitted on a tapered shaft seat",
+          "Dismounting using the oil injection method"
+        ],
+        "page_start": 264,
+        "page_end": 264,
+        "text": "Chapter: Dismounting Section: Dismounting rolling bearings Subsection: Dismounting a bearing fitted on a tapered shaft seat Subsubsection: Dismounting using the oil injection method Heading path: Dismounting > Dismounting rolling bearings > Dismounting a bearing fitted on a tapered shaft seat > Dismounting using the oil injection method Pages: 264-264 ### Dismounting using the oil injection method Dismounting medium-size and large bearings from tapered shafts is easier and much safer when the oil injection method is used. With this method, oil with a viscosity of about 900 mm<sup>2</sup>/s at 20 °C (70 °F) is injected under high pressure between the two tapered mating surfaces, via a supply duct and a distribution groove. This significantly reduces the friction between the two surfaces and produces an axial force that separates the bearing from its seat (→ fig. 13). WARNING To avoid the risk of serious injury, attach a provision such as a lock nut to the shaft end to limit the bearing travel when it suddenly comes loose."
+      }
+    ],
+    "source_mode": "full_corpus_llm_gold_chunk_annotation",
+    "generation_note": "Reference answer generated from one LLM-selected gold SKF chunk.",
+    "annotation_model": "gpt-4o-mini"
+  },
+  {
+    "id": "rag_ch10_004",
+    "category": "rag_only",
+    "subcategory": "skf_manual",
+    "chapter": 10,
+    "chapter_title": "Dismounting",
+    "question": "When is hydraulic dismounting useful for rolling bearings?",
+    "ground_truth": "Hydraulic dismounting is useful for medium-size and large bearings fitted on a withdrawal sleeve, as it allows for easy dismounting using a hydraulic nut.",
+    "reference_answer": "Hydraulic dismounting is useful for medium-size and large bearings fitted on a withdrawal sleeve, as it allows for easy dismounting using a hydraulic nut.",
+    "evidence_boundary": "The chunk does not provide specific scenarios beyond the general application for medium-size and large bearings.",
+    "source_chunk_ids": [
+      "ch10_text_021_dismounting_rolling_bearings"
+    ],
+    "gold_chunk_id": "ch10_text_021_dismounting_rolling_bearings",
+    "secondary_chunk_ids": [
+      "ch10_text_022_dismounting_rolling_bearings",
+      "ch10_text_012_dismounting_rolling_bearings"
+    ],
+    "source_pages": [
+      270
+    ],
+    "source_chunks": [
+      {
+        "chunk_id": "ch10_text_021_dismounting_rolling_bearings",
+        "type": "text",
+        "chapter": "Dismounting",
+        "section": "Dismounting rolling bearings",
+        "heading_path": [
+          "Dismounting",
+          "Dismounting rolling bearings",
+          "Dismounting a bearing fitted on a withdrawal sleeve",
+          "Dismounting with a hydraulic nut"
+        ],
+        "page_start": 270,
+        "page_end": 270,
+        "text": "Chapter: Dismounting Section: Dismounting rolling bearings Subsection: Dismounting a bearing fitted on a withdrawal sleeve Subsubsection: Dismounting with a hydraulic nut Heading path: Dismounting > Dismounting rolling bearings > Dismounting a bearing fitted on a withdrawal sleeve > Dismounting with a hydraulic nut Pages: 270-270 ### Dismounting with a hydraulic nut Medium-size and large bearings fitted on a withdrawal sleeve can be easily dismounted with a hydraulic nut. **WARNING** To avoid the risk of serious injury, attach a provision such as a lock nut for end plate to the shaft end (**→ fig. 25**) to limit the withdrawal sleeve travel when it suddenly comes loose. Engineering drawing showing dismounting with a hydraulic nut and a safety stop on the shaft end. Screw the hydraulic nut onto the thread of the withdrawal sleeve with the piston facing the bearing until the piston abuts the inner ring. Connect the hydraulic pump to the hydraulic nut and supply oil until the sleeve comes free. Once the sleeve is free, open the oil release valve of the hydraulic pump, so that the pressurized oil can leave the nut. Disconnect the hydraulic pump and remove the stop. Completely withdraw the sleeve from the shaft and remove the bearing. NOTE: Detailed information about SKF hydraulic nuts is provided under Hydraulic tools, on page 73. Useful instructions for use can be found under Oil injection method, starting on page 62. Engineering drawing showing dismounting using the oil injection method with two hydraulic pumps."
+      }
+    ],
+    "source_mode": "full_corpus_llm_gold_chunk_annotation",
+    "generation_note": "Reference answer generated from one LLM-selected gold SKF chunk.",
+    "annotation_model": "gpt-4o-mini"
+  },
+  {
+    "id": "rag_ch11_001",
+    "category": "rag_only",
+    "subcategory": "skf_manual",
+    "chapter": 11,
+    "chapter_title": "Bearing damage and their causes",
+    "question": "How does SKF describe the ISO 15243 classification of bearing damage and failure modes?",
+    "ground_truth": "SKF explains bearing damage using the ISO 15243 classification. The standard recognizes six main groups and sixteen subgroups of failure modes related to post-manufacturing sustained damage, based mainly on features visible on rolling elements, raceways and other functional surfaces. Most bearing damage can be linked back to these main groups and subgroups.",
+    "reference_answer": "SKF explains bearing damage using the ISO 15243 classification. The standard recognizes six main groups and sixteen subgroups of failure modes related to post-manufacturing sustained damage, based mainly on features visible on rolling elements, raceways and other functional surfaces. Most bearing damage can be linked back to these main groups and subgroups.",
+    "evidence_boundary": "The gold chunk discusses SKF/ISO damage classification rather than a detailed root-cause list.",
+    "source_chunk_ids": [
+      "ch11_text_009_bearing_damage"
+    ],
+    "gold_chunk_id": "ch11_text_009_bearing_damage",
+    "secondary_chunk_ids": [],
+    "source_pages": [
+      302
+    ],
+    "source_chunks": [
+      {
+        "chunk_id": "ch11_text_009_bearing_damage",
+        "type": "text",
+        "chapter": "Bearing damage and their causes",
+        "section": "Bearing damage",
+        "heading_path": [
+          "Bearing damage and their causes",
+          "Bearing damage"
+        ],
+        "page_start": 302,
+        "page_end": 302,
+        "text": "Chapter: Bearing damage and their causes Section: Bearing damage Heading path: Bearing damage and their causes > Bearing damage Pages: 302-302 # Bearing damage Because of the increasing attention given to prevent bearing damage and failures from recurring, the International Organization for Standardization (ISO) has developed a methodology for classifying bearing damage and failures (ISO 15243:2004). This standard recognizes six main groups of failure modes and sixteen subgroups, all related to post-manufacturing sustained damage. The standard is based primarily on features that are visible on the rolling elements, raceways and other functional surfaces. It also identifies the mechanisms involved for each type of failure. Most bearing damage can be linked back to the six main groups as well as the various subgroups shown in **table 1**. Definitions of the failure modes are provided in **table 2**. Most damage resulting from these mechanisms can be detected and monitored easily when condition monitoring is part of a comprehensive maintenance programme. Using vibration analysis, the first signs of bearing damage can be detected, enabling maintenance personnel to take corrective actions in a timely manner. This can significantly reduce costly, unexpected downtime and can avoid catastrophic failures that damage adjacent components. It also enables maintenance staff to examine the damaged bearing at an early stage to determine the root cause, and take the necessary steps to prevent the problem from recurring. NOTE: Refer to *Inspection*, starting on **page 216**. Most bearing damage can be classified into two damage categories: pre-operational and operational. Pre-operational damage occurs prior to or during bearing installation, while operational damage occurs while the bearing is in operation. Causes of pre-operational damage: * incorrect shaft and housing fits * defective bearing seats on shafts and in housings * static misalignment * faulty mounting practices * passage of electric current through the bearing (excessive voltage) * transportation, handling and storage Causes of operational damage: * material fatigue * ineffective lubrication * ine ... [truncated]"
+      }
+    ],
+    "source_mode": "full_corpus_llm_gold_chunk_annotation_manual_review",
+    "generation_note": "Reference answer reviewed and corrected from one manually selected gold SKF chunk.",
+    "annotation_model": "gpt-4o-mini",
+    "review_status": "manual_reviewed"
+  },
+  {
+    "id": "rag_ch11_002",
+    "category": "rag_only",
+    "subcategory": "skf_manual",
+    "chapter": 11,
+    "chapter_title": "Bearing damage and their causes",
+    "question": "What damage mechanism does SKF describe when lubrication is ineffective in rolling bearings?",
+    "ground_truth": "SKF states that ineffective lubrication can cause damage because the lubricant should separate rolling elements, cage and raceways in rolling and sliding contact regions. Without effective lubrication, metal-to-metal contact occurs and damages these surfaces. Lubrication-related damage can involve insufficient or excessive viscosity, over-lubrication, inadequate quantity, contaminated lubricant or the wrong lubricant for the application.",
+    "reference_answer": "SKF states that ineffective lubrication can cause damage because the lubricant should separate rolling elements, cage and raceways in rolling and sliding contact regions. Without effective lubrication, metal-to-metal contact occurs and damages these surfaces. Lubrication-related damage can involve insufficient or excessive viscosity, over-lubrication, inadequate quantity, contaminated lubricant or the wrong lubricant for the application.",
+    "evidence_boundary": "The gold chunk explains the damage mechanism and common lubrication-related contributing conditions.",
+    "source_chunk_ids": [
+      "ch11_text_025_bearing_damage"
+    ],
+    "gold_chunk_id": "ch11_text_025_bearing_damage",
+    "secondary_chunk_ids": [],
+    "source_pages": [
+      314
+    ],
+    "source_chunks": [
+      {
+        "chunk_id": "ch11_text_025_bearing_damage",
+        "type": "text",
+        "chapter": "Bearing damage and their causes",
+        "section": "Bearing damage",
+        "heading_path": [
+          "Bearing damage and their causes",
+          "Bearing damage",
+          "Operational causes of damage",
+          "Ineffective lubrication"
+        ],
+        "page_start": 314,
+        "page_end": 314,
+        "text": "Chapter: Bearing damage and their causes Section: Bearing damage Subsection: Operational causes of damage Subsubsection: Ineffective lubrication Heading path: Bearing damage and their causes > Bearing damage > Operational causes of damage > Ineffective lubrication Pages: 314-314 ### Ineffective lubrication One of the primary assumptions made when calculating the life expectancy of a bearing, is that the bearing will be lubricated properly. This means that the correct lubricant in the right quantity will reach the bearing at the right time. All bearings require adequate lubrication for reliable operation. The lubricant separates the rolling elements, cage and raceways, in both the rolling and sliding regions of contact. Without effective lubrication, metal-to-metal contact occurs between the rolling elements and the raceways and other contact surfaces, causing damage to these surfaces. The term \"lubricant failure\" is too often taken to imply that there was no oil or grease in the bearing. While this might happen occasionally, a bearing damage analysis is normally not that simple. Many damage cases are the result of insufficient lubricant viscosity, excessive lubricant viscosity, over-lubrication, inadequate lubricant quantity, contaminated lubricant or the wrong lubricant being used in the application. Therefore, a thorough examination of the lubricant properties, the amount of lubricant applied to the bearing, and the operating conditions are pertinent to any lubrication damage analysis. When lubrication is ineffective, damage in the form of surface fatigue will result. This damage might progress rapidly to failures that are often difficult to differentiate from failures due to material fatigue or spalling. Spalling will occur and often destroy the evidence of ineffective lubrication. However, if found early enough, indications that pinpoint the real cause of damage will be visible. Stages of damage due to inadequate lubrication (surface distress) are shown in **fig. 37**. The first visible indication of trouble is usually a fine roughening or waviness on the surface. Later, fine cracks develop, followed by spalling. **Fig. 37** **Progressive s ... [truncated]"
+      }
+    ],
+    "source_mode": "full_corpus_llm_gold_chunk_annotation_manual_review",
+    "generation_note": "Reference answer reviewed and corrected from one manually selected gold SKF chunk.",
+    "annotation_model": "gpt-4o-mini",
+    "review_status": "manual_reviewed"
+  },
+  {
+    "id": "rag_ch11_003",
+    "category": "rag_only",
+    "subcategory": "skf_manual",
+    "chapter": 11,
+    "chapter_title": "Bearing damage and their causes",
+    "question": "How does vibration analysis help detect bearing damage before catastrophic failure?",
+    "ground_truth": "Vibration analysis helps detect bearing damage before catastrophic failure by identifying the first signs of damage, allowing maintenance personnel to take timely corrective actions. This proactive approach can significantly reduce unexpected downtime and prevent further damage to adjacent components.",
+    "reference_answer": "Vibration analysis helps detect bearing damage before catastrophic failure by identifying the first signs of damage, allowing maintenance personnel to take timely corrective actions. This proactive approach can significantly reduce unexpected downtime and prevent further damage to adjacent components.",
+    "evidence_boundary": "The chunk provides general information on the benefits of vibration analysis in detecting bearing damage but does not detail specific vibration analysis techniques or metrics.",
+    "source_chunk_ids": [
+      "ch11_text_009_bearing_damage"
+    ],
+    "gold_chunk_id": "ch11_text_009_bearing_damage",
+    "secondary_chunk_ids": [
+      "ch8_text_009_inspection_during_operation",
+      "ch8_table_002_part_01"
+    ],
+    "source_pages": [
+      302
+    ],
+    "source_chunks": [
+      {
+        "chunk_id": "ch11_text_009_bearing_damage",
+        "type": "text",
+        "chapter": "Bearing damage and their causes",
+        "section": "Bearing damage",
+        "heading_path": [
+          "Bearing damage and their causes",
+          "Bearing damage"
+        ],
+        "page_start": 302,
+        "page_end": 302,
+        "text": "Chapter: Bearing damage and their causes Section: Bearing damage Heading path: Bearing damage and their causes > Bearing damage Pages: 302-302 # Bearing damage Because of the increasing attention given to prevent bearing damage and failures from recurring, the International Organization for Standardization (ISO) has developed a methodology for classifying bearing damage and failures (ISO 15243:2004). This standard recognizes six main groups of failure modes and sixteen subgroups, all related to post-manufacturing sustained damage. The standard is based primarily on features that are visible on the rolling elements, raceways and other functional surfaces. It also identifies the mechanisms involved for each type of failure. Most bearing damage can be linked back to the six main groups as well as the various subgroups shown in **table 1**. Definitions of the failure modes are provided in **table 2**. Most damage resulting from these mechanisms can be detected and monitored easily when condition monitoring is part of a comprehensive maintenance programme. Using vibration analysis, the first signs of bearing damage can be detected, enabling maintenance personnel to take corrective actions in a timely manner. This can significantly reduce costly, unexpected downtime and can avoid catastrophic failures that damage adjacent components. It also enables maintenance staff to examine the damaged bearing at an early stage to determine the root cause, and take the necessary steps to prevent the problem from recurring. NOTE: Refer to *Inspection*, starting on **page 216**. Most bearing damage can be classified into two damage categories: pre-operational and operational. Pre-operational damage occurs prior to or during bearing installation, while operational damage occurs while the bearing is in operation. Causes of pre-operational damage: * incorrect shaft and housing fits * defective bearing seats on shafts and in housings * static misalignment * faulty mounting practices * passage of electric current through the bearing (excessive voltage) * transportation, handling and storage Causes of operational damage: * material fatigue * ineffective lubrication * ine ... [truncated]"
+      }
+    ],
+    "source_mode": "full_corpus_llm_gold_chunk_annotation",
+    "generation_note": "Reference answer generated from one LLM-selected gold SKF chunk.",
+    "annotation_model": "gpt-4o-mini"
+  },
+  {
+    "id": "rag_ch11_004",
+    "category": "rag_only",
+    "subcategory": "skf_manual",
+    "chapter": 11,
+    "chapter_title": "Bearing damage and their causes",
+    "question": "How does SKF describe material fatigue as an operational cause of bearing damage?",
+    "ground_truth": "SKF identifies material fatigue as an operational cause of damage. During operation, load is transmitted through the rolling elements, producing repeated stress cycles in the contact area. Depending on load, temperature and number of stress cycles, residual stresses can form cracks below the surface; these cracks can propagate to the surface and lead to spalling, increased noise and vibration.",
+    "reference_answer": "SKF identifies material fatigue as an operational cause of damage. During operation, load is transmitted through the rolling elements, producing repeated stress cycles in the contact area. Depending on load, temperature and number of stress cycles, residual stresses can form cracks below the surface; these cracks can propagate to the surface and lead to spalling, increased noise and vibration.",
+    "evidence_boundary": "The gold chunk covers material fatigue as an operational cause; other operational causes are covered in later chunks.",
+    "source_chunk_ids": [
+      "ch11_text_024_bearing_damage"
+    ],
+    "gold_chunk_id": "ch11_text_024_bearing_damage",
+    "secondary_chunk_ids": [],
+    "source_pages": [
+      313
+    ],
+    "source_chunks": [
+      {
+        "chunk_id": "ch11_text_024_bearing_damage",
+        "type": "text",
+        "chapter": "Bearing damage and their causes",
+        "section": "Bearing damage",
+        "heading_path": [
+          "Bearing damage and their causes",
+          "Bearing damage",
+          "Operational causes of damage"
+        ],
+        "page_start": 313,
+        "page_end": 313,
+        "text": "Chapter: Bearing damage and their causes Section: Bearing damage Subsection: Operational causes of damage Heading path: Bearing damage and their causes > Bearing damage > Operational causes of damage Pages: 313-313 ## Operational causes of damage ###Material fatigue (subsurface initiated) In operation, load is transmitted from one ring to the other through the rolling elements. Every time a rolling element comes into the load zone, the load transmitted in the contact area goes from zero to a maximum and back to zero. This leads to a build-up of residual stresses in the material. Depending on the load, temperature and the number of stress cycles, these stresses will lead to structural changes in the material and result in the formation of cracks underneath the surface. These cracks will finally propagate to the surface and spalling will occur (→ fig. 35). A bearing is damaged as soon as the first spall occurs. This does not mean that the bearing cannot continue to operate. Spalls will gradually increase in size (→ fig. 36) and number and give rise to increased noise and vibration levels in the machinery. The machine should be stopped and repaired before the bearing fails catastrophically. To avoid premature subsurface initiated fatigue, three major conditions must exist: * clean bearing steel – best quality bearing * good lubrication conditions (no contamination) * good load distribution over the rolling elements and along the rolling element contact line A spall in a bearing. ISO classification: Subsurface initiated fatigue Advanced spalling due to subsurface initiated fatigue of the material. ISO classification: Subsurface initiated fatigue"
+      }
+    ],
+    "source_mode": "full_corpus_llm_gold_chunk_annotation_manual_review",
+    "generation_note": "Reference answer reviewed and corrected from one manually selected gold SKF chunk.",
+    "annotation_model": "gpt-4o-mini",
+    "review_status": "manual_reviewed"
+  }
+]
