@@ -451,3 +451,25 @@ Current DT+RAG results:
 - Chapter 12 has parsed/chunked artifacts, but it is not part of the current main experimental index.
 - RAGAS judge calls can time out when using a large local model through a gateway. Use smaller pilot runs, `--request-timeout`, `--metric-retry-attempts`, and `--ragas-workers 1` when debugging.
 - The pydantic warning that appears during some runs is a dependency warning and does not normally affect results.
+
+## Citation
+
+If this project is helpful to your research, please cite our paper:
+
+### BibTeX
+```bibtex
+@article{zhu2026bearing,
+  title={A Digital-Twin-Based and 
+RAG-Based LLM Agent Framework for Intelligent Bearing Diagnosis and 
+Maintenance},
+  author={Zhu, Bingran and Huang, Hai and Chen, Zhengkui},
+  journal={Applied Sciences},
+  publisher={MDPI},
+  volume={16},
+  number={18},
+  pages={9247},
+  year={2026},
+  doi={10.3390/app16189247},
+  url={https://doi.org/10.3390/app16189247}
+}
+```
