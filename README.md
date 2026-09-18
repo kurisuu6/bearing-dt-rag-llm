@@ -320,14 +320,6 @@ python3 agent/evaluate_router.py \
   --summary agent/eval/router_eval_summary_full140_hybrid_corrected.csv
 ```
 
-Current router results:
-
-| Router | Total | Accuracy | Error count | Unrelated | RAG-only | DT-only | DT+RAG |
-|---|---:|---:|---:|---:|---:|---:|---:|
-| Rule | 140 | 0.9286 | 0 | 30/30 | 44/50 | 28/30 | 28/30 |
-| LLM llama3.3:70b | 140 | 0.9714 | 0 | 30/30 | 50/50 | 26/30 | 30/30 |
-| Hybrid | 140 | 0.9786 | 0 | 30/30 | 50/50 | 28/30 | 29/30 |
-
 ## DT Benchmark
 
 Run the LLM-planner DT benchmark:
@@ -345,15 +337,6 @@ python3 DT/evaluate_dt_benchmark_llm.py \
   --results DT/eval/dt_benchmark_results_llama_planner_judge_full_v4.json \
   --summary DT/eval/dt_benchmark_summary_llama_planner_judge_full_v4.csv
 ```
-
-Current DT benchmark results:
-
-| Scope | Total | Query accuracy | Execution accuracy | Answer accuracy | Joint accuracy |
-|---|---:|---:|---:|---:|---:|
-| Overall | 30 | 0.9667 | 1.0000 | 0.9333 | 0.9000 |
-| Feature | 10 | 1.0000 | 1.0000 | 0.9000 | 0.9000 |
-| State | 10 | 0.9000 | 1.0000 | 1.0000 | 0.9000 |
-| Trend | 10 | 1.0000 | 1.0000 | 0.9000 | 0.9000 |
 
 ## RAG-only Evaluation
 
@@ -385,15 +368,6 @@ python3 agent/evaluate_rag_only_with_ragas.py \
   --skip-context-recall \
   --skip-hit-at-10
 ```
-
-Current RAG-only results:
-
-| Retrieval | Hit@1 | Hit@5 | MRR | Faithfulness | Answer relevancy | Context precision |
-|---|---:|---:|---:|---:|---:|---:|
-| BM25 | 0.5400 | 0.7400 | 0.6267 | 0.8917 | 0.9020 | 0.8877 |
-| Dense | 0.5200 | 0.8400 | 0.6390 | 0.9501 | 0.9483 | 0.9149 |
-| Hybrid | 0.6000 | 0.8800 | 0.7057 | 0.9148 | 0.9314 | 0.9239 |
-| Hybrid + Reranker | 0.6000 | 0.9200 | 0.7180 | 0.9265 | 0.9390 | 0.9660 |
 
 ## DT+RAG Evaluation
 
@@ -435,15 +409,6 @@ python3 agent/evaluate_dt_rag_with_ragas.py \
   --skip-context-recall \
   --skip-hit-at-10
 ```
-
-Current DT+RAG results:
-
-| Retrieval | Hit@1 | Hit@5 | MRR | Faithfulness | Answer relevancy | Context precision |
-|---|---:|---:|---:|---:|---:|---:|
-| BM25 | 0.5667 | 0.6000 | 0.5733 | 0.7712 | 0.7014 | 0.9523 |
-| Dense | 0.3667 | 0.8000 | 0.5428 | 0.8247 | 0.7166 | 0.9807 |
-| Hybrid | 0.6000 | 0.8000 | 0.6478 | 0.8514 | 0.6917 | 0.9827 |
-| Hybrid + Intent Reranker | 0.4667 | 0.7667 | 0.5911 | 0.8073 | 0.6838 | 0.9706 |
 
 ## Notes
 
