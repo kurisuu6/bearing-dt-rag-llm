@@ -438,3 +438,7 @@ Maintenance},
   url={https://doi.org/10.3390/app16189247}
 }
 ```
+
+**APA format (for Word):**
+
+> Zhu, B., Huang, H., & Chen, Z. (2026). A Digital-Twin-Based and RAG-Based LLM Agent Framework for Intelligent Bearing Diagnosis and Maintenance. *Applied Sciences*, *16*(18), 9247. https://doi.org/10.3390/app16189247
